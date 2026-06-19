@@ -1013,7 +1013,7 @@ export default function Home() {
             </div>
 
             {/* 3. Navigation tabs */}
-            <div className="animate-on-scroll border-b border-white/10 pb-1">
+            <div className="animate-on-scroll pb-1">
               <nav className="flex flex-wrap gap-2 sm:gap-6">
                 {[
                   { id: "dashboard", label: "Analytics Overview", icon: BarChart2 },
