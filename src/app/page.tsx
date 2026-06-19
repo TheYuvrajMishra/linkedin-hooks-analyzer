@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import {
   BarChart,
   Bar,
@@ -142,6 +142,14 @@ export default function Home() {
   
   // Clipboard copy state
   const [copiedHookIdx, setCopiedHookIdx] = useState<number | null>(null);
+
+  // Hook Intelligence Explorer states
+  const [explorerDimension, setExplorerDimension] = useState<"hookType" | "sentenceStructure" | "hookLength">("hookType");
+  const [explorerValue, setExplorerValue] = useState<string>("Curiosity");
+  const [expandedStructure, setExpandedStructure] = useState<string | null>(null);
+  
+  // Post Details expand state
+  const [expandedPostId, setExpandedPostId] = useState<string | null>(null);
 
   const copyToClipboard = (text: string, idx: number) => {
     navigator.clipboard.writeText(text);
@@ -1184,64 +1192,87 @@ export default function Home() {
                     </thead>
                     <tbody className="divide-y divide-zinc-900/60 bg-zinc-900/10">
                       {paginatedPosts.length > 0 ? (
-                        paginatedPosts.map((post) => (
-                          <tr key={post.id} className="hover:bg-zinc-900/40 transition-colors">
-                            <td className="p-4 text-zinc-400 font-medium">
-                              {post.publishedAt 
-                                ? new Date(post.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
-                                : "N/A"}
-                            </td>
-                            <td className="p-4 font-normal">
-                              {post.analyzed ? (
-                                <div className="line-clamp-2 text-zinc-200 pr-4 italic">
-                                  "{post.hook}"
-                                </div>
-                              ) : (
-                                <div className="text-zinc-500 flex items-center gap-1.5">
-                                  <AlertCircle className="h-3 w-3 text-amber-500 flex-shrink-0" />
-                                  <span className="truncate max-w-[200px]">{post.postUrl}</span>
-                                </div>
-                              )}
-                            </td>
-                            <td className="p-4">
-                              {post.hookType ? (
-                                <span className="inline-block rounded-md border border-purple-900 bg-purple-950/40 px-2 py-0.5 text-[10px] font-bold text-purple-400">
-                                  {post.hookType}
-                                </span>
-                              ) : (
-                                <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
-                              )}
-                            </td>
-                            <td className="p-4">
-                              {post.topic ? (
-                                <span className="inline-block rounded-md border border-sky-900 bg-sky-950/40 px-2 py-0.5 text-[10px] font-bold text-sky-400">
-                                  {post.topic}
-                                </span>
-                              ) : (
-                                <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
-                              )}
-                            </td>
-                            <td className="p-4 text-right text-zinc-300 font-semibold">
-                              {post.impressions.toLocaleString()}
-                            </td>
-                            <td className="p-4 text-right text-zinc-300 font-semibold">
-                              {post.engagements.toLocaleString()}
-                            </td>
-                            <td className="p-4 text-right text-indigo-400 font-bold">
-                              {post.engagementRate.toFixed(2)}%
-                            </td>
-                            <td className="p-4 text-center">
-                              <a
-                                href={post.postUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-zinc-800 hover:border-zinc-700 bg-zinc-950 hover:bg-zinc-900 text-zinc-400 hover:text-white transition-colors"
+                        paginatedPosts.map((post) => {
+                          const isPostExpanded = expandedPostId === post.id;
+                          return (
+                            <Fragment key={post.id}>
+                              <tr 
+                                onClick={() => setExpandedPostId(isPostExpanded ? null : post.id)}
+                                className="hover:bg-zinc-900/20 transition-colors cursor-pointer select-none"
                               >
-                                <ExternalLink className="h-3 w-3" />
-                              </a>
-                            </td>
-                          </tr>
-                        ))
+                                <td className="p-4 text-zinc-400 font-medium">
+                                  {post.publishedAt 
+                                    ? new Date(post.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+                                    : "N/A"}
+                                </td>
+                                <td className="p-4 font-normal">
+                                  {post.analyzed ? (
+                                    <div className="flex items-center gap-2">
+                                      <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 flex-shrink-0 ${isPostExpanded ? "rotate-90 text-indigo-400" : ""}`} />
+                                      <div className={`text-zinc-200 pr-4 italic ${isPostExpanded ? "" : "line-clamp-2"}`}>
+                                        "{post.hook}"
+                                      </div>
+                                    </div>
+                                  ) : (
+                                    <div className="text-zinc-500 flex items-center gap-1.5">
+                                      <AlertCircle className="h-3 w-3 text-amber-500 flex-shrink-0" />
+                                      <span className="truncate max-w-[200px]">{post.postUrl}</span>
+                                    </div>
+                                  )}
+                                </td>
+                                <td className="p-4">
+                                  {post.hookType ? (
+                                    <span className="inline-block rounded-md border border-purple-900 bg-purple-950/40 px-2 py-0.5 text-[10px] font-bold text-purple-400">
+                                      {post.hookType}
+                                    </span>
+                                  ) : (
+                                    <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
+                                  )}
+                                </td>
+                                <td className="p-4">
+                                  {post.topic ? (
+                                    <span className="inline-block rounded-md border border-sky-900 bg-sky-950/40 px-2 py-0.5 text-[10px] font-bold text-sky-400">
+                                      {post.topic}
+                                    </span>
+                                  ) : (
+                                    <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
+                                  )}
+                                </td>
+                                <td className="p-4 text-right text-zinc-300 font-semibold">
+                                  {post.impressions.toLocaleString()}
+                                </td>
+                                <td className="p-4 text-right text-zinc-300 font-semibold">
+                                  {post.engagements.toLocaleString()}
+                                </td>
+                                <td className="p-4 text-right text-indigo-400 font-bold">
+                                  {post.engagementRate.toFixed(2)}%
+                                </td>
+                                <td className="p-4 text-center" onClick={(e) => e.stopPropagation()}>
+                                  <a
+                                    href={post.postUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-zinc-800 hover:border-zinc-700 bg-zinc-950 hover:bg-zinc-900 text-zinc-400 hover:text-white transition-colors"
+                                  >
+                                    <ExternalLink className="h-3 w-3" />
+                                  </a>
+                                </td>
+                              </tr>
+                              {isPostExpanded && post.postText && (
+                                <tr className="bg-zinc-950/15">
+                                  <td colSpan={8} className="p-4 border-b border-zinc-900/60">
+                                    <div className="rounded-lg border border-zinc-900 bg-zinc-950/50 p-4 shadow-inner">
+                                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider mb-2">Full Post Content</div>
+                                      <div className="text-xs text-zinc-300 leading-relaxed whitespace-pre-wrap font-mono">
+                                        {post.postText}
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              )}
+                            </Fragment>
+                          );
+                        })
                       ) : (
                         <tr>
                           <td colSpan={8} className="p-8 text-center text-zinc-500 italic">
@@ -1404,14 +1435,75 @@ export default function Home() {
                               .map((p) => p.hook!.trim().split("\n")[0])
                               .join(" // ");
                             
+                            const isExpanded = expandedStructure === struct.name;
                             return (
-                              <tr key={idx} className="hover:bg-zinc-900/20 transition-colors">
-                                <td className="p-3 font-semibold text-zinc-200">{struct.name}</td>
-                                <td className="p-3 text-zinc-400">{struct.count} posts</td>
-                                <td className="p-3 text-right text-zinc-300">{struct.avgImpressions.toLocaleString()}</td>
-                                <td className="p-3 text-right text-indigo-400 font-bold">{struct.avgEngagementRate.toFixed(2)}%</td>
-                                <td className="p-3 text-zinc-500 italic max-w-sm truncate">"{examples}"</td>
-                              </tr>
+                              <Fragment key={idx}>
+                                <tr
+                                  onClick={() => setExpandedStructure(isExpanded ? null : struct.name)}
+                                  className="hover:bg-zinc-900/20 transition-colors cursor-pointer select-none border-b border-zinc-900/40"
+                                >
+                                  <td className="p-3 font-semibold text-zinc-200">
+                                    <div className="flex items-center gap-2">
+                                      <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 ${isExpanded ? "rotate-90 text-indigo-400" : ""}`} />
+                                      <span>{struct.name}</span>
+                                    </div>
+                                  </td>
+                                  <td className="p-3 text-zinc-400">{struct.count} posts</td>
+                                  <td className="p-3 text-right text-zinc-300">{struct.avgImpressions.toLocaleString()}</td>
+                                  <td className="p-3 text-right text-indigo-400 font-bold">{struct.avgEngagementRate.toFixed(2)}%</td>
+                                  <td className="p-3 text-zinc-500 italic max-w-sm truncate">"{examples}"</td>
+                                </tr>
+                                {isExpanded && (
+                                  <tr className="bg-zinc-950/20">
+                                    <td colSpan={5} className="p-4 border-b border-zinc-900">
+                                      <div className="space-y-3">
+                                        <div className="text-[11px] font-bold text-zinc-400 flex items-center justify-between">
+                                          <span>All posts matching "{struct.name}" (sorted by Engagement Rate):</span>
+                                        </div>
+                                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                                          {posts
+                                            .filter((p) => p.analyzed && p.sentenceStructure === struct.name)
+                                            .sort((a, b) => b.engagementRate - a.engagementRate)
+                                            .map((p, pIdx) => (
+                                              <div key={p.id || pIdx} className="rounded-lg border border-zinc-900 bg-zinc-900/40 p-3 shadow-md hover:border-zinc-800 transition-all">
+                                                <div className="flex items-start justify-between gap-2 mb-2">
+                                                  <span className="inline-flex items-center gap-1 rounded bg-indigo-950 px-1.5 py-0.5 text-[9px] font-semibold text-indigo-400 border border-indigo-900">
+                                                    #{pIdx + 1}
+                                                  </span>
+                                                  <a
+                                                    href={p.postUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-0.5 text-[10px] text-zinc-400 hover:text-white transition-colors"
+                                                  >
+                                                    View Post <ExternalLink className="h-2.5 w-2.5" />
+                                                  </a>
+                                                </div>
+                                                <p className="text-[11px] text-zinc-300 line-clamp-3 mb-2 italic">
+                                                  "{p.hook || p.postText || "(No hook text)"}"
+                                                </p>
+                                                <div className="grid grid-cols-3 gap-2 border-t border-zinc-900/40 pt-2 text-[9px] text-zinc-500">
+                                                  <div>
+                                                    <span className="block text-zinc-500">Impressions</span>
+                                                    <span className="text-zinc-300 font-bold">{p.impressions.toLocaleString()}</span>
+                                                  </div>
+                                                  <div>
+                                                    <span className="block text-zinc-500">Engagements</span>
+                                                    <span className="text-zinc-300 font-bold">{p.engagements.toLocaleString()}</span>
+                                                  </div>
+                                                  <div>
+                                                    <span className="block text-zinc-500">ER</span>
+                                                    <span className="text-indigo-400 font-bold">{p.engagementRate.toFixed(2)}%</span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            ))}
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                )}
+                              </Fragment>
                             );
                           })
                         ) : (
@@ -1424,6 +1516,160 @@ export default function Home() {
                       </tbody>
                     </table>
                   </div>
+                </div>
+
+                {/* Interactive Winning Reels Inspector */}
+                <div className="rounded-2xl border border-zinc-900 bg-zinc-900/20 p-6 shadow-xl backdrop-blur-md">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                    <div>
+                      <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
+                        <Zap className="h-4 w-4 text-amber-400" />
+                        <span>🏆 Hook Performance Deep-Dive Explorer</span>
+                      </h3>
+                      <p className="text-[10px] text-zinc-500 mt-1">Select a metric segment below to see the exact LinkedIn posts (reels) that used it and won</p>
+                    </div>
+                    
+                    <div className="flex flex-wrap items-center gap-3">
+                      {/* Filter by Dimension */}
+                      <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+                        <span>Segment by:</span>
+                        <select
+                          value={explorerDimension}
+                          onChange={(e) => {
+                            const newDim = e.target.value as any;
+                            setExplorerDimension(newDim);
+                            // Auto-select first option of the new dimension
+                            if (newDim === "hookType") {
+                              setExplorerValue("Curiosity");
+                            } else if (newDim === "sentenceStructure") {
+                              setExplorerValue("First-Person Narrative");
+                            } else {
+                              setExplorerValue("Medium (101-200 chars)");
+                            }
+                          }}
+                          className="rounded border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                        >
+                          <option value="hookType">Hook Style (AI)</option>
+                          <option value="sentenceStructure">Sentence Structure</option>
+                          <option value="hookLength">Hook Character Length</option>
+                        </select>
+                      </div>
+
+                      {/* Filter by Value */}
+                      <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+                        <span>Value:</span>
+                        <select
+                          value={explorerValue}
+                          onChange={(e) => setExplorerValue(e.target.value)}
+                          className="rounded border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                        >
+                          {explorerDimension === "hookType" && [
+                            "Curiosity", "Contrarian", "Story", "Failure", "Achievement", "Opinion", "Question", "Educational", "Building In Public", "Career"
+                          ].map(v => <option key={v} value={v}>{v}</option>)}
+
+                          {explorerDimension === "sentenceStructure" && [
+                            "Action/Instructional", "First-Person Narrative", "Numbered List/Listicle", "Interrogative/Question", "Negative/Contrarian Assertion", "Declarative Statement"
+                          ].map(v => <option key={v} value={v}>{v}</option>)}
+
+                          {explorerDimension === "hookLength" && [
+                            "Short (0-100 chars)", "Medium (101-200 chars)", "Long (200+ chars)"
+                          ].map(v => <option key={v} value={v}>{v}</option>)}
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Inspector Results */}
+                  {isMounted && posts.some(p => p.analyzed) ? (
+                    (() => {
+                      const matchingPosts = posts.filter(p => {
+                        if (!p.analyzed) return false;
+                        if (explorerDimension === "hookType") {
+                          return p.hookType === explorerValue;
+                        }
+                        if (explorerDimension === "sentenceStructure") {
+                          return p.sentenceStructure === explorerValue;
+                        }
+                        if (explorerDimension === "hookLength") {
+                          if (explorerValue === "Short (0-100 chars)") {
+                            return p.hookLength !== null && p.hookLength <= 100;
+                          } else if (explorerValue === "Medium (101-200 chars)") {
+                            return p.hookLength !== null && p.hookLength > 100 && p.hookLength <= 200;
+                          } else {
+                            return p.hookLength !== null && p.hookLength > 200;
+                          }
+                        }
+                        return false;
+                      }).sort((a, b) => b.engagementRate - a.engagementRate);
+
+                      if (matchingPosts.length === 0) {
+                        return (
+                          <div className="flex h-36 items-center justify-center text-xs text-zinc-500 italic border border-dashed border-zinc-800 rounded-xl">
+                            No analyzed posts found in this segment. Try another option or run the analysis.
+                          </div>
+                        );
+                      }
+
+                      return (
+                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                          {matchingPosts.map((post, idx) => (
+                            <div
+                              key={post.id || idx}
+                              className={`group relative rounded-xl border p-4 shadow-lg transition-all duration-300 ${
+                                idx === 0 
+                                  ? "border-amber-500/30 bg-amber-950/5 hover:border-amber-500/50" 
+                                  : "border-zinc-900 bg-zinc-900/30 hover:border-zinc-800"
+                              }`}
+                            >
+                              {/* Trophy badge for top performer */}
+                              {idx === 0 && (
+                                <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-black shadow-lg">
+                                  🏆
+                                </span>
+                              )}
+                              
+                              <div className="flex items-center justify-between border-b border-zinc-900/60 pb-2 mb-3 text-[10px]">
+                                <span className="font-bold text-zinc-500">Post #{idx + 1}</span>
+                                <a
+                                  href={post.postUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 font-semibold text-indigo-400 group-hover:text-indigo-300 transition-colors"
+                                >
+                                  Open Post <ExternalLink className="h-3 w-3" />
+                                </a>
+                              </div>
+                              
+                              {/* Hook text */}
+                              <div className="min-h-[64px] text-xs text-zinc-200 leading-relaxed italic bg-zinc-950/20 rounded p-2.5 mb-3 max-h-24 overflow-y-auto font-mono scrollbar-thin">
+                                "{post.hook || post.postText || "(No hook content)"}"
+                              </div>
+                              
+                              {/* Performance grid */}
+                              <div className="grid grid-cols-3 gap-2 text-center text-[10px] border-t border-zinc-900/40 pt-3">
+                                <div className="border-r border-zinc-900/40">
+                                  <span className="text-zinc-500 block">Impressions</span>
+                                  <span className="text-zinc-200 font-bold font-mono">{post.impressions.toLocaleString()}</span>
+                                </div>
+                                <div className="border-r border-zinc-900/40">
+                                  <span className="text-zinc-500 block">Engagements</span>
+                                  <span className="text-zinc-200 font-bold font-mono">{post.engagements.toLocaleString()}</span>
+                                </div>
+                                <div>
+                                  <span className="text-zinc-500 block">Engagement Rate</span>
+                                  <span className="text-indigo-400 font-extrabold font-mono text-[11px]">{post.engagementRate.toFixed(2)}%</span>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      );
+                    })()
+                  ) : (
+                    <div className="flex h-36 items-center justify-center text-xs text-zinc-500 border border-dashed border-zinc-800 rounded-xl">
+                      Run the analysis pipeline to inspect hook performance details.
+                    </div>
+                  )}
                 </div>
 
               </div>

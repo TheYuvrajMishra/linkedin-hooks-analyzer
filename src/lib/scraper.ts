@@ -27,12 +27,47 @@ export async function scrapePostText(url: string): Promise<string> {
     const html = response.data;
     const $ = cheerio.load(html);
 
-    // Extract post text from metadata tags
-    const metaDesc = $('meta[property="og:description"]').attr("content") ||
-                     $('meta[name="description"]').attr("content") ||
-                     $('meta[name="twitter:description"]').attr("content") || "";
+    let scrapedText = "";
 
-    let finalCode = metaDesc.trim();
+    // 1. Try to parse JSON-LD
+    $('script[type="application/ld+json"]').each((_, el) => {
+      try {
+        const htmlContent = $(el).html();
+        if (!htmlContent) return;
+        const parsed = JSON.parse(htmlContent);
+        const items = Array.isArray(parsed) ? parsed : [parsed];
+        for (const item of items) {
+          if (item.articleBody) {
+            scrapedText = item.articleBody.trim();
+            break;
+          }
+          if (item.description && !scrapedText) {
+            scrapedText = item.description.trim();
+          }
+        }
+        if (scrapedText) return false; // break cheerio loop
+      } catch (e) {
+        // ignore parse errors
+      }
+    });
+
+    // 2. Try class selectors
+    if (!scrapedText) {
+      const classText = $(".attributed-text-segment-list__content").first().text().trim();
+      if (classText) {
+        scrapedText = classText;
+      }
+    }
+
+    // 3. Fallback to meta description tags
+    if (!scrapedText) {
+      scrapedText = $('meta[property="og:description"]').attr("content") ||
+                    $('meta[name="description"]').attr("content") ||
+                    $('meta[name="twitter:description"]').attr("content") || "";
+      scrapedText = scrapedText.trim();
+    }
+
+    let finalCode = scrapedText;
     
     if (finalCode) {
       // Clean up common LinkedIn meta prefixes
