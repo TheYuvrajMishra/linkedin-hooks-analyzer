@@ -1,0 +1,5226 @@
+{
+  "posts": [
+    {
+      "id": "post_1781848774455_z3zt9gkit",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-fullstackdeveloper-reactjs-share-7402528501125287936-GA-2",
+      "publishedAt": "2025-12-04T18:30:00.000Z",
+      "engagements": 74,
+      "impressions": 11391,
+      "engagementRate": 0.65,
+      "createdAt": "2026-06-19T05:59:34.455Z",
+      "updatedAt": "2026-06-19T06:00:18.789Z",
+      "postText": "Building and sharing insights about Nextjs Fullstackdeveloper Reactjs in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Nextjs Fullstackdeveloper Reactjs in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 146,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774456_6ah8omr2d",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_ai-startups-indiehackers-ugcPost-7454181312229179392-guuE",
+      "publishedAt": "2026-04-25T18:30:00.000Z",
+      "engagements": 36,
+      "impressions": 2451,
+      "engagementRate": 1.47,
+      "createdAt": "2026-06-19T05:59:34.456Z",
+      "updatedAt": "2026-06-19T06:00:13.692Z",
+      "postText": "Building and sharing insights about Startups Indiehackers GuuE in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Startups Indiehackers GuuE in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Startups",
+      "hookLength": 139,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774458_gqfxj81ks",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-nextjs-mernstack-share-7392552040322969601-Q1R-",
+      "publishedAt": "2025-11-06T18:30:00.000Z",
+      "engagements": 28,
+      "impressions": 5286,
+      "engagementRate": 0.53,
+      "createdAt": "2026-06-19T05:59:34.458Z",
+      "updatedAt": "2026-06-19T06:00:28.158Z",
+      "postText": "Building and sharing insights about Fullstackdeveloper Nextjs Mernstack Q1R in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Fullstackdeveloper Nextjs Mernstack Q1R in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 152,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774459_glcu0brwz",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-nextjs-fullstackdeveloper-ugcPost-7387158291929485312-TgLa",
+      "publishedAt": "2025-10-22T18:30:00.000Z",
+      "engagements": 26,
+      "impressions": 410,
+      "engagementRate": 6.34,
+      "createdAt": "2026-06-19T05:59:34.459Z",
+      "updatedAt": "2026-06-19T06:01:13.736Z",
+      "postText": "Building and sharing insights about Webdevelopment Nextjs Fullstackdeveloper TgLa in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Webdevelopment Nextjs Fullstackdeveloper TgLa in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 158,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774460_r262pzx2o",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-videotag-ux-share-7445867915956113408-x4zg",
+      "publishedAt": "2026-04-02T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 1116,
+      "engagementRate": 0.27,
+      "createdAt": "2026-06-19T05:59:34.460Z",
+      "updatedAt": "2026-06-19T06:00:15.792Z",
+      "postText": "Building and sharing insights about Webdevelopment Videotag X4zg in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Webdevelopment Videotag X4zg in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 141,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774462_8h7cu0amd",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_developers-webdev-it-ugcPost-7399449063580147712-LcNm",
+      "publishedAt": "2025-11-25T18:30:00.000Z",
+      "engagements": 20,
+      "impressions": 474,
+      "engagementRate": 4.22,
+      "createdAt": "2026-06-19T05:59:34.462Z",
+      "updatedAt": "2026-06-19T06:00:22.069Z",
+      "postText": "Building and sharing insights about Developers Webdev LcNm in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Developers Webdev LcNm in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 135,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774463_lt9apqkn1",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_css-tailwindcss-frontend-share-7402175983065333760-6H1q",
+      "publishedAt": "2025-12-03T18:30:00.000Z",
+      "engagements": 9,
+      "impressions": 1046,
+      "engagementRate": 0.86,
+      "createdAt": "2026-06-19T05:59:34.463Z",
+      "updatedAt": "2026-06-19T06:00:19.245Z",
+      "postText": "Building and sharing insights about Css Tailwindcss Frontend 6H1q in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Css Tailwindcss Frontend 6H1q in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 142,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774464_a6xb4qzbl",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_workinprogress-webdevelopment-saas-ugcPost-7388970180900696064-MZHF",
+      "publishedAt": "2025-10-27T18:30:00.000Z",
+      "engagements": 11,
+      "impressions": 286,
+      "engagementRate": 3.85,
+      "createdAt": "2026-06-19T05:59:34.464Z",
+      "updatedAt": "2026-06-19T06:01:10.696Z",
+      "postText": "Building and sharing insights about Workinprogress Webdevelopment Saas MZHF in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Workinprogress Webdevelopment Saas MZHF in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "SaaS",
+      "hookLength": 152,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774465_gdb2jdapt",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-seo-webdevelopment-share-7392771674116349952-0LZr",
+      "publishedAt": "2025-11-07T18:30:00.000Z",
+      "engagements": 6,
+      "impressions": 938,
+      "engagementRate": 0.64,
+      "createdAt": "2026-06-19T05:59:34.465Z",
+      "updatedAt": "2026-06-19T06:00:27.175Z",
+      "postText": "Building and sharing insights about Nextjs Seo Webdevelopment 0LZr in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Nextjs Seo Webdevelopment 0LZr in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 143,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774466_g5493jmpp",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_aiindevelopment-fullstack-productivity-ugcPost-7389878289756225536-J5x0",
+      "publishedAt": "2025-10-30T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 904,
+      "engagementRate": 0.22,
+      "createdAt": "2026-06-19T05:59:34.466Z",
+      "updatedAt": "2026-06-19T06:00:30.525Z",
+      "postText": "Building and sharing insights about Aiindevelopment Fullstack Productivity J5x0 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Aiindevelopment Fullstack Productivity J5x0 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 156,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774467_k1qvwjwmo",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uiux-productdesign-saas-share-7445048327727136768-CbfA",
+      "publishedAt": "2026-03-31T18:30:00.000Z",
+      "engagements": 8,
+      "impressions": 758,
+      "engagementRate": 1.06,
+      "createdAt": "2026-06-19T05:59:34.467Z",
+      "updatedAt": "2026-06-19T06:00:16.671Z",
+      "postText": "Building and sharing insights about Uiux Productdesign Saas CbfA in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Uiux Productdesign Saas CbfA in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "SaaS",
+      "hookLength": 141,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774468_4zrf4ydmx",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_developer-webperformance-coding-ugcPost-7388163833137213440-ixjn",
+      "publishedAt": "2025-10-25T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 880,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.468Z",
+      "updatedAt": "2026-06-19T06:01:11.777Z",
+      "postText": "Building and sharing insights about Developer Webperformance Coding Ixjn in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Developer Webperformance Coding Ixjn in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 149,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774469_1gr3fve7y",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_reactjs-javascript-codingtips-ugcPost-7389139829432799232-isYp",
+      "publishedAt": "2025-10-28T18:30:00.000Z",
+      "engagements": 8,
+      "impressions": 244,
+      "engagementRate": 3.28,
+      "createdAt": "2026-06-19T05:59:34.469Z",
+      "updatedAt": "2026-06-19T06:00:32.121Z",
+      "postText": "Building and sharing insights about Reactjs Javascript Codingtips IsYp in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Reactjs Javascript Codingtips IsYp in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "React",
+      "hookLength": 147,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774470_2f1ih56mr",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_frontend-uidesign-animation-ugcPost-7395118258573713408-MFI1",
+      "publishedAt": "2025-11-13T18:30:00.000Z",
+      "engagements": 7,
+      "impressions": 545,
+      "engagementRate": 1.28,
+      "createdAt": "2026-06-19T05:59:34.470Z",
+      "updatedAt": "2026-06-19T06:00:24.817Z",
+      "postText": "Building and sharing insights about Frontend Uidesign Animation MFI1 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Frontend Uidesign Animation MFI1 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 145,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774470_m1bgx7lzv",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-softskills-freelancing-share-7399827115870691329-48W_",
+      "publishedAt": "2025-11-26T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 725,
+      "engagementRate": 0.14,
+      "createdAt": "2026-06-19T05:59:34.470Z",
+      "updatedAt": "2026-06-19T06:00:21.588Z",
+      "postText": "Building and sharing insights about The Yuvraj Mishra_fullstackdeveloper Softskills Freelancing 48W_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about The Yuvraj Mishra_fullstackdeveloper Softskills Freelancing 48W_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 177,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774471_kw12vsl2r",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_i-boosted-my-e-commerce-apps-lighthouse-ugcPost-7388057904643207168-RRAt",
+      "publishedAt": "2025-10-25T18:30:00.000Z",
+      "engagements": 6,
+      "impressions": 273,
+      "engagementRate": 2.2,
+      "createdAt": "2026-06-19T05:59:34.471Z",
+      "updatedAt": "2026-06-19T06:01:12.241Z",
+      "postText": "Building and sharing insights about Boosted Commerce Apps Lighthouse RRAt in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Boosted Commerce Apps Lighthouse RRAt in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 150,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774472_9d7dk65by",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_typescript-reactjs-cleancode-share-7392946184987889664-isep",
+      "publishedAt": "2025-11-07T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 521,
+      "engagementRate": 0.77,
+      "createdAt": "2026-06-19T05:59:34.472Z",
+      "updatedAt": "2026-06-19T06:00:27.643Z",
+      "postText": "Building and sharing insights about Typescript Reactjs Cleancode Isep in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Typescript Reactjs Cleancode Isep in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "React",
+      "hookLength": 146,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774473_gqyqp38vv",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_jobmarket-jobs-career-share-7451966792500985856-c9tr",
+      "publishedAt": "2026-04-19T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 369,
+      "engagementRate": 1.36,
+      "createdAt": "2026-06-19T05:59:34.473Z",
+      "updatedAt": "2026-06-19T06:00:15.202Z",
+      "postText": "Building and sharing insights about Jobmarket Jobs Career C9tr in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Jobmarket Jobs Career C9tr in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 139,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774474_kbu3h2v4n",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-webdev-reactjs-share-7396503511628423168-AQyJ",
+      "publishedAt": "2025-11-17T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 478,
+      "engagementRate": 0.42,
+      "createdAt": "2026-06-19T05:59:34.474Z",
+      "updatedAt": "2026-06-19T06:00:23.912Z",
+      "postText": "Building and sharing insights about Fullstackdeveloper Webdev Reactjs AQyJ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Fullstackdeveloper Webdev Reactjs AQyJ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "React",
+      "hookLength": 151,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774475_02pb4qmny",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_good-opportunity-share-7393252912212180992-kLwk",
+      "publishedAt": "2025-11-08T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 258,
+      "engagementRate": 1.94,
+      "createdAt": "2026-06-19T05:59:34.475Z",
+      "updatedAt": "2026-06-19T06:00:26.585Z",
+      "postText": "Building and sharing insights about Good Opportunity KLwk in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Good Opportunity KLwk in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 134,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774475_vxm2b7z60",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_opentowork-nextjs-reactjs-share-7470018832783314944-eoTY",
+      "publishedAt": "2026-06-08T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 225,
+      "engagementRate": 2.22,
+      "createdAt": "2026-06-19T05:59:34.476Z",
+      "updatedAt": "2026-06-19T06:00:12.582Z",
+      "postText": "Building and sharing insights about Opentowork Nextjs Reactjs EoTY in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Opentowork Nextjs Reactjs EoTY in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 143,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774476_a98wh17q4",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-seo-ssr-share-7390057387719815168-udvk",
+      "publishedAt": "2025-10-30T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 209,
+      "engagementRate": 2.39,
+      "createdAt": "2026-06-19T05:59:34.476Z",
+      "updatedAt": "2026-06-19T06:00:30.988Z",
+      "postText": "Building and sharing insights about Nextjs Seo Ssr Udvk in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Nextjs Seo Ssr Udvk in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 132,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774478_j4216p6d4",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_git-github-versioncontrol-share-7403486488593838080-yMMd",
+      "publishedAt": "2025-12-06T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 309,
+      "engagementRate": 0.32,
+      "createdAt": "2026-06-19T05:59:34.478Z",
+      "updatedAt": "2026-06-19T06:00:18.322Z",
+      "postText": "Building and sharing insights about Git Github Versioncontrol YMMd in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Git Github Versioncontrol YMMd in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 143,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774480_0i68bntdw",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uxdesign-webdev-philosophy-share-7387377485648273408-zYIW",
+      "publishedAt": "2025-10-23T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 249,
+      "engagementRate": 1.61,
+      "createdAt": "2026-06-19T05:59:34.480Z",
+      "updatedAt": "2026-06-19T06:01:13.254Z",
+      "postText": "Building and sharing insights about Uxdesign Webdev Philosophy ZYIW in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Uxdesign Webdev Philosophy ZYIW in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 144,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774481_pi358doju",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_cleancode-business-coding-share-7401452417382318080-FTQU",
+      "publishedAt": "2025-12-01T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 296,
+      "engagementRate": 1.01,
+      "createdAt": "2026-06-19T05:59:34.481Z",
+      "updatedAt": "2026-06-19T06:00:19.702Z",
+      "postText": "Building and sharing insights about Cleancode Business Coding FTQU in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Cleancode Business Coding FTQU in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 143,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774482_jy7wory04",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_languages-espanol-learning-share-7452324662694330368-oNWc",
+      "publishedAt": "2026-04-20T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 231,
+      "engagementRate": 1.73,
+      "createdAt": "2026-06-19T05:59:34.482Z",
+      "updatedAt": "2026-06-19T06:00:14.509Z",
+      "postText": "Building and sharing insights about Languages Espanol Learning ONWc in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Languages Espanol Learning ONWc in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Educational",
+      "topic": "UI/UX",
+      "hookLength": 144,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774483_zchkzh5sa",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_anthropic-claudemythos-aisecurity-share-7452663509982781440-2LgP",
+      "publishedAt": "2026-04-21T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 146,
+      "engagementRate": 2.74,
+      "createdAt": "2026-06-19T05:59:34.483Z",
+      "updatedAt": "2026-06-19T06:00:14.076Z",
+      "postText": "Building and sharing insights about Anthropic Claudemythos Aisecurity 2LgP in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Anthropic Claudemythos Aisecurity 2LgP in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 151,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774485_qbz8u2o7h",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_reactjs-statemanagement-javascript-share-7400220191525195776-KKpP",
+      "publishedAt": "2025-11-27T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 274,
+      "engagementRate": 0.73,
+      "createdAt": "2026-06-19T05:59:34.485Z",
+      "updatedAt": "2026-06-19T06:00:21.049Z",
+      "postText": "Building and sharing insights about Reactjs Statemanagement Javascript KKpP in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Reactjs Statemanagement Javascript KKpP in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "React",
+      "hookLength": 152,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774485_6ng25etm9",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_cleancode-javascript-typescript-share-7398733351274172416-m5uA",
+      "publishedAt": "2025-11-23T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 228,
+      "engagementRate": 1.32,
+      "createdAt": "2026-06-19T05:59:34.485Z",
+      "updatedAt": "2026-06-19T06:00:22.514Z",
+      "postText": "Building and sharing insights about Cleancode Javascript Typescript M5uA in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Cleancode Javascript Typescript M5uA in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 149,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774486_tyamminir",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_gaming-kart-isnt-just-an-e-commerce-site-ugcPost-7365035778160205825-oyGZ",
+      "publishedAt": "2025-08-22T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 189,
+      "engagementRate": 1.59,
+      "createdAt": "2026-06-19T05:59:34.486Z",
+      "updatedAt": "2026-06-19T06:01:14.209Z",
+      "postText": "Building and sharing insights about Gaming Kart Isnt Just Commerce Site OyGZ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Gaming Kart Isnt Just Commerce Site OyGZ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 153,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774487_rqm15cpak",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nodejs-security-jwt-share-7389693809611255809-ExE9",
+      "publishedAt": "2025-10-29T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 183,
+      "engagementRate": 1.64,
+      "createdAt": "2026-06-19T05:59:34.487Z",
+      "updatedAt": "2026-06-19T06:00:31.472Z",
+      "postText": "Building and sharing insights about Nodejs Security Jwt ExE9 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Nodejs Security Jwt ExE9 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 137,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774488_b15tm87b2",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_responsivedesign-css-frontend-share-7400417855294369792-n9ou",
+      "publishedAt": "2025-11-28T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 147,
+      "engagementRate": 2.04,
+      "createdAt": "2026-06-19T05:59:34.488Z",
+      "updatedAt": "2026-06-19T06:00:20.597Z",
+      "postText": "Building and sharing insights about Responsivedesign Css Frontend N9ou in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Responsivedesign Css Frontend N9ou in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 147,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774489_h8kowf47t",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-mongodb-nodejs-share-7392421367272333312-ttlv",
+      "publishedAt": "2025-11-06T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 224,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.489Z",
+      "updatedAt": "2026-06-19T06:00:28.610Z",
+      "postText": "Building and sharing insights about Fullstackdeveloper Mongodb Nodejs Ttlv in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Fullstackdeveloper Mongodb Nodejs Ttlv in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 151,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774490_35dkjx2t4",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_it-is-hard-sometimes-share-7457392675466502144-h08v",
+      "publishedAt": "2026-05-04T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 224,
+      "engagementRate": 0.89,
+      "createdAt": "2026-06-19T05:59:34.490Z",
+      "updatedAt": "2026-06-19T06:00:13.220Z",
+      "postText": "Building and sharing insights about Hard Sometimes H08v in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Hard Sometimes H08v in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 132,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774491_tmug6r059",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_figma-uidesign-frontend-share-7393820105622650880-ygo_",
+      "publishedAt": "2025-11-10T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 202,
+      "engagementRate": 0.99,
+      "createdAt": "2026-06-19T05:59:34.491Z",
+      "updatedAt": "2026-06-19T06:00:25.701Z",
+      "postText": "Building and sharing insights about The Yuvraj Mishra_figma Uidesign Frontend Ygo_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about The Yuvraj Mishra_figma Uidesign Frontend Ygo_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 159,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774492_uxlilnrxu",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_we-have-reached-a-point-where-i-trust-imperfect-share-7471173130833641473-S2LB",
+      "publishedAt": "2026-06-11T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 148,
+      "engagementRate": 1.35,
+      "createdAt": "2026-06-19T05:59:34.492Z",
+      "updatedAt": "2026-06-19T06:00:11.854Z",
+      "postText": "Building and sharing insights about Have Reached Point Where Trust Imperfect S2LB in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Have Reached Point Where Trust Imperfect S2LB in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 158,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774493_4ft2m2kz7",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdev-coding-fullstackdeveloper-ugcPost-7387685942586929152-GqrE",
+      "publishedAt": "2025-10-24T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 198,
+      "engagementRate": 0.51,
+      "createdAt": "2026-06-19T05:59:34.493Z",
+      "updatedAt": "2026-06-19T06:01:12.797Z",
+      "postText": "Building and sharing insights about Webdev Coding Fullstackdeveloper GqrE in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Webdev Coding Fullstackdeveloper GqrE in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 150,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774495_pjbj32wp8",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-edgecomputing-serverless-share-7397701016143495169-T76b",
+      "publishedAt": "2025-11-20T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 147,
+      "engagementRate": 1.36,
+      "createdAt": "2026-06-19T05:59:34.495Z",
+      "updatedAt": "2026-06-19T06:00:22.989Z",
+      "postText": "Building and sharing insights about Nextjs Edgecomputing Serverless T76b in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Nextjs Edgecomputing Serverless T76b in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 149,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774497_pz7p1jw5r",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_hiring-freshers-entrylevel-share-7396543417335377920-j7Uv",
+      "publishedAt": "2025-11-17T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 198,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.497Z",
+      "updatedAt": "2026-06-19T06:00:24.372Z",
+      "postText": "Building and sharing insights about Hiring Freshers Entrylevel J7Uv in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Hiring Freshers Entrylevel J7Uv in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 144,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774498_cswy001li",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_personalbranding-uidesign-webdeveloper-share-7397507301789818880-99K_",
+      "publishedAt": "2025-11-20T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 146,
+      "engagementRate": 1.37,
+      "createdAt": "2026-06-19T05:59:34.498Z",
+      "updatedAt": "2026-06-19T06:00:23.445Z",
+      "postText": "Building and sharing insights about The Yuvraj Mishra_personalbranding Uidesign Webdeveloper 99K_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about The Yuvraj Mishra_personalbranding Uidesign Webdeveloper 99K_ in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 174,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774499_3zq536n2q",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uidesign-uxdesign-webdevelopment-ugcPost-7390288119780237312-YvaF",
+      "publishedAt": "2025-10-31T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 198,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.499Z",
+      "updatedAt": "2026-06-19T06:00:30.068Z",
+      "postText": "Building and sharing insights about Uidesign Uxdesign Webdevelopment YvaF in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Uidesign Uxdesign Webdevelopment YvaF in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 150,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774500_s1i6bl8sa",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uiux-webdesign-figma-ugcPost-7388424050110382080-iGes",
+      "publishedAt": "2025-10-26T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 197,
+      "engagementRate": 0.51,
+      "createdAt": "2026-06-19T05:59:34.500Z",
+      "updatedAt": "2026-06-19T06:01:11.203Z",
+      "postText": "Building and sharing insights about Uiux Webdesign Figma IGes in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Uiux Webdesign Figma IGes in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 138,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774501_45dpb4iaa",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_ugcPost-7390617942498975744-4EIf",
+      "publishedAt": "2025-11-01T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 190,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.501Z",
+      "updatedAt": "2026-06-19T06:00:29.617Z",
+      "postText": "Building and sharing insights about 4EIf in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about 4EIf in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 117,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774502_p8bl7a9ld",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_freelancing-remotework-buildinginpublic-share-7472162721166188544-L65F",
+      "publishedAt": "2026-06-14T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 184,
+      "engagementRate": 0.54,
+      "createdAt": "2026-06-19T05:59:34.502Z",
+      "updatedAt": "2026-06-19T06:00:11.021Z",
+      "postText": "Building and sharing insights about Freelancing Remotework Buildinginpublic L65F in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Freelancing Remotework Buildinginpublic L65F in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 157,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774503_aiamxyxwk",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_sql-nosql-mongodb-ugcPost-7391414058324807680-oHRC",
+      "publishedAt": "2025-11-03T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 180,
+      "engagementRate": 0.56,
+      "createdAt": "2026-06-19T05:59:34.503Z",
+      "updatedAt": "2026-06-19T06:00:29.141Z",
+      "postText": "Building and sharing insights about Sql Nosql Mongodb OHRC in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Sql Nosql Mongodb OHRC in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 135,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774504_rpwjiflrk",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-nextjs-vite-share-7404176467858735105-2Or5",
+      "publishedAt": "2025-12-08T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 180,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.504Z",
+      "updatedAt": "2026-06-19T06:00:17.723Z",
+      "postText": "Building and sharing insights about Webdevelopment Nextjs Vite 2Or5 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Webdevelopment Nextjs Vite 2Or5 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 144,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774505_9yatp1j5l",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_photoshop-uidesign-webdesign-share-7393967245380599808-iYi9",
+      "publishedAt": "2025-11-10T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 139,
+      "engagementRate": 0.72,
+      "createdAt": "2026-06-19T05:59:34.505Z",
+      "updatedAt": "2026-06-19T06:00:26.150Z",
+      "postText": "Building and sharing insights about Photoshop Uidesign Webdesign IYi9 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Photoshop Uidesign Webdesign IYi9 in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 146,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781848774507_g1i5554ct",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_tailwindcss-typescript-frontend-share-7394990475172028416-p1ZG",
+      "publishedAt": "2025-11-13T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 140,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T05:59:34.507Z",
+      "updatedAt": "2026-06-19T06:00:25.246Z",
+      "postText": "Building and sharing insights about Tailwindcss Typescript Frontend P1ZG in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hook": "Building and sharing insights about Tailwindcss Typescript Frontend P1ZG in my journey as a developer. (Note: Content parsed from post URL keywords).",
+      "hookType": "Building In Public",
+      "topic": "UI/UX",
+      "hookLength": 149,
+      "openingWords": "Building and sharing insights about",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    }
+  ],
+  "dailyMetrics": [
+    {
+      "id": "metric_1781848774508_blkc1of3z",
+      "date": "2025-06-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_zbbtb2wod",
+      "date": "2025-06-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_5zs2wxhyi",
+      "date": "2025-06-21T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_yu83rkyhp",
+      "date": "2025-06-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_0hhaiwo2b",
+      "date": "2025-06-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_tkbf68g5q",
+      "date": "2025-06-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_90g9dgf6z",
+      "date": "2025-06-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_de2804ks8",
+      "date": "2025-06-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_secm5ztai",
+      "date": "2025-06-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_cpgjn3es2",
+      "date": "2025-06-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_opqw0k5tj",
+      "date": "2025-06-29T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_f5vgfy0i8",
+      "date": "2025-06-30T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_a0eo4bxxb",
+      "date": "2025-07-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_oc6t92uz1",
+      "date": "2025-07-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ura0z82bd",
+      "date": "2025-07-03T18:30:00.000Z",
+      "impressions": 48,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774509_0dpfq5xfi",
+      "date": "2025-07-04T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_e7liyqkdn",
+      "date": "2025-07-05T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_xmv5nvgip",
+      "date": "2025-07-06T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_p4ir0abvq",
+      "date": "2025-07-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_vwkhugbj7",
+      "date": "2025-07-08T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_orkuf6gcx",
+      "date": "2025-07-09T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_choc41ck6",
+      "date": "2025-07-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_uald78snf",
+      "date": "2025-07-11T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_113xr1135",
+      "date": "2025-07-12T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_1kfov54mb",
+      "date": "2025-07-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_mt57trshe",
+      "date": "2025-07-14T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_43iws6d8d",
+      "date": "2025-07-15T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_obkov8xnn",
+      "date": "2025-07-16T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_e1sboqkwo",
+      "date": "2025-07-17T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_zkukw5jd1",
+      "date": "2025-07-18T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_dm5a9d3vs",
+      "date": "2025-07-19T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_pyshfug19",
+      "date": "2025-07-20T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_nykkc0vmq",
+      "date": "2025-07-21T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_pnfhqdya7",
+      "date": "2025-07-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_lw3bol3or",
+      "date": "2025-07-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_1pr9wdo1v",
+      "date": "2025-07-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_nzgs00pr4",
+      "date": "2025-07-25T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_118bjql55",
+      "date": "2025-07-26T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ck5uxhi1j",
+      "date": "2025-07-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_2soz1pulw",
+      "date": "2025-07-28T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_suti6em7z",
+      "date": "2025-07-29T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_k20sv2p7w",
+      "date": "2025-07-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_zamvo2t84",
+      "date": "2025-07-31T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_wkyzdf5hn",
+      "date": "2025-08-01T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_t5m46yyjo",
+      "date": "2025-08-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_6wvyfcjmx",
+      "date": "2025-08-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_7m8zmv35s",
+      "date": "2025-08-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ddhshdev8",
+      "date": "2025-08-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_jvr30hzb1",
+      "date": "2025-08-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_hljaztful",
+      "date": "2025-08-07T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_uo1xuykjn",
+      "date": "2025-08-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_lacwg1esn",
+      "date": "2025-08-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_bpg8gxt5t",
+      "date": "2025-08-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ercz8mlsp",
+      "date": "2025-08-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_f3ybdhwv2",
+      "date": "2025-08-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_kfjbvbett",
+      "date": "2025-08-13T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_cg98yg84l",
+      "date": "2025-08-14T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_o5q1kqk62",
+      "date": "2025-08-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_b5kqjih7p",
+      "date": "2025-08-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_585kdrfgo",
+      "date": "2025-08-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_losziglmd",
+      "date": "2025-08-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_3tajm2lre",
+      "date": "2025-08-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_id21hkraj",
+      "date": "2025-08-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_984kujq8e",
+      "date": "2025-08-21T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_bhkog4rgb",
+      "date": "2025-08-22T18:30:00.000Z",
+      "impressions": 43,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774509_7um0xl4f2",
+      "date": "2025-08-23T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_0eij3fio8",
+      "date": "2025-08-24T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774509_kqe9k3xy1",
+      "date": "2025-08-25T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_v2dottw50",
+      "date": "2025-08-26T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_735dno4zo",
+      "date": "2025-08-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ge8ca1cuq",
+      "date": "2025-08-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_bl5f6dcbk",
+      "date": "2025-08-29T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ja94y4g9g",
+      "date": "2025-08-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ycvlez2jf",
+      "date": "2025-08-31T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_0clx4oj70",
+      "date": "2025-09-01T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_injli6f9y",
+      "date": "2025-09-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_nlnil65fy",
+      "date": "2025-09-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_lrs90wyug",
+      "date": "2025-09-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_9fcibyp70",
+      "date": "2025-09-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_s7msskgk3",
+      "date": "2025-09-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_tl67go3zb",
+      "date": "2025-09-07T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_8rqz62ank",
+      "date": "2025-09-08T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_5xxuoec8s",
+      "date": "2025-09-09T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ldan7cwit",
+      "date": "2025-09-10T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_aj2iag0i8",
+      "date": "2025-09-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_hku7ypzlu",
+      "date": "2025-09-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_7oyrg6mh8",
+      "date": "2025-09-13T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_p7kjm6rs8",
+      "date": "2025-09-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_x63ebsrqw",
+      "date": "2025-09-15T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_fl3ytzrhj",
+      "date": "2025-09-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_puktw585d",
+      "date": "2025-09-17T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_cwi8a8int",
+      "date": "2025-09-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_oks5rhiln",
+      "date": "2025-09-19T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_7yc43udu3",
+      "date": "2025-09-20T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_esfnh31ga",
+      "date": "2025-09-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_rboklblzu",
+      "date": "2025-09-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_1qsnpyt2g",
+      "date": "2025-09-23T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_20nrrcy1r",
+      "date": "2025-09-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_lvk2pr7fx",
+      "date": "2025-09-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_j5bl83btv",
+      "date": "2025-09-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_wm77r3tom",
+      "date": "2025-09-27T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_lobkt6bdk",
+      "date": "2025-09-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_hjt2j5a34",
+      "date": "2025-09-29T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_xkw2vkd47",
+      "date": "2025-09-30T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_33jmjvanm",
+      "date": "2025-10-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_5y83awm1s",
+      "date": "2025-10-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_6fm7dhhcz",
+      "date": "2025-10-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_1qkibff75",
+      "date": "2025-10-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_dqa44jm1q",
+      "date": "2025-10-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_i52jeacr6",
+      "date": "2025-10-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_8z8ggfb41",
+      "date": "2025-10-07T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_kjucvv1vu",
+      "date": "2025-10-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_1stfve1u8",
+      "date": "2025-10-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ice3ja1jk",
+      "date": "2025-10-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ykgcr0rla",
+      "date": "2025-10-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_ttm8nyhsi",
+      "date": "2025-10-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_w5bt1x4hd",
+      "date": "2025-10-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_h1kuxzix3",
+      "date": "2025-10-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_mu8pcds8z",
+      "date": "2025-10-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_0df6l7onv",
+      "date": "2025-10-16T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_tgupyuhrq",
+      "date": "2025-10-17T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_fv6g8j36g",
+      "date": "2025-10-18T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_sjqnk6b2s",
+      "date": "2025-10-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_9i1zl370c",
+      "date": "2025-10-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_kh97hjnni",
+      "date": "2025-10-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_naad8qq3y",
+      "date": "2025-10-22T18:30:00.000Z",
+      "impressions": 54,
+      "engagements": 12
+    },
+    {
+      "id": "metric_1781848774509_h87n1k4rp",
+      "date": "2025-10-23T18:30:00.000Z",
+      "impressions": 108,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_j55itmxbt",
+      "date": "2025-10-24T18:30:00.000Z",
+      "impressions": 172,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774509_hr9x5nxa7",
+      "date": "2025-10-25T18:30:00.000Z",
+      "impressions": 351,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_huqktcvsf",
+      "date": "2025-10-26T18:30:00.000Z",
+      "impressions": 404,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_rxp80knkm",
+      "date": "2025-10-27T18:30:00.000Z",
+      "impressions": 392,
+      "engagements": 10
+    },
+    {
+      "id": "metric_1781848774509_61rvn48uf",
+      "date": "2025-10-28T18:30:00.000Z",
+      "impressions": 582,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774509_hkenx5z1y",
+      "date": "2025-10-29T18:30:00.000Z",
+      "impressions": 278,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_gtudsypn9",
+      "date": "2025-10-30T18:30:00.000Z",
+      "impressions": 475,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774509_qlvk3izql",
+      "date": "2025-10-31T18:30:00.000Z",
+      "impressions": 386,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_xkczq1we7",
+      "date": "2025-11-01T18:30:00.000Z",
+      "impressions": 329,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774509_8br0198ws",
+      "date": "2025-11-02T18:30:00.000Z",
+      "impressions": 317,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774509_xxa17fkao",
+      "date": "2025-11-03T18:30:00.000Z",
+      "impressions": 419,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774509_3hea26gcc",
+      "date": "2025-11-04T18:30:00.000Z",
+      "impressions": 382,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774509_03fesk0ap",
+      "date": "2025-11-05T18:30:00.000Z",
+      "impressions": 208,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774509_mv5b5wpfg",
+      "date": "2025-11-06T18:30:00.000Z",
+      "impressions": 310,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_9z72mjtt3",
+      "date": "2025-11-07T18:30:00.000Z",
+      "impressions": 364,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_xeaw8w5rn",
+      "date": "2025-11-08T18:30:00.000Z",
+      "impressions": 2171,
+      "engagements": 11
+    },
+    {
+      "id": "metric_1781848774510_wz9lifpcv",
+      "date": "2025-11-09T18:30:00.000Z",
+      "impressions": 1248,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774510_5k46xvxr1",
+      "date": "2025-11-10T18:30:00.000Z",
+      "impressions": 925,
+      "engagements": 8
+    },
+    {
+      "id": "metric_1781848774510_zh7dyrh8x",
+      "date": "2025-11-11T18:30:00.000Z",
+      "impressions": 1083,
+      "engagements": 10
+    },
+    {
+      "id": "metric_1781848774510_lhll8tkdc",
+      "date": "2025-11-12T18:30:00.000Z",
+      "impressions": 1423,
+      "engagements": 7
+    },
+    {
+      "id": "metric_1781848774510_qppxxzsbn",
+      "date": "2025-11-13T18:30:00.000Z",
+      "impressions": 816,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_vbg0ex7y5",
+      "date": "2025-11-14T18:30:00.000Z",
+      "impressions": 397,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_l81qtmxg1",
+      "date": "2025-11-15T18:30:00.000Z",
+      "impressions": 310,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_wr8xnz98k",
+      "date": "2025-11-16T18:30:00.000Z",
+      "impressions": 251,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_g25zxjy1i",
+      "date": "2025-11-17T18:30:00.000Z",
+      "impressions": 303,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_vhwuixufh",
+      "date": "2025-11-18T18:30:00.000Z",
+      "impressions": 185,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_hl0pgrsxj",
+      "date": "2025-11-19T18:30:00.000Z",
+      "impressions": 168,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_7dvy67z6z",
+      "date": "2025-11-20T18:30:00.000Z",
+      "impressions": 220,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_4p2d7kdpj",
+      "date": "2025-11-21T18:30:00.000Z",
+      "impressions": 228,
+      "engagements": 6
+    },
+    {
+      "id": "metric_1781848774510_1p4lklw8o",
+      "date": "2025-11-22T18:30:00.000Z",
+      "impressions": 190,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_6zwc899ht",
+      "date": "2025-11-23T18:30:00.000Z",
+      "impressions": 317,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_kr3rllueq",
+      "date": "2025-11-24T18:30:00.000Z",
+      "impressions": 389,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_a55ijd6t2",
+      "date": "2025-11-25T18:30:00.000Z",
+      "impressions": 389,
+      "engagements": 15
+    },
+    {
+      "id": "metric_1781848774510_dzvf9ox2d",
+      "date": "2025-11-26T18:30:00.000Z",
+      "impressions": 261,
+      "engagements": 6
+    },
+    {
+      "id": "metric_1781848774510_1suv8g87a",
+      "date": "2025-11-27T18:30:00.000Z",
+      "impressions": 434,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_uwllgk1ms",
+      "date": "2025-11-28T18:30:00.000Z",
+      "impressions": 257,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_0nofz6zkd",
+      "date": "2025-11-29T18:30:00.000Z",
+      "impressions": 259,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_8d1jtkkkg",
+      "date": "2025-11-30T18:30:00.000Z",
+      "impressions": 173,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_gpk3kl7tq",
+      "date": "2025-12-01T18:30:00.000Z",
+      "impressions": 207,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_93om70nt3",
+      "date": "2025-12-02T18:30:00.000Z",
+      "impressions": 82,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_pdynv8k3p",
+      "date": "2025-12-03T18:30:00.000Z",
+      "impressions": 495,
+      "engagements": 7
+    },
+    {
+      "id": "metric_1781848774510_eq4mmjmw4",
+      "date": "2025-12-04T18:30:00.000Z",
+      "impressions": 2193,
+      "engagements": 34
+    },
+    {
+      "id": "metric_1781848774510_fzmyk7x5c",
+      "date": "2025-12-05T18:30:00.000Z",
+      "impressions": 4113,
+      "engagements": 22
+    },
+    {
+      "id": "metric_1781848774510_masjdclf0",
+      "date": "2025-12-06T18:30:00.000Z",
+      "impressions": 1225,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_wifswog5j",
+      "date": "2025-12-07T18:30:00.000Z",
+      "impressions": 3005,
+      "engagements": 15
+    },
+    {
+      "id": "metric_1781848774510_h7xtjcrue",
+      "date": "2025-12-08T18:30:00.000Z",
+      "impressions": 963,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774510_gcakphnqy",
+      "date": "2025-12-09T18:30:00.000Z",
+      "impressions": 686,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_fyumz4uk0",
+      "date": "2025-12-10T18:30:00.000Z",
+      "impressions": 407,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_w73duu8lz",
+      "date": "2025-12-11T18:30:00.000Z",
+      "impressions": 107,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_p8fipj6vk",
+      "date": "2025-12-12T18:30:00.000Z",
+      "impressions": 76,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_vcvj0ma1q",
+      "date": "2025-12-13T18:30:00.000Z",
+      "impressions": 100,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_3llrqjxxe",
+      "date": "2025-12-14T18:30:00.000Z",
+      "impressions": 91,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_c78oyrcce",
+      "date": "2025-12-15T18:30:00.000Z",
+      "impressions": 59,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ap5el5dpz",
+      "date": "2025-12-16T18:30:00.000Z",
+      "impressions": 52,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_unaqvid9t",
+      "date": "2025-12-17T18:30:00.000Z",
+      "impressions": 67,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_d5a7rom6m",
+      "date": "2025-12-18T18:30:00.000Z",
+      "impressions": 23,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_dpk9muj3f",
+      "date": "2025-12-19T18:30:00.000Z",
+      "impressions": 36,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_u20dzl3ds",
+      "date": "2025-12-20T18:30:00.000Z",
+      "impressions": 15,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_avlheig38",
+      "date": "2025-12-21T18:30:00.000Z",
+      "impressions": 27,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_9mnsp2t7j",
+      "date": "2025-12-22T18:30:00.000Z",
+      "impressions": 33,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_o6i5rnohq",
+      "date": "2025-12-23T18:30:00.000Z",
+      "impressions": 27,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_eb0nboewz",
+      "date": "2025-12-24T18:30:00.000Z",
+      "impressions": 32,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_70vtnb5jl",
+      "date": "2025-12-25T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_w8gcenr2h",
+      "date": "2025-12-26T18:30:00.000Z",
+      "impressions": 37,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_i8r099a6p",
+      "date": "2025-12-27T18:30:00.000Z",
+      "impressions": 23,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_stxqpqfac",
+      "date": "2025-12-28T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_oo9idn3ly",
+      "date": "2025-12-29T18:30:00.000Z",
+      "impressions": 17,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_d1igjrs17",
+      "date": "2025-12-30T18:30:00.000Z",
+      "impressions": 24,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_h138a1py7",
+      "date": "2025-12-31T18:30:00.000Z",
+      "impressions": 26,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_pkw0ehrlu",
+      "date": "2026-01-01T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_6utwsoklc",
+      "date": "2026-01-02T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_n2lsjmtnn",
+      "date": "2026-01-03T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_9f6pkd61w",
+      "date": "2026-01-04T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_nlkupdse8",
+      "date": "2026-01-05T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_4as68vubd",
+      "date": "2026-01-06T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_fobd1kezw",
+      "date": "2026-01-07T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_kauxoznco",
+      "date": "2026-01-08T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_sbsrwu1i5",
+      "date": "2026-01-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_8fj0jwq4h",
+      "date": "2026-01-10T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_3b99i0zss",
+      "date": "2026-01-11T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_udbabntvf",
+      "date": "2026-01-12T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_61a8e6eh1",
+      "date": "2026-01-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_9lkwoubaj",
+      "date": "2026-01-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_fdl3zuwe4",
+      "date": "2026-01-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_xppe9gq91",
+      "date": "2026-01-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_vqi2i6le1",
+      "date": "2026-01-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_jhsjqftsu",
+      "date": "2026-01-18T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_mik9kxnnq",
+      "date": "2026-01-19T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_svggdv52h",
+      "date": "2026-01-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_uit1p4n4e",
+      "date": "2026-01-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_wr3rj0dqp",
+      "date": "2026-01-22T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_4ljfzkr1y",
+      "date": "2026-01-23T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_6gtsb5jmo",
+      "date": "2026-01-24T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_b3datm17g",
+      "date": "2026-01-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ifl15ksqc",
+      "date": "2026-01-26T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_2zue7i2lz",
+      "date": "2026-01-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_wznlbrsma",
+      "date": "2026-01-28T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_p8n48xc2h",
+      "date": "2026-01-29T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_1xvwmc6wv",
+      "date": "2026-01-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_dy5tlhusv",
+      "date": "2026-01-31T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_j8phxitay",
+      "date": "2026-02-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_n1aigf2g0",
+      "date": "2026-02-02T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_tjdzs2zm0",
+      "date": "2026-02-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_3onqzvvwo",
+      "date": "2026-02-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ots2yhkd5",
+      "date": "2026-02-05T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_rkwd8gu1m",
+      "date": "2026-02-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_7a1kw5391",
+      "date": "2026-02-07T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_gmcnbttac",
+      "date": "2026-02-08T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_98cp8jcjt",
+      "date": "2026-02-09T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_qfv654ez2",
+      "date": "2026-02-10T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_2ud6m3vvb",
+      "date": "2026-02-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_0rseyep9y",
+      "date": "2026-02-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_9kj1oa8aq",
+      "date": "2026-02-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_vnoctmi5l",
+      "date": "2026-02-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_rpsyle0zs",
+      "date": "2026-02-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_hq9h8kehz",
+      "date": "2026-02-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_xn5hfw9rk",
+      "date": "2026-02-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_3s5abhbxw",
+      "date": "2026-02-18T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_1tzknfw4a",
+      "date": "2026-02-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ey0zjqede",
+      "date": "2026-02-20T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_uo503kkd8",
+      "date": "2026-02-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_msr34q9bu",
+      "date": "2026-02-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_x0j0mbq42",
+      "date": "2026-02-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_vcglmcvjm",
+      "date": "2026-02-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_9sqpaujk9",
+      "date": "2026-02-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_4akq931s6",
+      "date": "2026-02-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_6xcp636it",
+      "date": "2026-02-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_swun0nusb",
+      "date": "2026-02-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ea9tui1os",
+      "date": "2026-03-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_eiv0udkvf",
+      "date": "2026-03-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_bccwruuwk",
+      "date": "2026-03-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_vy50k2ltt",
+      "date": "2026-03-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_zeyrwrwwd",
+      "date": "2026-03-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_z9n6unove",
+      "date": "2026-03-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_8aph9wekd",
+      "date": "2026-03-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_wzqgs2zk4",
+      "date": "2026-03-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_c1uj2kdnc",
+      "date": "2026-03-09T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ngn3nnjtb",
+      "date": "2026-03-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_1sxmbcv2w",
+      "date": "2026-03-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_qrf6h5qs2",
+      "date": "2026-03-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_imyq7kmhx",
+      "date": "2026-03-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_0twmkb9n3",
+      "date": "2026-03-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_p7d2k2t50",
+      "date": "2026-03-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_2k1soied1",
+      "date": "2026-03-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_5xyf1yn39",
+      "date": "2026-03-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_s8dugsalr",
+      "date": "2026-03-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_j7wxh2qnn",
+      "date": "2026-03-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_4ewxd4417",
+      "date": "2026-03-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_uzsynuam4",
+      "date": "2026-03-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_j6vfxf01x",
+      "date": "2026-03-22T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_jjgkn48fq",
+      "date": "2026-03-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_nsql1wtef",
+      "date": "2026-03-24T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_dn3npjd37",
+      "date": "2026-03-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_6jaxbv9pq",
+      "date": "2026-03-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_tgvdmoygk",
+      "date": "2026-03-27T18:30:00.000Z",
+      "impressions": 105,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_pjggusce8",
+      "date": "2026-03-28T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_j2q0kvl58",
+      "date": "2026-03-29T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_ts1f7ggj6",
+      "date": "2026-03-30T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_h0g09gbg9",
+      "date": "2026-03-31T18:30:00.000Z",
+      "impressions": 169,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_xh4b7mjs6",
+      "date": "2026-04-01T18:30:00.000Z",
+      "impressions": 257,
+      "engagements": 9
+    },
+    {
+      "id": "metric_1781848774510_anb22aoj1",
+      "date": "2026-04-02T18:30:00.000Z",
+      "impressions": 271,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774510_fnz8qqcod",
+      "date": "2026-04-03T18:30:00.000Z",
+      "impressions": 578,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774510_1puhmvgjw",
+      "date": "2026-04-04T18:30:00.000Z",
+      "impressions": 302,
+      "engagements": -1
+    },
+    {
+      "id": "metric_1781848774510_1fgb3c5wb",
+      "date": "2026-04-05T18:30:00.000Z",
+      "impressions": 138,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_npxwd7x39",
+      "date": "2026-04-06T18:30:00.000Z",
+      "impressions": 64,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_qgjtsln7g",
+      "date": "2026-04-07T18:30:00.000Z",
+      "impressions": 79,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774510_ycio12pjn",
+      "date": "2026-04-08T18:30:00.000Z",
+      "impressions": 362,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774510_cp2r4w2d1",
+      "date": "2026-04-09T18:30:00.000Z",
+      "impressions": 81,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_rhd92misq",
+      "date": "2026-04-10T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_pwedc8v2q",
+      "date": "2026-04-11T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_j2fwseurc",
+      "date": "2026-04-12T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_cgamyt3o3",
+      "date": "2026-04-13T18:30:00.000Z",
+      "impressions": 18,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_8s7jvwiv9",
+      "date": "2026-04-14T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_asqjxgxxu",
+      "date": "2026-04-15T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_xrx5nc6se",
+      "date": "2026-04-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_zs758xtvn",
+      "date": "2026-04-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_hgh9yfgid",
+      "date": "2026-04-18T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_8of10p4ki",
+      "date": "2026-04-19T18:30:00.000Z",
+      "impressions": 188,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781848774511_ty20533ke",
+      "date": "2026-04-20T18:30:00.000Z",
+      "impressions": 168,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_r2emqzptc",
+      "date": "2026-04-21T18:30:00.000Z",
+      "impressions": 197,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774511_cwpsy9bkl",
+      "date": "2026-04-22T18:30:00.000Z",
+      "impressions": 90,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_xvu0qzkt5",
+      "date": "2026-04-23T18:30:00.000Z",
+      "impressions": 29,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_19e4h937e",
+      "date": "2026-04-24T18:30:00.000Z",
+      "impressions": 41,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_jl1n2ph1d",
+      "date": "2026-04-25T18:30:00.000Z",
+      "impressions": 832,
+      "engagements": 20
+    },
+    {
+      "id": "metric_1781848774511_swk2h1nte",
+      "date": "2026-04-26T18:30:00.000Z",
+      "impressions": 1439,
+      "engagements": 16
+    },
+    {
+      "id": "metric_1781848774511_7nz5w2hv8",
+      "date": "2026-04-27T18:30:00.000Z",
+      "impressions": 58,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_6uvvmzvw3",
+      "date": "2026-04-28T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_d7gvvm681",
+      "date": "2026-04-29T18:30:00.000Z",
+      "impressions": 65,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_gfieg5tc8",
+      "date": "2026-04-30T18:30:00.000Z",
+      "impressions": 34,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_rpe13ibge",
+      "date": "2026-05-01T18:30:00.000Z",
+      "impressions": 24,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_el5fzut22",
+      "date": "2026-05-02T18:30:00.000Z",
+      "impressions": 29,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_24xhzjc2a",
+      "date": "2026-05-03T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_4sb0itfyp",
+      "date": "2026-05-04T18:30:00.000Z",
+      "impressions": 156,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774511_oadolv85x",
+      "date": "2026-05-05T18:30:00.000Z",
+      "impressions": 18,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774511_liagtizjc",
+      "date": "2026-05-06T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_myk048ph8",
+      "date": "2026-05-07T18:30:00.000Z",
+      "impressions": 36,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_wyeqrt72f",
+      "date": "2026-05-08T18:30:00.000Z",
+      "impressions": 14,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_8qo1929o4",
+      "date": "2026-05-09T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_iy4wd1ml8",
+      "date": "2026-05-10T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_1iiuu6fjt",
+      "date": "2026-05-11T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_jr83f175u",
+      "date": "2026-05-12T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_rkc1rxmq7",
+      "date": "2026-05-13T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_6hu3vv421",
+      "date": "2026-05-14T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_vosvjv2ma",
+      "date": "2026-05-15T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_brwcchkxq",
+      "date": "2026-05-16T18:30:00.000Z",
+      "impressions": 143,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_rxh683z21",
+      "date": "2026-05-17T18:30:00.000Z",
+      "impressions": 55,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_wo3ou97fx",
+      "date": "2026-05-18T18:30:00.000Z",
+      "impressions": 46,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_b5z4nlvd9",
+      "date": "2026-05-19T18:30:00.000Z",
+      "impressions": 20,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_h1fcmwp3x",
+      "date": "2026-05-20T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_r3cn3aeji",
+      "date": "2026-05-21T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_guv6u282x",
+      "date": "2026-05-22T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_p8d0kx3g3",
+      "date": "2026-05-23T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_ewjmthfio",
+      "date": "2026-05-24T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_i9qe3jt29",
+      "date": "2026-05-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_497dxq4yz",
+      "date": "2026-05-26T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_vmq5lwf05",
+      "date": "2026-05-27T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_961bdg22n",
+      "date": "2026-05-28T18:30:00.000Z",
+      "impressions": 12,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774511_fdcl7fzz0",
+      "date": "2026-05-29T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_dneirbbt8",
+      "date": "2026-05-30T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_qvc1iqevz",
+      "date": "2026-05-31T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_mjc797j0p",
+      "date": "2026-06-01T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_cdvvmagtm",
+      "date": "2026-06-02T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_vl2tbh7cc",
+      "date": "2026-06-03T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_94h9qpxra",
+      "date": "2026-06-04T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_7lktexdda",
+      "date": "2026-06-05T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774511_l40rpxpmv",
+      "date": "2026-06-06T18:30:00.000Z",
+      "impressions": 22,
+      "engagements": -4
+    },
+    {
+      "id": "metric_1781848774511_ttj4auwkd",
+      "date": "2026-06-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_fye08o9eh",
+      "date": "2026-06-08T18:30:00.000Z",
+      "impressions": 137,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781848774511_2cmemxk26",
+      "date": "2026-06-09T18:30:00.000Z",
+      "impressions": 40,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781848774511_uzj4r2qge",
+      "date": "2026-06-10T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_h6fpq8skm",
+      "date": "2026-06-11T18:30:00.000Z",
+      "impressions": 83,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_aufkouqpo",
+      "date": "2026-06-12T18:30:00.000Z",
+      "impressions": 30,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_lf4bpdzv2",
+      "date": "2026-06-13T18:30:00.000Z",
+      "impressions": 33,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_fbh797jb0",
+      "date": "2026-06-14T18:30:00.000Z",
+      "impressions": 165,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781848774511_9bcixhj5a",
+      "date": "2026-06-15T18:30:00.000Z",
+      "impressions": 110,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781848774511_4lu8f97zx",
+      "date": "2026-06-16T18:30:00.000Z",
+      "impressions": 120,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_9kjea98fy",
+      "date": "2026-06-17T18:30:00.000Z",
+      "impressions": 181,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781848774511_avp2gbmyx",
+      "date": "2026-06-18T18:30:00.000Z",
+      "impressions": 52,
+      "engagements": 0
+    }
+  ],
+  "followerMetrics": [
+    {
+      "id": "follower_1781848774515_bbvuvxpkk",
+      "date": "2025-06-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_zzrm1av8h",
+      "date": "2025-06-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_dp8abv30p",
+      "date": "2025-06-21T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_c4mre7agm",
+      "date": "2025-06-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_2a69y3s0o",
+      "date": "2025-06-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_i20tif7b9",
+      "date": "2025-06-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_67eaajejl",
+      "date": "2025-06-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_wsth39d8v",
+      "date": "2025-06-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_if37wv0ur",
+      "date": "2025-06-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_2w81uglav",
+      "date": "2025-06-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_yyof4rn31",
+      "date": "2025-06-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_z5q96427r",
+      "date": "2025-06-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_rm4zps5tw",
+      "date": "2025-07-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_uf026aisk",
+      "date": "2025-07-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_tbdtfzpj1",
+      "date": "2025-07-03T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774515_xfzsaia4w",
+      "date": "2025-07-04T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_s3g01wccq",
+      "date": "2025-07-05T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_enbd8sf69",
+      "date": "2025-07-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_vj42aeowk",
+      "date": "2025-07-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_col05y2bi",
+      "date": "2025-07-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_800q3xxdu",
+      "date": "2025-07-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_ch0pl9bxn",
+      "date": "2025-07-10T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774515_zl8hcacc0",
+      "date": "2025-07-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_nw3j8med4",
+      "date": "2025-07-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_rqt0waws2",
+      "date": "2025-07-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_4cl4z6f7u",
+      "date": "2025-07-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_zahoc73j9",
+      "date": "2025-07-15T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774515_t4hxniivy",
+      "date": "2025-07-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_z05ecuv5t",
+      "date": "2025-07-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_zyzj9xhmo",
+      "date": "2025-07-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_1lruuxkg0",
+      "date": "2025-07-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_4dde7wb68",
+      "date": "2025-07-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_eztck8uug",
+      "date": "2025-07-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_exd4azy3i",
+      "date": "2025-07-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_4jp5piqao",
+      "date": "2025-07-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_7nca65k8e",
+      "date": "2025-07-24T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_bshabuvx7",
+      "date": "2025-07-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_3yurb4uvu",
+      "date": "2025-07-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_nb3eb78fk",
+      "date": "2025-07-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_upm5scx4j",
+      "date": "2025-07-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_852f8mm9x",
+      "date": "2025-07-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_j36ac9xp7",
+      "date": "2025-07-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_h26xjdhuv",
+      "date": "2025-07-31T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_43wlkq5b1",
+      "date": "2025-08-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_443jdguau",
+      "date": "2025-08-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_accbir7mf",
+      "date": "2025-08-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_hmy2cnk9y",
+      "date": "2025-08-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_dyx072ek0",
+      "date": "2025-08-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_qogzod9ro",
+      "date": "2025-08-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_1r7ik3vx2",
+      "date": "2025-08-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_a4v2bq1w6",
+      "date": "2025-08-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_vy5qjul2p",
+      "date": "2025-08-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_lq3duii04",
+      "date": "2025-08-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_myu86o9y1",
+      "date": "2025-08-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_qzkf2m4qz",
+      "date": "2025-08-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_s07ni5vln",
+      "date": "2025-08-13T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_5jngb6zgl",
+      "date": "2025-08-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_2izx03j5s",
+      "date": "2025-08-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_wdj01qdg2",
+      "date": "2025-08-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_guq8kmexh",
+      "date": "2025-08-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_k9dmjz0q5",
+      "date": "2025-08-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_y8vn5efug",
+      "date": "2025-08-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_wfca7pzax",
+      "date": "2025-08-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_pt0zqznjv",
+      "date": "2025-08-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_6i5hytib7",
+      "date": "2025-08-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_y1f2pouj0",
+      "date": "2025-08-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_2zvb8ef9a",
+      "date": "2025-08-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_33uo33186",
+      "date": "2025-08-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_oqxpubj4z",
+      "date": "2025-08-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_pc0vjj8qx",
+      "date": "2025-08-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_vqadwsyjh",
+      "date": "2025-08-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_wdl8il32t",
+      "date": "2025-08-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_e4hly8nd1",
+      "date": "2025-08-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_hufq9kco3",
+      "date": "2025-08-31T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_xfazaqgko",
+      "date": "2025-09-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_gllnws8xi",
+      "date": "2025-09-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_e81y2zg1d",
+      "date": "2025-09-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_51ugnbkz7",
+      "date": "2025-09-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_zj5nxcedn",
+      "date": "2025-09-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_bxbov59tl",
+      "date": "2025-09-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_o5h2c5wpb",
+      "date": "2025-09-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_nt5yt6sox",
+      "date": "2025-09-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_7rtl9k99w",
+      "date": "2025-09-09T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774515_o8o51olpj",
+      "date": "2025-09-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_cubmqojvj",
+      "date": "2025-09-11T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_7fui2ml9m",
+      "date": "2025-09-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_2m1wdl3i9",
+      "date": "2025-09-13T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774515_9pnn6igpi",
+      "date": "2025-09-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_36k7iaz5e",
+      "date": "2025-09-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_90jxtp6n3",
+      "date": "2025-09-16T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774515_lri1841k2",
+      "date": "2025-09-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_e7q7yh75c",
+      "date": "2025-09-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_bkljotmkj",
+      "date": "2025-09-19T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_tbwa7r57z",
+      "date": "2025-09-20T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_aphg19ztz",
+      "date": "2025-09-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_kw05tz9ix",
+      "date": "2025-09-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_dgft82gm0",
+      "date": "2025-09-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_cqjad9nqj",
+      "date": "2025-09-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_q79q5k2cl",
+      "date": "2025-09-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_oaw6pt5f7",
+      "date": "2025-09-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_ig17jxlby",
+      "date": "2025-09-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_v8bqujuav",
+      "date": "2025-09-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_9lhc7wyn4",
+      "date": "2025-09-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_1m2s08ies",
+      "date": "2025-09-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_krj121248",
+      "date": "2025-10-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_9iqxdj3jz",
+      "date": "2025-10-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_dokcj9ixa",
+      "date": "2025-10-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_d2egp4ryo",
+      "date": "2025-10-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_3rs2i50uj",
+      "date": "2025-10-05T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774515_5bbwy9t1l",
+      "date": "2025-10-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_buvh2399s",
+      "date": "2025-10-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_hfzvyz2bl",
+      "date": "2025-10-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_mlgdyh0dw",
+      "date": "2025-10-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_43djkpo0x",
+      "date": "2025-10-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_kc56mpqqj",
+      "date": "2025-10-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_5hdifyabz",
+      "date": "2025-10-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_mzzcp9r3y",
+      "date": "2025-10-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_xnmuri4ie",
+      "date": "2025-10-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_rn85ggkan",
+      "date": "2025-10-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_untdv9j4p",
+      "date": "2025-10-16T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774515_0583nubdu",
+      "date": "2025-10-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_ua0y4r5xi",
+      "date": "2025-10-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_ze2gksst1",
+      "date": "2025-10-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_s2zvzire6",
+      "date": "2025-10-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_dvx07soml",
+      "date": "2025-10-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_gpv2q520o",
+      "date": "2025-10-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_jpud7xuwy",
+      "date": "2025-10-23T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_4vrqm0dv9",
+      "date": "2025-10-24T18:30:00.000Z",
+      "newFollowers": 41
+    },
+    {
+      "id": "follower_1781848774515_0l4g7kjzq",
+      "date": "2025-10-25T18:30:00.000Z",
+      "newFollowers": 17
+    },
+    {
+      "id": "follower_1781848774515_3yb4nvbnu",
+      "date": "2025-10-26T18:30:00.000Z",
+      "newFollowers": 80
+    },
+    {
+      "id": "follower_1781848774515_5o4bt0qcn",
+      "date": "2025-10-27T18:30:00.000Z",
+      "newFollowers": 57
+    },
+    {
+      "id": "follower_1781848774515_4ba8m7u40",
+      "date": "2025-10-28T18:30:00.000Z",
+      "newFollowers": 24
+    },
+    {
+      "id": "follower_1781848774515_02t4y60dt",
+      "date": "2025-10-29T18:30:00.000Z",
+      "newFollowers": 29
+    },
+    {
+      "id": "follower_1781848774515_6da7zocoh",
+      "date": "2025-10-30T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774515_j1mfxfdff",
+      "date": "2025-10-31T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774515_9hyofu9dz",
+      "date": "2025-11-01T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_omvrv5yyo",
+      "date": "2025-11-02T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774515_teiobcf4p",
+      "date": "2025-11-03T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781848774515_llf2csxia",
+      "date": "2025-11-04T18:30:00.000Z",
+      "newFollowers": 94
+    },
+    {
+      "id": "follower_1781848774515_itck268zm",
+      "date": "2025-11-05T18:30:00.000Z",
+      "newFollowers": 45
+    },
+    {
+      "id": "follower_1781848774515_umchvx686",
+      "date": "2025-11-06T18:30:00.000Z",
+      "newFollowers": 19
+    },
+    {
+      "id": "follower_1781848774515_bugvzl4jp",
+      "date": "2025-11-07T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774515_9v17bkpjo",
+      "date": "2025-11-08T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781848774515_j698hkloc",
+      "date": "2025-11-09T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_8leendcwg",
+      "date": "2025-11-10T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781848774515_zhe79e4h9",
+      "date": "2025-11-11T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781848774515_gg4ua5553",
+      "date": "2025-11-12T18:30:00.000Z",
+      "newFollowers": 46
+    },
+    {
+      "id": "follower_1781848774515_9rev8bjnz",
+      "date": "2025-11-13T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781848774515_xwhw6okep",
+      "date": "2025-11-14T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781848774515_r6xsmts7b",
+      "date": "2025-11-15T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781848774515_zy1fhw468",
+      "date": "2025-11-16T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781848774515_pzlmaqzmd",
+      "date": "2025-11-17T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774515_2tj39w7ss",
+      "date": "2025-11-18T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_6erfm1rkr",
+      "date": "2025-11-19T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_3hhdnbgrg",
+      "date": "2025-11-20T18:30:00.000Z",
+      "newFollowers": 30
+    },
+    {
+      "id": "follower_1781848774515_bixjlgp97",
+      "date": "2025-11-21T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781848774515_vxcr6d4ui",
+      "date": "2025-11-22T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774515_b6yi0hnlq",
+      "date": "2025-11-23T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774515_bwlihjf25",
+      "date": "2025-11-24T18:30:00.000Z",
+      "newFollowers": 39
+    },
+    {
+      "id": "follower_1781848774515_dd6felqvb",
+      "date": "2025-11-25T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781848774515_yptlaqexd",
+      "date": "2025-11-26T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774515_jpdhqquji",
+      "date": "2025-11-27T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_eqw7mz169",
+      "date": "2025-11-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774515_4ah2smg9w",
+      "date": "2025-11-29T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774515_q6yeayc0r",
+      "date": "2025-11-30T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_t55ennh35",
+      "date": "2025-12-01T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_2arogq6fs",
+      "date": "2025-12-02T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_nr9nv35s2",
+      "date": "2025-12-03T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774515_u80nvg4vt",
+      "date": "2025-12-04T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774515_j5nr35ih0",
+      "date": "2025-12-05T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774515_b9vuayrf0",
+      "date": "2025-12-06T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774515_4hevp5hyu",
+      "date": "2025-12-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774515_hkfdvkl9t",
+      "date": "2025-12-08T18:30:00.000Z",
+      "newFollowers": 26
+    },
+    {
+      "id": "follower_1781848774515_8dmnywu39",
+      "date": "2025-12-09T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781848774515_918c7ezg4",
+      "date": "2025-12-10T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774516_sz5l5gcbo",
+      "date": "2025-12-11T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781848774516_eopqm8e3y",
+      "date": "2025-12-12T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774516_xnfyghtac",
+      "date": "2025-12-13T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774516_loc89mlye",
+      "date": "2025-12-14T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_luykpi3ud",
+      "date": "2025-12-15T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_ocqypbxow",
+      "date": "2025-12-16T18:30:00.000Z",
+      "newFollowers": 63
+    },
+    {
+      "id": "follower_1781848774516_iew5wt31b",
+      "date": "2025-12-17T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781848774516_fqm8ah7it",
+      "date": "2025-12-18T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774516_l95wr9y17",
+      "date": "2025-12-19T18:30:00.000Z",
+      "newFollowers": 27
+    },
+    {
+      "id": "follower_1781848774516_sk7reuhvj",
+      "date": "2025-12-20T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774516_enq58e2sq",
+      "date": "2025-12-21T18:30:00.000Z",
+      "newFollowers": 111
+    },
+    {
+      "id": "follower_1781848774516_zwp3uete0",
+      "date": "2025-12-22T18:30:00.000Z",
+      "newFollowers": 39
+    },
+    {
+      "id": "follower_1781848774516_nrjjf5elq",
+      "date": "2025-12-23T18:30:00.000Z",
+      "newFollowers": 26
+    },
+    {
+      "id": "follower_1781848774516_0dg5q3ncv",
+      "date": "2025-12-24T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774516_i2mj9sf5h",
+      "date": "2025-12-25T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_80dh4zmiv",
+      "date": "2025-12-26T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_4l8303w3v",
+      "date": "2025-12-27T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_67oiegkd8",
+      "date": "2025-12-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_8bhx87hk1",
+      "date": "2025-12-29T18:30:00.000Z",
+      "newFollowers": 147
+    },
+    {
+      "id": "follower_1781848774516_7io72qjpa",
+      "date": "2025-12-30T18:30:00.000Z",
+      "newFollowers": 29
+    },
+    {
+      "id": "follower_1781848774516_85mqnf9vs",
+      "date": "2025-12-31T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774516_ujywmgwpk",
+      "date": "2026-01-01T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781848774516_88pv3b6mc",
+      "date": "2026-01-02T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_ovc37al5a",
+      "date": "2026-01-03T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_lb5bs9ptc",
+      "date": "2026-01-04T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_868uqarjj",
+      "date": "2026-01-05T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781848774516_qcmfg3iu8",
+      "date": "2026-01-06T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_ywv4aep8q",
+      "date": "2026-01-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_84fsrfshz",
+      "date": "2026-01-08T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_4u33n7j5t",
+      "date": "2026-01-09T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_po0ilcvk2",
+      "date": "2026-01-10T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_qcsox56yv",
+      "date": "2026-01-11T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781848774516_8j0v82qx9",
+      "date": "2026-01-12T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_ckhiziztz",
+      "date": "2026-01-13T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_m04xhfhok",
+      "date": "2026-01-14T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_fh1gkq24j",
+      "date": "2026-01-15T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774516_mzrkfku9c",
+      "date": "2026-01-16T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781848774516_08il7hp31",
+      "date": "2026-01-17T18:30:00.000Z",
+      "newFollowers": 45
+    },
+    {
+      "id": "follower_1781848774516_oisx10jzq",
+      "date": "2026-01-18T18:30:00.000Z",
+      "newFollowers": 24
+    },
+    {
+      "id": "follower_1781848774516_fap0io6l5",
+      "date": "2026-01-19T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781848774516_6umq3hq7g",
+      "date": "2026-01-20T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781848774516_8764jdw2z",
+      "date": "2026-01-21T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_m4ee8lhfi",
+      "date": "2026-01-22T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_aon916kgz",
+      "date": "2026-01-23T18:30:00.000Z",
+      "newFollowers": 78
+    },
+    {
+      "id": "follower_1781848774516_w9ywiuwsy",
+      "date": "2026-01-24T18:30:00.000Z",
+      "newFollowers": 43
+    },
+    {
+      "id": "follower_1781848774516_0hx84u5uo",
+      "date": "2026-01-25T18:30:00.000Z",
+      "newFollowers": 28
+    },
+    {
+      "id": "follower_1781848774516_q0ni7fjon",
+      "date": "2026-01-26T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781848774516_z7og94exn",
+      "date": "2026-01-27T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774516_sb1ovlo5q",
+      "date": "2026-01-28T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781848774516_cscg6leif",
+      "date": "2026-01-29T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_b8fa4pkmb",
+      "date": "2026-01-30T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_rvwesltzv",
+      "date": "2026-01-31T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_31xtmga7l",
+      "date": "2026-02-01T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_wggd0618w",
+      "date": "2026-02-02T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_ovl35m585",
+      "date": "2026-02-03T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_xmyu90sx5",
+      "date": "2026-02-04T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_9ombeprgn",
+      "date": "2026-02-05T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_5yeji24pj",
+      "date": "2026-02-06T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_gs1jytk5u",
+      "date": "2026-02-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_fzskhlfmq",
+      "date": "2026-02-08T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_k925lsnn6",
+      "date": "2026-02-09T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_be6jifzn9",
+      "date": "2026-02-10T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_xriqed4gr",
+      "date": "2026-02-11T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_ho7qjnekd",
+      "date": "2026-02-12T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_ef22pdqdk",
+      "date": "2026-02-13T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_lki3jd362",
+      "date": "2026-02-14T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_g41v6smgw",
+      "date": "2026-02-15T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781848774516_a0bwfuvpi",
+      "date": "2026-02-16T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_h4btrij3h",
+      "date": "2026-02-17T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_wunsp3lxd",
+      "date": "2026-02-18T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_txezjkv79",
+      "date": "2026-02-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_vrveei8nc",
+      "date": "2026-02-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_agugqv988",
+      "date": "2026-02-21T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_vlgvbu9gj",
+      "date": "2026-02-22T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_0a6nf3c5h",
+      "date": "2026-02-23T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_w2kho6p12",
+      "date": "2026-02-24T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_e2zylgzlx",
+      "date": "2026-02-25T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_c9avmr2da",
+      "date": "2026-02-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_s0y8lpugh",
+      "date": "2026-02-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_2y0f88jyn",
+      "date": "2026-02-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_nufmatj55",
+      "date": "2026-03-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_x0twm6iv0",
+      "date": "2026-03-02T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774516_mz9mm5mtm",
+      "date": "2026-03-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_a76zqlzyi",
+      "date": "2026-03-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_8o7fq8bf8",
+      "date": "2026-03-05T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_yehefdzi0",
+      "date": "2026-03-06T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_v8pmn39uf",
+      "date": "2026-03-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_whq0dkttf",
+      "date": "2026-03-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_0bkpd6hr7",
+      "date": "2026-03-09T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_k8erf5klo",
+      "date": "2026-03-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_svr0heb3o",
+      "date": "2026-03-11T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_biwkw65rw",
+      "date": "2026-03-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_8njepm1vv",
+      "date": "2026-03-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_5zn89q6kw",
+      "date": "2026-03-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_38j8qphid",
+      "date": "2026-03-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_kxvwwqz2b",
+      "date": "2026-03-16T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_5on127x26",
+      "date": "2026-03-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_bimyh185i",
+      "date": "2026-03-18T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_a6mwd0bif",
+      "date": "2026-03-19T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774516_x5ogf9tuq",
+      "date": "2026-03-20T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_mfecufhzd",
+      "date": "2026-03-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_nro1brqg3",
+      "date": "2026-03-22T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_vlam6mlx2",
+      "date": "2026-03-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_m7bb598ok",
+      "date": "2026-03-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_16a2hqud1",
+      "date": "2026-03-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_mhnchsmri",
+      "date": "2026-03-26T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781848774516_2srt7e9aj",
+      "date": "2026-03-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_yrrq1lawf",
+      "date": "2026-03-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_rgwk52lh9",
+      "date": "2026-03-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_57ozkk62a",
+      "date": "2026-03-30T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781848774516_y9rwglnvi",
+      "date": "2026-03-31T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781848774516_wa41xl4ia",
+      "date": "2026-04-01T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_13aefz4xx",
+      "date": "2026-04-02T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_6b58l40fz",
+      "date": "2026-04-03T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781848774516_r3unewiat",
+      "date": "2026-04-04T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_ug8mn8xam",
+      "date": "2026-04-05T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_0bf6wzen7",
+      "date": "2026-04-06T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_wb9qfn8o6",
+      "date": "2026-04-07T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_w2qqq191y",
+      "date": "2026-04-08T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_wcj7t9zkk",
+      "date": "2026-04-09T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_9rd9glh63",
+      "date": "2026-04-10T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_shi8alub3",
+      "date": "2026-04-11T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_qz5gzxhvi",
+      "date": "2026-04-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_oapcjsj5l",
+      "date": "2026-04-13T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_1pxvyrmqa",
+      "date": "2026-04-14T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_5pwja5cbe",
+      "date": "2026-04-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_ofwxpc9l4",
+      "date": "2026-04-16T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_nnk0dmwgv",
+      "date": "2026-04-17T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_78lhd41lr",
+      "date": "2026-04-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_5y2l94cha",
+      "date": "2026-04-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_cvul2o6su",
+      "date": "2026-04-20T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_8qmer6ltr",
+      "date": "2026-04-21T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_i66nf2xk4",
+      "date": "2026-04-22T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_hahvvj5yg",
+      "date": "2026-04-23T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_rjeiem0wj",
+      "date": "2026-04-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_vdwconelo",
+      "date": "2026-04-25T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_rcfb4wkae",
+      "date": "2026-04-26T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781848774516_voe2xszl2",
+      "date": "2026-04-27T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_ckfhfbjn1",
+      "date": "2026-04-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_7zv5a4kp6",
+      "date": "2026-04-29T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781848774516_x80r62g1l",
+      "date": "2026-04-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_9h6bfaav0",
+      "date": "2026-05-01T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_f15we0a4i",
+      "date": "2026-05-02T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781848774516_twrb78qyq",
+      "date": "2026-05-03T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_q391d9s1h",
+      "date": "2026-05-04T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_aovttla8n",
+      "date": "2026-05-05T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_b2z3qmhng",
+      "date": "2026-05-06T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_tc035ienf",
+      "date": "2026-05-07T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_8j2ol4k7d",
+      "date": "2026-05-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_r7o4g3qpa",
+      "date": "2026-05-09T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_kqe7b8n6s",
+      "date": "2026-05-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_bbn5gr55u",
+      "date": "2026-05-11T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781848774516_oim6fi5n2",
+      "date": "2026-05-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_v85quas7o",
+      "date": "2026-05-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_nfym0dauu",
+      "date": "2026-05-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_hy1ojtchn",
+      "date": "2026-05-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_qrmx20cbo",
+      "date": "2026-05-16T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_29140bodb",
+      "date": "2026-05-17T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781848774516_y6n9qrtyz",
+      "date": "2026-05-18T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_ia0eie68h",
+      "date": "2026-05-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_gcht83eq6",
+      "date": "2026-05-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_jqswp1z1s",
+      "date": "2026-05-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_byjshcy0g",
+      "date": "2026-05-22T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_b0ly9527f",
+      "date": "2026-05-23T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_iysbddiy8",
+      "date": "2026-05-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_v03l91duw",
+      "date": "2026-05-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_7se5y0kdy",
+      "date": "2026-05-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_39boak4mj",
+      "date": "2026-05-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_x4ms2biic",
+      "date": "2026-05-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_6a1jdiv68",
+      "date": "2026-05-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_56gyjqepl",
+      "date": "2026-05-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_45v7hcet1",
+      "date": "2026-05-31T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781848774516_ap4ifuodz",
+      "date": "2026-06-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_vah0wqcas",
+      "date": "2026-06-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_23j5buuhs",
+      "date": "2026-06-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_h2o9th7hv",
+      "date": "2026-06-04T18:30:00.000Z",
+      "newFollowers": 19
+    },
+    {
+      "id": "follower_1781848774516_stwxam88n",
+      "date": "2026-06-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_ia12wibd1",
+      "date": "2026-06-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_ncggaxau1",
+      "date": "2026-06-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_8aw2px7go",
+      "date": "2026-06-08T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781848774516_c97mhmpsv",
+      "date": "2026-06-09T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781848774516_adez28rt8",
+      "date": "2026-06-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_xnzslfclr",
+      "date": "2026-06-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_aox9myl5y",
+      "date": "2026-06-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_6xmk00jc2",
+      "date": "2026-06-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_5dhywxgct",
+      "date": "2026-06-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_q27scq4b0",
+      "date": "2026-06-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_cabrbfvtr",
+      "date": "2026-06-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_sysawc64l",
+      "date": "2026-06-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781848774516_0dixaff7v",
+      "date": "2026-06-18T18:30:00.000Z",
+      "newFollowers": 0
+    }
+  ],
+  "demographicMetrics": [
+    {
+      "id": "demo_1781848774519_7pyti9xfe",
+      "category": "Company",
+      "value": "WEBSKITTERS TECHNOLOGY SOLUTIONS PRIVATE LIMITED",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781848774519_k1qwce7ra",
+      "category": "Company",
+      "value": "Tata Consultancy Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_9j0qssfvr",
+      "category": "Company",
+      "value": "WebSkitters Academy",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_q2ynlkgsi",
+      "category": "Company",
+      "value": "Accenture",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_cxyw1tlac",
+      "category": "Company",
+      "value": "CodeClouds",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_nocokfxfs",
+      "category": "Company",
+      "value": "Cognizant",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_5m8w71j6k",
+      "category": "Company",
+      "value": "Techno Exponent (T-Web Exponent Services Pvt. Ltd)",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_55pie0dgo",
+      "category": "Company",
+      "value": "Capgemini",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_szpa641ix",
+      "category": "Company",
+      "value": "WebArt Technology Pvt. Ltd.",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_acqsz8j4m",
+      "category": "Location",
+      "value": "Greater Kolkata Area",
+      "percentage": 49
+    },
+    {
+      "id": "demo_1781848774519_riz3sfl1y",
+      "category": "Location",
+      "value": "Greater Delhi Area",
+      "percentage": 8
+    },
+    {
+      "id": "demo_1781848774519_xevdr3enx",
+      "category": "Location",
+      "value": "Greater Bengaluru Area",
+      "percentage": 5
+    },
+    {
+      "id": "demo_1781848774519_q2hhj25qa",
+      "category": "Location",
+      "value": "Noida",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_wg7wcwwpk",
+      "category": "Location",
+      "value": "Greater Hyderabad Area",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_wy9xyenbb",
+      "category": "Location",
+      "value": "Mumbai Metropolitan Region",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_h77x0v9oo",
+      "category": "Location",
+      "value": "Greater Ahmedabad Area",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_81oyduxts",
+      "category": "Location",
+      "value": "Greater Chennai Area",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_dbq4tv0g3",
+      "category": "Location",
+      "value": "Greater Surat Area",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_zxn15dvvo",
+      "category": "Company size",
+      "value": "11-50 employees",
+      "percentage": 20
+    },
+    {
+      "id": "demo_1781848774519_4bw4me600",
+      "category": "Company size",
+      "value": "51-200 employees",
+      "percentage": 16
+    },
+    {
+      "id": "demo_1781848774519_840eerwj8",
+      "category": "Company size",
+      "value": "10,001+ employees",
+      "percentage": 9
+    },
+    {
+      "id": "demo_1781848774519_4kbt0asue",
+      "category": "Company size",
+      "value": "2-10 employees",
+      "percentage": 9
+    },
+    {
+      "id": "demo_1781848774519_025mddujh",
+      "category": "Company size",
+      "value": "501-1,000 employees",
+      "percentage": 7
+    },
+    {
+      "id": "demo_1781848774519_kimc79cez",
+      "category": "Company size",
+      "value": "201-500 employees",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781848774519_o7lc2vixm",
+      "category": "Company size",
+      "value": "1,001-5,000 employees",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781848774519_wa3k1i462",
+      "category": "Company size",
+      "value": "0-1 employees",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_e2ie7tf73",
+      "category": "Company size",
+      "value": "5,001-10,000 employees",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_xx4jfxtlq",
+      "category": "Seniority",
+      "value": "Entry",
+      "percentage": 48
+    },
+    {
+      "id": "demo_1781848774519_129q96xg7",
+      "category": "Seniority",
+      "value": "Senior",
+      "percentage": 21
+    },
+    {
+      "id": "demo_1781848774519_61289a0vc",
+      "category": "Seniority",
+      "value": "Training",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781848774519_y27ld0x7s",
+      "category": "Seniority",
+      "value": "Owner",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_14u6nol71",
+      "category": "Seniority",
+      "value": "Manager",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_b812q2e1d",
+      "category": "Seniority",
+      "value": "Director",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_sdnj3a25u",
+      "category": "Seniority",
+      "value": "CXO",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_nlxdl7ib7",
+      "category": "Seniority",
+      "value": "VP",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781848774519_bjalp0fjd",
+      "category": "Job title",
+      "value": "Software Engineer",
+      "percentage": 16
+    },
+    {
+      "id": "demo_1781848774519_fpjjsh1on",
+      "category": "Job title",
+      "value": "Full Stack Engineer",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781848774519_8yvfydx1m",
+      "category": "Job title",
+      "value": "Frontend Developer",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781848774519_ie6yb79b1",
+      "category": "Job title",
+      "value": "Web Developer",
+      "percentage": 5
+    },
+    {
+      "id": "demo_1781848774519_ctvhbc39h",
+      "category": "Job title",
+      "value": "Interface Specialist",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781848774519_2ye09sm6a",
+      "category": "Job title",
+      "value": "User Interface Designer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_46ctg0p9b",
+      "category": "Job title",
+      "value": "Founder",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_ykfr879yz",
+      "category": "Job title",
+      "value": "User Experience Designer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_b1tofwf8m",
+      "category": "Job title",
+      "value": "Javascript Developer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_vkejdv0u7",
+      "category": "Industry",
+      "value": "IT Services and IT Consulting",
+      "percentage": 44
+    },
+    {
+      "id": "demo_1781848774519_gt1vlaxed",
+      "category": "Industry",
+      "value": "Software Development",
+      "percentage": 22
+    },
+    {
+      "id": "demo_1781848774519_74uzl8eqh",
+      "category": "Industry",
+      "value": "Technology, Information and Internet",
+      "percentage": 8
+    },
+    {
+      "id": "demo_1781848774519_mkua4rny3",
+      "category": "Industry",
+      "value": "IT System Custom Software Development",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_yyjwcfwb2",
+      "category": "Industry",
+      "value": "Design Services",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_45d5sazx1",
+      "category": "Industry",
+      "value": "Graphic Design",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781848774519_u11tn1x82",
+      "category": "Industry",
+      "value": "Business Consulting and Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_2xznauoxx",
+      "category": "Industry",
+      "value": "Marketing Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781848774519_9wkhigdin",
+      "category": "Industry",
+      "value": "IT System Design Services",
+      "percentage": 1
+    }
+  ],
+  "analysisResults": [
+    {
+      "id": "analysis_1781848878916",
+      "winningHooks": [
+        "Hook style \"Educational\" is your top engagement driver, achieving an average engagement rate of 1.73%.",
+        "\"Building In Public\" hooks also perform well, yielding 738 average impressions per post."
+      ],
+      "winningTopics": [
+        "Posts covering \"SaaS\" show the highest resonance with your audience, leading other topics in average engagement.",
+        "Content focused on \"Startups\" is a strong second, with a solid 1.47% engagement rate."
+      ],
+      "recommendations": [
+        "Increase output of \"SaaS\" posts using a \"Educational\" styled hook structure to capture high engagement early.",
+        "Refine lower-performing categories (e.g., \"Building In Public\" hooks) by keeping the opening line shorter (under 80 characters).",
+        "Aim to include a single question or controversial assertion in your opening line to lift comment rates."
+      ],
+      "createdAt": "2026-06-19T06:01:18.916Z"
+    }
+  ]
+}

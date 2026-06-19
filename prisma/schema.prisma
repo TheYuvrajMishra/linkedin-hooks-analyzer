@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Post {
+  id                String   @id @default(uuid())
+  postUrl           String   @unique
+  publishedAt       DateTime?
+  impressions       Int      @default(0)
+  engagements       Int      @default(0)
+  engagementRate    Float    @default(0.0)
+  postText          String?
+  hook              String?
+  hookType          String?  // Curiosity, Contrarian, Story, Failure, Achievement, Opinion, Question, Educational, Building In Public, Career
+  topic             String?  // AI, Startups, SaaS, Career, Hiring, Freelancing, Full Stack, React, Next.js, UI/UX, Productivity, Entrepreneurship, Personal Branding
+  hookLength        Int?
+  openingWords      String?
+  sentenceStructure String?
+  analyzed          Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model DailyMetric {
+  id          String   @id @default(uuid())
+  date        DateTime @unique
+  impressions Int      @default(0)
+  engagements Int      @default(0)
+}
+
+model FollowerMetric {
+  id           String   @id @default(uuid())
+  date         DateTime @unique
+  newFollowers Int      @default(0)
+}
+
+model DemographicMetric {
+  id         String @id @default(uuid())
+  category   String // Company, Seniority, Location, etc.
+  value      String
+  percentage Float
+}
+
+model AnalysisResult {
+  id              String   @id @default(uuid())
+  winningHooks    Json     // String array
+  winningTopics   Json     // String array
+  recommendations Json     // String array
+  createdAt       DateTime @default(now())
+}
+
