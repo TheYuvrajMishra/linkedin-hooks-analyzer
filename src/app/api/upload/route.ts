@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     const buffer = Buffer.from(await file.arrayBuffer());
     
     // Parse Excel data using SheetJS
-    const parsedData = parseLinkedInExcel(buffer);
+    const parsedData = parseLinkedInExcel(buffer as unknown as ArrayBuffer);
     
     // Clear old records
     await db.clearAll();
