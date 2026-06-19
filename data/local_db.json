@@ -1,7 +1,5246 @@
 {
-  "posts": [],
-  "dailyMetrics": [],
-  "followerMetrics": [],
-  "demographicMetrics": [],
-  "analysisResults": []
+  "posts": [
+    {
+      "id": "post_1781856644408_kj2dcbvz1",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-fullstackdeveloper-reactjs-share-7402528501125287936-GA-2",
+      "publishedAt": "2025-12-04T18:30:00.000Z",
+      "engagements": 74,
+      "impressions": 11391,
+      "engagementRate": 0.65,
+      "createdAt": "2026-06-19T08:10:44.408Z",
+      "updatedAt": "2026-06-19T08:11:12.080Z",
+      "postText": "Is \"Full Stack\" just... \"Next.js\"?\n\n...I'm half-kidding.\nBut think about it.\nMy stack: React, Next, TS, Node, Mongoose, Tailwind.\nWith Next.js... I get:\n✅ **Frontend:** React, TS, Tailwind\n✅ **Backend:** API Routes\n✅ **\"DevOps\":** Vercel handles it.\n\nI still *need* to know Node.js (for the API logic).\nI still *need* to know Mongoose/SQL (for the database).\n...but \"Next.js\" is the *glue*. It's the *framework* for the *entire* stack.\nIt's the \"Full Stack Operating System.\"\n\nIt's an amazing time to be a web dev.\nOne framework... to rule them all?\n\nDo you see Next.js as a \"frontend\" tool? Or a \"full stack\" tool?\n\n#nextjs #fullstackdeveloper #reactjs #webdev #javascript",
+      "hook": "Is \"Full Stack\" just... \"Next.js\"?\n...I'm half-kidding.\nBut think about it.",
+      "hookType": "Question",
+      "topic": "Next.js",
+      "hookLength": 75,
+      "openingWords": "Is \"Full Stack\" just... \"Next.js\"?",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644417_74vu7on7c",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_ai-startups-indiehackers-ugcPost-7454181312229179392-guuE",
+      "publishedAt": "2026-04-25T18:30:00.000Z",
+      "engagements": 36,
+      "impressions": 2451,
+      "engagementRate": 1.47,
+      "createdAt": "2026-06-19T08:10:44.417Z",
+      "updatedAt": "2026-06-19T08:11:00.027Z",
+      "postText": "I’ve been working on something quietly.\nA way to turn any idea into an interactive experience instantly.\nNot a design tool.\nNot a no-code builder.\nNot another AI wrapper.\nYou just describe what you want\nand it becomes something people can click, explore, and engage with.\nQuizzes.\nDecision flows.\nExplainers.\nSimulations.\nAll generated in seconds and embeddable anywhere.\nThe interesting part isn’t the AI.\nIt’s what happens after.\nWhen people stop reading your content\nand start interacting with it.\nStill early. Still evolving.\nBut I’m exploring a simple idea.\nContent should respond back.\nIf you’re someone who teaches, writes, or shares ideas\nI’d love to show you what I’m building.\n#AI #Startups #IndieHackers #ContentCreation #EdTech #NoCode #Creators #ProductBuilding #BuildInPublic",
+      "hook": "I’ve been working on something quietly.\nA way to turn any idea into an interactive experience instantly.\nNot a design tool.",
+      "hookType": "Curiosity",
+      "topic": "AI",
+      "hookLength": 123,
+      "openingWords": "I’ve been working on something",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644419_vk9ayc1lt",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-nextjs-mernstack-share-7392552040322969601-Q1R-",
+      "publishedAt": "2025-11-06T18:30:00.000Z",
+      "engagements": 28,
+      "impressions": 5286,
+      "engagementRate": 0.53,
+      "createdAt": "2026-06-19T08:10:44.419Z",
+      "updatedAt": "2026-06-19T08:11:39.176Z",
+      "postText": "Hot take: \"MERN Stack\" is an outdated term.\n\nThink about it. Are you *really* just using \"React\"? No, you're using Next.js.\nIs \"Express\" your main server? Or are you just using Next.js API routes?\nIs \"MongoDB\" your only database? Or are you mixing in SQL or a vector DB for AI?\n\nThe stack is evolving. It's not a rigid acronym anymore. It's a hybrid, serverless-first, AI-integrated... *thing*.\nWe need a new name.\n\nWhat do you call your \"MERN\" stack? I'm leaning towards \"The Next.js Ecosystem\".\n\n#fullstackdeveloper #nextjs #mernstack #webdev #reactjs",
+      "hook": "Hot take: \"MERN Stack\" is an outdated term.\n\nThink about it. Are you *really* just using \"React\"? No, you're using Next.js.",
+      "hookType": "Contrarian",
+      "topic": "Full Stack",
+      "hookLength": 123,
+      "openingWords": "Hot take: \"MERN Stack\" is",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644422_hcnjlurys",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-nextjs-fullstackdeveloper-ugcPost-7387158291929485312-TgLa",
+      "publishedAt": "2025-10-22T18:30:00.000Z",
+      "engagements": 26,
+      "impressions": 410,
+      "engagementRate": 6.34,
+      "createdAt": "2026-06-19T08:10:44.422Z",
+      "updatedAt": "2026-06-19T08:12:05.239Z",
+      "postText": "Just shipped my new portfolio site and honestly? Pretty stoked with how it turned out 🚀\n\nBuilt with:\n→ Next.js 15 (because who doesn't love React Server Components?)\n→ TypeScript (type safety is non-negotiable)\n→ MongoDB for handling contact forms\n→ Tailwind CSS for that clean responsive design\n\nAdded some fun touches like a custom splash screen, ambient audio, and smooth animations. Mobile-first, SEO-optimized, the whole nine yards.\n\nStill learning, still building. Would love your feedback!\n\n🔗 yuvrajmishra.vercel.app\n\n#WebDevelopment #NextJS #FullStackDeveloper #BuildInPublic",
+      "hook": "Just shipped my new portfolio site and honestly? Pretty stoked with how it turned out 🚀\nBuilt with:\n→ Next.js 15 (because who doesn't love React Server Components?)",
+      "hookType": "Question",
+      "topic": "Next.js",
+      "hookLength": 165,
+      "openingWords": "Just shipped my new portfolio",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644424_7p5n9hrn4",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-videotag-ux-share-7445867915956113408-x4zg",
+      "publishedAt": "2026-04-02T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 1116,
+      "engagementRate": 0.27,
+      "createdAt": "2026-06-19T08:10:44.424Z",
+      "updatedAt": "2026-06-19T08:11:05.689Z",
+      "postText": "Fix video thumbnail loading issues with this simple trick!\nSometimes video tags struggle to load thumbnails, leaving users with blank spaces. This creates a disjointed user experience.\nThe trick is to briefly play the video for a tiny fraction of a second (0.01ms) and then immediately pause it. This forces the browser to load the first frame, effectively creating a thumbnail.\n\n#WebDevelopment #VideoTag #UX #Frontend #CodingTips #TechTricks",
+      "hook": "Fix video thumbnail loading issues with this simple trick!\nSometimes video tags struggle to load thumbnails, leaving users with blank spaces. This creates a disjointed user experience.\nThe trick is to briefly play the video for a tiny fraction of a second (0.01ms) and then immediately pause it. This forces the browser to load the first frame, effectively creating a thumbnail.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 378,
+      "openingWords": "Fix video thumbnail loading issues",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644425_r1xdq7b62",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_developers-webdev-it-ugcPost-7399449063580147712-LcNm",
+      "publishedAt": "2025-11-25T18:30:00.000Z",
+      "engagements": 20,
+      "impressions": 474,
+      "engagementRate": 4.22,
+      "createdAt": "2026-06-19T08:10:44.425Z",
+      "updatedAt": "2026-06-19T08:11:19.495Z",
+      "postText": "Soft Product Launch.. I have created a product for developer who wants to get all dev tools at one place.\nHere's the Project \"DevUtilities\" [ https://lnkd.in/ev8pqr4W ]\nFrom a large library of Typography , Previewing the typography on a real page and its use case.\nTo Generating and choosing the best Color Palette. From Professional Luxury Vibe to totally funky and modern Vibe.\nTools aren't stop there only, It have a large library of icons & svg , Efficient and clean Code Snippets, and Data Tools Especially Designed for native developers.\nPlease try it yourself and give me your feedbacks, about how i can improve it, you can also request new tools.\n\n#developers #webdev #IT #utilities #UserInterface #UserExperience #GraphicDesign",
+      "hook": "Soft Product Launch.. I have created a product for developer who wants to get all dev tools at one place.\nHere's the Project \"DevUtilities\" [ https://lnkd.in/ev8pqr4W ]\nFrom a large library of Typography , Previewing the typography on a real page and its use case.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 264,
+      "openingWords": "Soft Product Launch.. I have",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644427_pxiklw8om",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_css-tailwindcss-frontend-share-7402175983065333760-6H1q",
+      "publishedAt": "2025-12-03T18:30:00.000Z",
+      "engagements": 9,
+      "impressions": 1046,
+      "engagementRate": 0.86,
+      "createdAt": "2026-06-19T08:10:44.427Z",
+      "updatedAt": "2026-06-19T08:11:13.372Z",
+      "postText": "Why your \"simple\" CSS is *so hard* to maintain.\n\nYou started simple.\nJust a `styles.css` file.\nThen... `header.css`. And `footer.css`.\nNow... you have 50 CSS files.\n...you have `.btn-primary` and `.button-blue`... and they *do the same thing*.\n...you change one `h1`... and it breaks the layout on *another page*.\n\nYou don't have a \"CSS\" problem.\nYou have a \"scoping\" problem. And a \"systems\" problem.\nThis is why I *love* TailwindCSS.\nIt's not \"CSS-in-JS.\" It's \"Utility-first.\"\nIt *forces* a system. `mb-4` *always* means \"1rem.\"\nIt's *scoped* to the component.\nIt's... maintainable.\n\nAre you \"pure CSS\"? \"Styled-Components\"? \"Tailwind\"?\n...Let's hear it.\n\n#css #tailwindcss #frontend #webdesign #webdev",
+      "hook": "Why your \"simple\" CSS is *so hard* to maintain.\nYou started simple.\nJust a `styles.css` file.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 93,
+      "openingWords": "Why your \"simple\" CSS is",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644429_twnxxd487",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_workinprogress-webdevelopment-saas-ugcPost-7388970180900696064-MZHF",
+      "publishedAt": "2025-10-27T18:30:00.000Z",
+      "engagements": 11,
+      "impressions": 286,
+      "engagementRate": 3.85,
+      "createdAt": "2026-06-19T08:10:44.429Z",
+      "updatedAt": "2026-06-19T08:11:56.101Z",
+      "postText": "🔥 Work in Progress: Sneak Peek!\n.\nExcited to share the first look at a new project I'm building: TrackNest.\n.\nThe vision is to create an AI-powered productivity platform that actually adapts to you. It's not just another to-do list; it's an intelligent assistant designed to learn your work patterns and automate the small stuff.\n.\nSome of the core features I'm working on:\n*AI Task Prioritization\n*Workflow Automation\n*Real-Time Analytics & Time Intelligence\n.\nIt's still under construction, but I'm really energized by how the UI and the core tech are coming together.\n.\nWhat's the #1 feature you wish your current productivity tool had?\n.\n#WorkInProgress #WebDevelopment #SaaS #AI #Productivity #UIUX #Tech",
+      "hook": "🔥 Work in Progress: Sneak Peek!\n.\nExcited to share the first look at a new project I'm building: TrackNest.",
+      "hookType": "Building In Public",
+      "topic": "AI",
+      "hookLength": 108,
+      "openingWords": "🔥 Work in Progress: Sneak",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644430_qovrpnfez",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-seo-webdevelopment-share-7392771674116349952-0LZr",
+      "publishedAt": "2025-11-07T18:30:00.000Z",
+      "engagements": 6,
+      "impressions": 938,
+      "engagementRate": 0.64,
+      "createdAt": "2026-06-19T08:10:44.430Z",
+      "updatedAt": "2026-06-19T08:11:35.345Z",
+      "postText": "Your Next.js app probably has terrible SEO... even with Next.js.\n\nI see this all the time. Devs think \"I'm using Next.js, so my SEO is perfect!\"\n...then they wrap every piece of text in a `<div>` or `<span>`.\n...they forget to add a unique `<title>` or `meta:description`.\n...they have zero `<h1>` tags.\n\nNext.js gives you the *tools* for SEO (like SSR and file-based routing). It doesn't do it *for* you.\nSemantic HTML still matters. Content structure *still* matters.\nI had to learn this fast on my ZyrixCraft project.\n\nWhat's the most common \"Next.js SEO\" mistake you've seen?\n\n#nextjs #seo #webdevelopment #fullstackdeveloper #reactjs",
+      "hook": "Your Next.js app probably has terrible SEO... even with Next.js.\nI see this all the time. Devs think \"I'm using Next.js, so my SEO is perfect!\"\n...then they wrap every piece of text in a `<div>` or `<span>`.",
+      "hookType": "Curiosity",
+      "topic": "Next.js",
+      "hookLength": 207,
+      "openingWords": "Your Next.js app probably has",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644431_yayovdnl1",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_aiindevelopment-fullstack-productivity-ugcPost-7389878289756225536-J5x0",
+      "publishedAt": "2025-10-30T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 904,
+      "engagementRate": 0.22,
+      "createdAt": "2026-06-19T08:10:44.431Z",
+      "updatedAt": "2026-06-19T08:11:48.915Z",
+      "postText": "When AI Codes Faster Than You: What Skills Will Still Matter?\n#AIInDevelopment #FullStack #Productivity #DeveloperLife #EthicalAI #CodingCommunity #FutureOfWork #AIDrivenDevelopment #TechLeadership",
+      "hook": "When AI Codes Faster Than You: What Skills Will Still Matter?",
+      "hookType": "Question",
+      "topic": "AI",
+      "hookLength": 61,
+      "openingWords": "When AI Codes Faster Than",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644432_mvgoqnma0",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uiux-productdesign-saas-share-7445048327727136768-CbfA",
+      "publishedAt": "2026-03-31T18:30:00.000Z",
+      "engagements": 8,
+      "impressions": 758,
+      "engagementRate": 1.06,
+      "createdAt": "2026-06-19T08:10:44.432Z",
+      "updatedAt": "2026-06-19T08:11:07.113Z",
+      "postText": "Users don’t leave your product because it’s bad, they leave because it’s confusing. This can happen in under 10 seconds.\n\nHere are 5 UI mistakes I keep seeing, even in funded startups:\n\n❌ 1. Too many choices at once  \n→ Users don’t explore; they freeze.  \n❌ 2. No clear primary action  \n→ If everything looks important, nothing is.  \n❌ 3. Slow or cluttered onboarding  \n→ First impression = last impression.  \n❌ 4. Ignoring visual hierarchy  \n→ Users shouldn’t “search” for what to do next.  \n❌ 5. Designing for aesthetics, not behavior  \n→ Pretty ≠ usable.  \n\nWhat I’ve learned from building SaaS products is that good UI is not just about design; it’s about decision-making. Every screen should answer ONE question clearly: “What should the user do next?” If your product feels “clunky,” it’s probably not your tech; it’s your UX.\n\nCurious, what’s the most frustrating UI you’ve used recently?  \n\n#UIUX #ProductDesign #SaaS #Startup #SoftwareDevelopment #UserExperience #Founders #Hiring #DesignThinking #Tech",
+      "hook": "Users don’t leave your product because it’s bad, they leave because it’s confusing. This can happen in under 10 seconds.\nHere are 5 UI mistakes I keep seeing, even in funded startups:\n❌ 1. Too many choices at once",
+      "hookType": "Failure",
+      "topic": "SaaS",
+      "hookLength": 213,
+      "openingWords": "Users don’t leave your product",
+      "sentenceStructure": "Negative/Contrarian Assertion",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644433_ty7z669qe",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_developer-webperformance-coding-ugcPost-7388163833137213440-ixjn",
+      "publishedAt": "2025-10-25T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 880,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.433Z",
+      "updatedAt": "2026-06-19T08:11:58.893Z",
+      "postText": "Let me know your go-to debug method in the comments!\n\n#Developer #WebPerformance #Coding",
+      "hook": "Let me know your go-to debug method in the comments!\n#Developer #WebPerformance #Coding",
+      "hookType": "Curiosity",
+      "topic": "Career",
+      "hookLength": 87,
+      "openingWords": "Let me know your go-to",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644434_magpd6rg3",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_reactjs-javascript-codingtips-ugcPost-7389139829432799232-isYp",
+      "publishedAt": "2025-10-28T18:30:00.000Z",
+      "engagements": 8,
+      "impressions": 244,
+      "engagementRate": 3.28,
+      "createdAt": "2026-06-19T08:10:44.434Z",
+      "updatedAt": "2026-06-19T08:11:54.878Z",
+      "postText": "Is your React app full of `prop-drilling`? Here's how I use `Context API` for clean state management.\n.\nA simple code example showing how to create a `Context`, provide it, and consume it with the `useContext` hook. This is a core part of building user-centric apps.\n.\nWhen do you reach for Context vs. Redux (or Zustand)?\n.\n#ReactJS #JavaScript #CodingTips #Frontend #NextJS",
+      "hook": "Is your React app full of `prop-drilling`? Here's how I use `Context API` for clean state management.\n.\nA simple code example showing how to create a `Context`, provide it, and consume it with the `useContext` hook. This is a core part of building user-centric apps.",
+      "hookType": "Question",
+      "topic": "Next.js",
+      "hookLength": 266,
+      "openingWords": "Is your React app full",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644435_g5fhxraba",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_frontend-uidesign-animation-ugcPost-7395118258573713408-MFI1",
+      "publishedAt": "2025-11-13T18:30:00.000Z",
+      "engagements": 7,
+      "impressions": 545,
+      "engagementRate": 1.28,
+      "createdAt": "2026-06-19T08:10:44.435Z",
+      "updatedAt": "2026-06-19T08:11:27.838Z",
+      "postText": "Designers: Stop asking for *impossible* animations.\n\nI love you. I *am* you.\nBut that Dribbble shot you're referencing...\n...it's a 10-second, pre-rendered After Effects video.\n...it's not a *real*, interactive, responsive web component.\n\nIt doesn't account for:\n➡️ `(prefers-reduced-motion)`\n➡️ Poor network conditions\n➡️ Main-thread blocking (jank!)\n➡️ How it *actually* works with real, dynamic content\n\nMy \"SparkVista\" project was a balance. We *used* Locomotion... but we had to *tame* it.\nThe best animations are the ones that are *functional* and *fast*.\nNot the ones that just look cool in a demo.\n\nDevs: What's the most \"impossible\" animation you've been asked to build?\n\n#frontend #uidesign #animation #webdesign #a11y",
+      "hook": "Designers: Stop asking for *impossible* animations.\nI love you. I *am* you.\nBut that Dribbble shot you're referencing...",
+      "hookType": "Contrarian",
+      "topic": "UI/UX",
+      "hookLength": 120,
+      "openingWords": "Designers: Stop asking for *impossible*",
+      "sentenceStructure": "Negative/Contrarian Assertion",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644436_xdihabxlo",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-softskills-freelancing-share-7399827115870691329-48W_",
+      "publishedAt": "2025-11-26T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 725,
+      "engagementRate": 0.14,
+      "createdAt": "2026-06-19T08:10:44.436Z",
+      "updatedAt": "2026-06-19T08:11:18.040Z",
+      "postText": "Let's talk about the *real* \"Full Stack\"...\n...Frontend, Backend, and *Business*.\n\nI see so many devs who are *allergic* to the \"business\" side.\nThey just want a ticket. They just want to code.\nBut working with REAL clients... you *can't* do that.\n\nYou have to be a *consultant*.\n➡️ \"You asked for this feature... but I think *this* feature will solve your problem *better*. Here's why.\"\n➡️ \"This will improve your SEO, which means *more leads*.\"\n➡️ \"We can A/B test this to *prove* it works.\"\n\nWhen you start speaking \"business\"...\n...you stop being a \"coder.\"\n...you become a *partner*.\n...and *that's* how you get better projects (and better pay).\n\nHow comfortable are you talking \"business\" (ROI, SEO, conversions) with your clients/boss?\n\n#fullstackdeveloper #softskills #freelancing #business #careeradvice",
+      "hook": "Let's talk about the *real* \"Full Stack\"...\n...Frontend, Backend, and *Business*.\nI see so many devs who are *allergic* to the \"business\" side.",
+      "hookType": "Curiosity",
+      "topic": "Career",
+      "hookLength": 143,
+      "openingWords": "Let's talk about the *real*",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644437_lasdn5nei",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_i-boosted-my-e-commerce-apps-lighthouse-ugcPost-7388057904643207168-RRAt",
+      "publishedAt": "2025-10-25T18:30:00.000Z",
+      "engagements": 6,
+      "impressions": 273,
+      "engagementRate": 2.2,
+      "createdAt": "2026-06-19T08:10:44.437Z",
+      "updatedAt": "2026-06-19T08:12:00.499Z",
+      "postText": "I boosted my E-commerce app's Lighthouse score by 25 points. Here's how.\n.\n.\n.\nFirst, Code Splitting with React.lazy(). By default, React bundles all your code into one large file. This means users download everything, even pages they might never visit. React.lazy() lets you split your code, loading components dynamically only when they are needed. Pair it with React.Suspense to show a loading indicator, dramatically speeding up your initial page load.\n.\nSecond, Image Optimization. Large images are a major bottleneck. Stop using bulky JPEGs and PNGs. Convert your images to modern formats like WebP or AVIF, which offer significantly smaller file sizes at the same quality. Use the <picture> tag to provide fallbacks for older browsers and add loading=\"lazy\" to images \"below the fold.\"\n.\nFinally, Memoization (useMemo/useCallback). This improves runtime performance, making your app feel faster. useMemo \"remembers\" the result of an expensive calculation, preventing it from re-running on every render. useCallback \"remembers\" a function, stopping unnecessary re-renders in child components that receive functions as props.",
+      "hook": "I boosted my E-commerce app's Lighthouse score by 25 points. Here's how.",
+      "hookType": "Achievement",
+      "topic": "React",
+      "hookLength": 72,
+      "openingWords": "I boosted my E-commerce app's",
+      "sentenceStructure": "First-Person Narrative",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644438_5axbyflca",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_typescript-reactjs-cleancode-share-7392946184987889664-isep",
+      "publishedAt": "2025-11-07T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 521,
+      "engagementRate": 0.77,
+      "createdAt": "2026-06-19T08:10:44.438Z",
+      "updatedAt": "2026-06-19T08:11:37.387Z",
+      "postText": "TypeScript's \"any\" type is a loaded gun.\n\nI get it. You're in a hurry. That third-party library has awful types. You just... `const data: any = ...`.\nYou've *technically* satisfied the compiler. But you've thrown away the *entire* reason for using TypeScript.\nYou've just planted a runtime-error timebomb for your future self.\n\nIt's a failure of imagination.\nA little bit of `unknown` + type-guarding...\nOr a quick `zod` schema...\n...is *always* better than `any`.\n\nWhat's your \"go-to\" alternative for `any` when you're in a hurry?\n\n#typescript #reactjs #cleancode #webdeveloper #fullstack",
+      "hook": "TypeScript's \"any\" type is a loaded gun.\n\nI get it. You're in a hurry. That third-party library has awful types. You just... `const data: any = ...`.",
+      "hookType": "Opinion",
+      "topic": "Full Stack",
+      "hookLength": 149,
+      "openingWords": "TypeScript's \"any\" type is a",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644440_6mpe8unkd",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_jobmarket-jobs-career-share-7451966792500985856-c9tr",
+      "publishedAt": "2026-04-19T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 369,
+      "engagementRate": 1.36,
+      "createdAt": "2026-06-19T08:10:44.440Z",
+      "updatedAt": "2026-06-19T08:11:04.353Z",
+      "postText": "The market needs experience from freshers. It's not which isn’t obvious. \nJob before graduation,\nIt’s hard; sometimes, somewhere in the corner of mind, questions the decision. But in my case, the decision turned me into a different person, more mature and more perseverant. Gaining really valuable industry experience.\n.\nWe are in a market where the “haua” [hype] of AI is shifting the landscape. But honestly, AI is an advantage. It’s impossible (and unnecessary) to cram the syntax of every single language now because AI can handle that. Instead, developers get to focus on what actually matters: logic, system flows, and optimizations, rather than just trying to resolve Promises using async/await.\n.\nThrough all these, the question flips, it’s not an option to have a job/experience in the industry before graduation.\nThe market needs experience from freshers. It's not which isn’t obvious. \nWhy would I hire a person if he doesn’t know how to handle pressure or meet deadlines?\n#jobmarket #jobs #career #worklifebalance #freshers",
+      "hook": "The market needs experience from freshers. It's not which isn’t obvious. \nJob before graduation,\nIt’s hard; sometimes, somewhere in the corner of mind, questions the decision. But in my case, the decision turned me into a different person, more mature and more perseverant. Gaining really valuable industry experience.",
+      "hookType": "Career",
+      "topic": "AI",
+      "hookLength": 318,
+      "openingWords": "The market needs experience from",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644441_f56jdst4c",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-webdev-reactjs-share-7396503511628423168-AQyJ",
+      "publishedAt": "2025-11-17T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 478,
+      "engagementRate": 0.42,
+      "createdAt": "2026-06-19T08:10:44.441Z",
+      "updatedAt": "2026-06-19T08:11:25.241Z",
+      "postText": "Hot take: The \"Full Stack Developer\" is a myth.\n\n...or at least, the \"50/50\" full-stack dev is.\nEveryone *leans*.\nI'm a \"full stack\" dev. But my heart is in the *frontend* and the *UX*.\nI love building a \"luxury\" UI. I love \"pixel-perfect\" design.\nI *can* (and do) build robust Node.js APIs and Mongoose schemas... but it's not what gets me *excited*.\n\nAnd that's *okay*.\nKnow your strengths. Be a \"T-shaped\" developer.\nGo *deep* on what you love (for me, UI/UX/React).\nAnd be *broad* enough to handle the rest (Node, Mongo, SQL, DevOps).\n\nWhat's your \"T-shape\"? Are you frontend-leaning or backend-leaning?\n\n#fullstackdeveloper #webdev #reactjs #nodejs #careeradvice",
+      "hook": "Hot take: The \"Full Stack Developer\" is a myth.\n...or at least, the \"50/50\" full-stack dev is.\nEveryone *leans*.",
+      "hookType": "Curiosity",
+      "topic": "React",
+      "hookLength": 112,
+      "openingWords": "Hot take: The \"Full Stack",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644446_wozus7fzq",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_good-opportunity-share-7393252912212180992-kLwk",
+      "publishedAt": "2025-11-08T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 258,
+      "engagementRate": 1.94,
+      "createdAt": "2026-06-19T08:10:44.446Z",
+      "updatedAt": "2026-06-19T08:11:33.770Z",
+      "postText": "500 million+ members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+      "hook": "500 million+ members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 152,
+      "openingWords": "500 million+ members | Manage",
+      "sentenceStructure": "Numbered List/Listicle",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644447_g65b4oe88",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_opentowork-nextjs-reactjs-share-7470018832783314944-eoTY",
+      "publishedAt": "2026-06-08T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 225,
+      "engagementRate": 2.22,
+      "createdAt": "2026-06-19T08:10:44.447Z",
+      "updatedAt": "2026-06-19T08:10:56.800Z",
+      "postText": "19. Shipped SaaS. Looking for work.\n\nBuilt foontro.com Foontro from scratch, a Freelance marketplace, Multi-tenant frontend, RBAC, Auth systems. Not a side project. Production. Real users.\n\nI write clean code and I care about UI. Both matter.\n\nSpent the last 8 months learning that fast ≠ sloppy and pretty ≠ slow.\n\nStack: React · Next.js · Node.js · Express · MongoDB · Tailwind\n\nIf you're building something at a product startup, I want in.\n\n#OpenToWork #NextJS #ReactJS #FullStackDeveloper",
+      "hook": "19. Shipped SaaS. Looking for work.\nBuilt foontro.com Foontro from scratch, a Freelance marketplace, Multi-tenant frontend, RBAC, Auth systems. Not a side project. Production. Real users.\nI write clean code and I care about UI. Both matter.",
+      "hookType": "Building In Public",
+      "topic": "Next.js",
+      "hookLength": 240,
+      "openingWords": "19. Shipped SaaS. Looking for",
+      "sentenceStructure": "Numbered List/Listicle",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644449_iltsxhwz2",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-seo-ssr-share-7390057387719815168-udvk",
+      "publishedAt": "2025-10-30T18:30:00.000Z",
+      "engagements": 5,
+      "impressions": 209,
+      "engagementRate": 2.39,
+      "createdAt": "2026-06-19T08:10:44.449Z",
+      "updatedAt": "2026-06-19T08:11:50.997Z",
+      "postText": "Why I use Next.js for SEO: Server-Side Rendering (SSR).\n.\nWhen a search engine bot crawls a standard React app, it sees a blank JS file. With Next.js (using `getServerSideProps`), the bot sees a fully rendered HTML page.\n.\nSSR, SSG, or CSR? What's your go-to for a new project? \n.\n.\n#NextJS #SEO #SSR #ReactJS #WebDev",
+      "hook": "Why I use Next.js for SEO: Server-Side Rendering (SSR). When a search engine bot crawls a standard React app, it sees a blank JS file. With Next.js (using `getServerSideProps`), the bot sees a fully rendered HTML page.",
+      "hookType": "Educational",
+      "topic": "Next.js",
+      "hookLength": 218,
+      "openingWords": "Why I use Next.js for",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644450_r1hp81iaa",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_git-github-versioncontrol-share-7403486488593838080-yMMd",
+      "publishedAt": "2025-12-06T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 309,
+      "engagementRate": 0.32,
+      "createdAt": "2026-06-19T08:10:44.450Z",
+      "updatedAt": "2026-06-19T08:11:10.162Z",
+      "postText": "What does \"Version Control (Git/GitHub)\" *really* mean on a resume?\n\nIt *doesn't* mean \"I know how to `git push`.\"\nIt means:\n✅ I know how to *untangle* a merge-conflict.\n✅ I know how to *write* a PR description.\n✅ I know *why* `git rebase` is better than `git merge`.\n✅ I know how to *review* someone else's code.\n✅ I know what \"atomic commits\" are.\n\nIt means \"I know how to be a *teammate*.\"\nIt's the single most important \"UI/UX\" skill...\n...the \"User Experience\" of *working with you*.\nMy `https://lnkd.in/eQ4dbRJi (if that's your GH!) is my *other* portfolio.\n\nWhat's one \"git\" skill you think *every* dev needs?\n\n#git #github #versioncontrol #webdeveloper #cleancode",
+      "hook": "What does \"Version Control (Git/GitHub)\" *really* mean on a resume?\nIt *doesn't* mean \"I know how to `git push`.\"\nIt means:",
+      "hookType": "Question",
+      "topic": "Hiring",
+      "hookLength": 123,
+      "openingWords": "What does \"Version Control (Git/GitHub)\"",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644451_cy67fpdgb",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uxdesign-webdev-philosophy-share-7387377485648273408-zYIW",
+      "publishedAt": "2025-10-23T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 249,
+      "engagementRate": 1.61,
+      "createdAt": "2026-06-19T08:10:44.451Z",
+      "updatedAt": "2026-06-19T08:12:03.561Z",
+      "postText": "\"Not all who wander are lost, but some who are lost... find a 404 page.\"\n\nThere's something beautiful about error pages. They're the digital equivalent of a fork in \nthe road – unexpected, slightly disorienting, but oddly honest.\n\nMost sites treat 404s like embarrassments. I treat mine like an opportunity. An opportunity \nto say: \"Hey, this page doesn't exist, but you do. And that matters more.\"\n\nBuilt my portfolio with this mindset – even the errors should feel intentional.\n\nBecause great UX isn't just about what works. It's about what happens when things don't.\n\nLive at: https://lnkd.in/eaGV8eEw\n\n#UXDesign #WebDev #Philosophy #DesignThinking",
+      "hook": "\"Not all who wander are lost, but some who are lost... find a 404 page.\"\nThere's something beautiful about error pages. They're the digital equivalent of a fork in \nthe road – unexpected, slightly disorienting, but oddly honest.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 228,
+      "openingWords": "\"Not all who wander are",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644452_m2em7fhj1",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_cleancode-business-coding-share-7401452417382318080-FTQU",
+      "publishedAt": "2025-12-01T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 296,
+      "engagementRate": 1.01,
+      "createdAt": "2026-06-19T08:10:44.452Z",
+      "updatedAt": "2026-06-19T08:11:14.475Z",
+      "postText": "Let's talk about \"technical debt.\"\n...Sometimes, it's *worth it*.\n\nI know, I know. \"Clean code\" is my mantra.\nBut \"business\" (that Commerce degree!) is about *tradeoffs*.\nSometimes... you *need* to ship.\nYou *need* to hit that deadline.\nYou *need* to get that A/B test *live*.\n\nSo... you take on a *little* debt.\nYou write the \"good enough\" code.\n...and you add a `// TODO: Refactor this!` comment.\n...and you *actually* make a ticket to refactor it.\n\n\"Technical debt\" is fine.\nIt's \"technical *bankruptcy*\"—when you *never* pay it back—that kills you.\nIt's a *tool*, not a sin.\n\nHow do you *manage* your technical debt?\n\n#cleancode #business #coding #webdeveloper #fullstack",
+      "hook": "Let's talk about \"technical debt.\"\n...Sometimes, it's *worth it*.\nI know, I know. \"Clean code\" is my mantra.",
+      "hookType": "Curiosity",
+      "topic": "Personal Branding",
+      "hookLength": 108,
+      "openingWords": "Let's talk about \"technical debt.\"",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644454_w9zb4nzhn",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_languages-espanol-learning-share-7452324662694330368-oNWc",
+      "publishedAt": "2026-04-20T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 231,
+      "engagementRate": 1.73,
+      "createdAt": "2026-06-19T08:10:44.454Z",
+      "updatedAt": "2026-06-19T08:11:02.990Z",
+      "postText": "Learning a new language, no, it’s not GoLang, it’s Español\nIt feels like I am in class 2, learning verbs, adjectives, degrees, articles, and prepositions from the start.\n\nSome of the words in Spanish are somewhat like Hindi\nPagar = To pay\nmase(maze) = Table\nTú = You\nAnd many more.\n\nAs a working professional in this IT field, one must learn different languages to handle clients that are international or even in India. India itself has above 300 languages.\nI know some of them, of course, in search of clients and curiosity, \nFor example , I know basics of:\nMarathi, Punjabi, Gujarati, Haryanvi, Bengali, and of course Hindi\n\nLearning a whole new language made me start from scratch, where i don’t know anything. This is the most exciting part about it; I have the freedom to do it in the correct way possible, researching, surfing, and exploring.\n\nBy the way this is my flex that I know these languages. What flex do you guys have, which is unrelated to your field?\n \n#languages #espanol #learning #ITjobs #Jobmarket",
+      "hook": "Learning a new language, no, it’s not GoLang, it’s Español\nIt feels like I am in class 2, learning verbs, adjectives, degrees, articles, and prepositions from the start.\nSome of the words in Spanish are somewhat like Hindi",
+      "hookType": "Educational",
+      "topic": "Career",
+      "hookLength": 222,
+      "openingWords": "Learning a new language, no,",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644455_cizng84ps",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_anthropic-claudemythos-aisecurity-share-7452663509982781440-2LgP",
+      "publishedAt": "2026-04-21T18:30:00.000Z",
+      "engagements": 4,
+      "impressions": 146,
+      "engagementRate": 2.74,
+      "createdAt": "2026-06-19T08:10:44.455Z",
+      "updatedAt": "2026-06-19T08:11:01.311Z",
+      "postText": "🚨 Anthropic Claude Mythos Breach: A Wake-Up Call for AI Security\nAnthropic is investigating unauthorized access to its cybersecurity AI model, Claude Mythos.\n\nA group reportedly accessed it via a third-party contractor portal not maliciously, but enough to raise serious concerns.\n\nWhy it matters:\n Claude Mythos is built to detect software vulnerabilities and strengthen cybersecurity. It was limited to partners like Amazon, Microsoft, Apple, Cisco, and Mozilla, where it helped uncover 271 Firefox vulnerabilities.\nBig takeaway:\n-AI security is now a real risk surface.\n-AI models are becoming high-value targets\n-Tools for defense can also enable AI-powered cyber threats\n\nThe question isn’t “Can AI secure systems?”\nIt’s “Who secures the AI?”\n#Anthropic #ClaudeMythos #AISecurity #Cybersecurity #ArtificialIntelligence #TechNews #InfoSec",
+      "hook": "🚨 Anthropic Claude Mythos Breach: A Wake-Up Call for AI Security\nAnthropic is investigating unauthorized access to its cybersecurity AI model, Claude Mythos.\nA group reportedly accessed it via a third-party contractor portal not maliciously, but enough to raise serious concerns.",
+      "hookType": "Curiosity",
+      "topic": "AI",
+      "hookLength": 280,
+      "openingWords": "🚨 Anthropic Claude Mythos Breach:",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644456_cfib44vdz",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_reactjs-statemanagement-javascript-share-7400220191525195776-KKpP",
+      "publishedAt": "2025-11-27T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 274,
+      "engagementRate": 0.73,
+      "createdAt": "2026-06-19T08:10:44.456Z",
+      "updatedAt": "2026-06-19T08:11:16.912Z",
+      "postText": "State Management in React is a solved problem.\n...and the solution is *not* Redux. (For most apps.)\n\nOkay, hot take.\nI've used Redux. I've used Context.\nBut for 90% of my projects? I use `Zustand`.\nWhy?\n➡️ **It's simple.** No \"Providers.\" No \"Actions.\" No \"Reducers.\"\n➡️ **It's minimal.** Tiny bundle size.\n➡️ **It's \"un-opinionated.\"** It doesn't *care* how you structure your store.\n➡️ **It handles `async`...** without 500 lines of \"thunk\" boilerplate.\n\n`useContext` is great... until your whole app re-renders.\nZustand is \"Context\" done *right*.\nIt's my default choice.\n\nWhat's your *go-to* state-manager for React in 2025?\n\n#reactjs #statemanagement #javascript #frontend #zustand",
+      "hook": "State Management in React is a solved problem.\n...and the solution is *not* Redux. (For most apps.)\nOkay, hot take.",
+      "hookType": "Curiosity",
+      "topic": "React",
+      "hookLength": 115,
+      "openingWords": "State Management in React is",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644458_vqaupkcm9",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_cleancode-javascript-typescript-share-7398733351274172416-m5uA",
+      "publishedAt": "2025-11-23T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 228,
+      "engagementRate": 1.32,
+      "createdAt": "2026-06-19T08:10:44.458Z",
+      "updatedAt": "2026-06-19T08:11:20.821Z",
+      "postText": "Stop naming your functions `handleData`.\n\n...or `doThing`. Or `manager`.\nThis is \"clean code 101.\"\nIt tells me *nothing*.\nWhat data? What thing? What does it manage?\n\nGood Naming:\n➡️ `fetchUserById`\n➡️ `validatePasswordStrength`\n➡️ `calculateCartTotal`\n➡️ `UserAuthMiddleware`\n\nA good function name describes *exactly* what it does.\nIt's the *first* piece of documentation.\nIf you need a comment to explain your function's name...\n...you need a *better* function name.\n\nWhat's the *worst* (or funniest) variable/function name you've ever seen in a real codebase?\n\n#cleancode #javascript #typescript #coding #webdeveloper",
+      "hook": "Stop naming your functions `handleData`.\n...or `doThing`. Or `manager`.\nThis is \"clean code 101.\"",
+      "hookType": "Contrarian",
+      "topic": "Career",
+      "hookLength": 97,
+      "openingWords": "Stop naming your functions `handleData`.",
+      "sentenceStructure": "Negative/Contrarian Assertion",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644460_kyk3slqpc",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_gaming-kart-isnt-just-an-e-commerce-site-ugcPost-7365035778160205825-oyGZ",
+      "publishedAt": "2025-08-22T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 189,
+      "engagementRate": 1.59,
+      "createdAt": "2026-06-19T08:10:44.460Z",
+      "updatedAt": "2026-06-19T08:12:06.537Z",
+      "postText": "🎮 Gaming Kart isn’t just an e-commerce site it’s a luxury arena for gamers. With a premium UI/UX, every scroll feels like leveling up in a AAA game. \n\nTechnologies Used: Vite+React+TSX , NodeJS, MongoDB, ExpressJS, Mongoose, Tailwind {:_more_effects}\n\nOur interactive client panel transforms shopping into a quest: inventories as wishLists, alerts as in-game notifications, and loyalty levels like rare achievements. The admin panel? A futuristic command center with real-time sales, AI-driven insights, and effortless control. Gaming Kart merges shopping with gaming fast, immersive, and premium. Not just buying an experience, a lifestyle, a flex. This is where gamers don’t just shop they conquer. ⚡",
+      "hook": "🎮 Gaming Kart isn’t just an e-commerce site it’s a luxury arena for gamers. With a premium UI/UX, every scroll feels like leveling up in a AAA game. \nTechnologies Used: Vite+React+TSX , NodeJS, MongoDB, ExpressJS, Mongoose, Tailwind {:_more_effects}\nOur interactive client panel transforms shopping into a quest: inventories as wishLists, alerts as in-game notifications, and loyalty levels like rare achievements. The admin panel? A futuristic command center with real-time sales, AI-driven insights, and effortless control. Gaming Kart merges shopping with gaming fast, immersive, and premium. Not just buying an experience, a lifestyle, a flex. This is where gamers don’t just shop they conquer. ⚡",
+      "hookType": "Question",
+      "topic": "React",
+      "hookLength": 701,
+      "openingWords": "🎮 Gaming Kart isn’t just",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644463_w3zmnmh77",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nodejs-security-jwt-share-7389693809611255809-ExE9",
+      "publishedAt": "2025-10-29T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 183,
+      "engagementRate": 1.64,
+      "createdAt": "2026-06-19T08:10:44.463Z",
+      "updatedAt": "2026-06-19T08:11:53.119Z",
+      "postText": "How do you secure your MERN stack? Don't forget JWT!\n.\nHere's a simple middleware function I use in Express.js to verify a JSON Web Token (JWT). It checks the 'Authorization' header and protects routes.\n.\nWhat's your go-to method for auth in Node.js? JWT, OAuth, or something else?\n.\n#NodeJS #Security #JWT #ExpressJS #Backend #MERN",
+      "hook": "How do you secure your MERN stack? Don't forget JWT! Here's a simple middleware function I use in Express.js to verify a JSON Web Token (JWT). It checks the 'Authorization' header and protects routes.",
+      "hookType": "Question",
+      "topic": "Full Stack",
+      "hookLength": 200,
+      "openingWords": "How do you secure your",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644464_mlyq5pzmu",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_responsivedesign-css-frontend-share-7400417855294369792-n9ou",
+      "publishedAt": "2025-11-28T18:30:00.000Z",
+      "engagements": 3,
+      "impressions": 147,
+      "engagementRate": 2.04,
+      "createdAt": "2026-06-19T08:10:44.464Z",
+      "updatedAt": "2026-06-19T08:11:15.727Z",
+      "postText": "\"Responsive Design\" is not just 3 breakpoints.\n\nIt's not \"mobile, tablet, desktop.\"\nIt's *fluid*.\nI see so many sites that look great at 375px...\n...and 1440px...\n...but are *completely* broken at 900px.\n\nWhy? They only tested the \"device\" presets.\nMy trick?\nI just... resize my browser.\nSlowly.\nThe *second* it looks weird... *that's* my new breakpoint.\nI'm not designing for \"an iPhone.\" I'm designing for \"a screen.\"\n(Tailwind's `md:`, `lg:` prefixes make this *so* easy to manage.)\n\nDo you use \"device\" breakpoints? Or \"fluid\" breakpoints?\n\n#responsivedesign #css #frontend #webdesign #tailwindcss",
+      "hook": "\"Responsive Design\" is not just 3 breakpoints.\nIt's not \"mobile, tablet, desktop.\"\nIt's *fluid*.",
+      "hookType": "Curiosity",
+      "topic": "UI/UX",
+      "hookLength": 96,
+      "openingWords": "\"Responsive Design\" is not just",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644465_er9oelglt",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_fullstackdeveloper-mongodb-nodejs-share-7392421367272333312-ttlv",
+      "publishedAt": "2025-11-06T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 224,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.465Z",
+      "updatedAt": "2026-06-19T08:11:41.456Z",
+      "postText": "Your MERN stack app is probably slower than it needs to be.\n.\nWe all love the MERN stack, but it’s easy to create bottlenecks. My biggest \"aha\" moment was realizing how lazy querying in Mongoose can kill performance.\n.\nI see devs fetching entire documents when they only need two fields. Or worse—doing a .find() inside a .map() loop. That's an N+1 query problem, and it's a performance disaster.\nUse .select() to grab only what you need. Learn to love $lookup and aggregation pipelines. Your database—and your users—will thank you.\nWhat’s the worst Mongoose/MongoDB mistake you’ve ever made (or seen)? We’ve all been there.\n#fullstackdeveloper #mongodb #nodejs #webperformance #mern",
+      "hook": "Your MERN stack app is probably slower than it needs to be.\n\nWe all love the MERN stack, but it’s easy to create bottlenecks. My biggest \"aha\" moment was realizing how lazy querying in Mongoose can kill performance.",
+      "hookType": "Educational",
+      "topic": "Full Stack",
+      "hookLength": 215,
+      "openingWords": "Your MERN stack app is",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644467_i79kvmder",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_it-is-hard-sometimes-share-7457392675466502144-h08v",
+      "publishedAt": "2026-05-04T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 224,
+      "engagementRate": 0.89,
+      "createdAt": "2026-06-19T08:10:44.467Z",
+      "updatedAt": "2026-06-19T08:10:57.964Z",
+      "postText": "it is hard sometimes .....",
+      "hook": "it is hard sometimes .....",
+      "hookType": "Curiosity",
+      "topic": "Entrepreneurship",
+      "hookLength": 26,
+      "openingWords": "it is hard sometimes .....",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644468_d689c2oaz",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_figma-uidesign-frontend-share-7393820105622650880-ygo_",
+      "publishedAt": "2025-11-10T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 202,
+      "engagementRate": 0.99,
+      "createdAt": "2026-06-19T08:10:44.468Z",
+      "updatedAt": "2026-06-19T08:11:30.802Z",
+      "postText": "Figma vs. Code: Who is the *real* source of truth?\n\nI've lived this battle. I'm both a dev and a UI/UX designer.\nThe designer builds a \"pixel-perfect\" Figma file.\nThe dev builds it.\n...then a change is needed.\nDoes the designer update Figma? Or does the dev just... change the code?\n\nA month later, Figma is a graveyard of old ideas. The *real* design lives in the TailwindCSS config and the React components.\nMy solution: The \"source of truth\" *must* be the code.\nFigma is for *prototyping* and *ideation*.\nThe \"component library\" in Storybook or in the app *is* the design system.\n\nWhere does the \"source of truth\" live for your team?\n\n#figma #uidesign #frontend #reactjs #tailwindcss",
+      "hook": "Figma vs. Code: Who is the *real* source of truth?\nI've lived this battle. I'm both a dev and a UI/UX designer.\nThe designer builds a \"pixel-perfect\" Figma file.",
+      "hookType": "Question",
+      "topic": "React",
+      "hookLength": 161,
+      "openingWords": "Figma vs. Code: Who is",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644469_32t2xerkl",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_we-have-reached-a-point-where-i-trust-imperfect-share-7471173130833641473-S2LB",
+      "publishedAt": "2026-06-11T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 148,
+      "engagementRate": 1.35,
+      "createdAt": "2026-06-19T08:10:44.469Z",
+      "updatedAt": "2026-06-19T08:10:55.574Z",
+      "postText": "We have reached a point where I trust imperfect humans more than perfect AI responses. \n \nRecently, I had a conversation on LinkedIn about startup challenges, and the responses were impressively smart, almost too perfect. Every message felt like it came straight out of a textbook\n\n\nThose are the things that create meaningful conversations\n\nSo, I said, If you use less AI, I will be more interested in chatting with you \n \nI don’t dislike AI, in fact, I think it is a powerful tool. But I have noticed that as it gets easier to generate polished answers, original thinking becomes more valuable. \n \nI remember the people who shared their real experiences, not those who provided perfectly formatted replies. \n \nAI can enhance your communication skills, but it should not replace your unique voice. In a world where everyone is using the same AI tool, your own perspective is more valuable. \n\nUse AI, but do not let it overshadow your individuality. \n\nWhat do you think?",
+      "hook": "We have reached a point where I trust imperfect humans more than perfect AI responses. \nRecently, I had a conversation on LinkedIn about startup challenges, and the responses were impressively smart, almost too perfect. Every message felt like it came straight out of a textbook\nThose are the things that create meaningful conversations",
+      "hookType": "Curiosity",
+      "topic": "AI",
+      "hookLength": 336,
+      "openingWords": "We have reached a point",
+      "sentenceStructure": "First-Person Narrative",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644470_iobiibd58",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdev-coding-fullstackdeveloper-ugcPost-7387685942586929152-GqrE",
+      "publishedAt": "2025-10-24T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 198,
+      "engagementRate": 0.51,
+      "createdAt": "2026-06-19T08:10:44.470Z",
+      "updatedAt": "2026-06-19T08:12:01.905Z",
+      "postText": "Code is jazz. And I've been learning to improvise. 🎷\n\nStarted with the basics (HTML, CSS, JS – the standard sheet music).\nThen learned to riff (React, Next.js, TypeScript).\nAdded my own style (performance optimization, UI/UX design).\nAnd now? I'm jamming. (Full-stack apps, admin dashboards, the whole set).\n\nJust dropped my \"personal introduction\" page – think of it as my \nliner notes. The story behind the music. The progression from \nbeginner to \"hey, I actually know what I'm doing now.\"\n\nIt's got:\n→ My career phases (from foundation to professional practice)\n→ Core principles (like why I obsess over details)\n→ Skills breakdown (frontend, backend, the works)\n→ Even my interests (because devs are human too)\n\nNot trying to be the next tech virtuoso. Just want to make good music \nand vibe with fellow musicians.\n\n🎵 Listen in: https://lnkd.in/eQMYPDyX\n\n#WebDev #Coding #FullStackDeveloper #TechLife",
+      "hook": "Code is jazz. And I've been learning to improvise. 🎷\nStarted with the basics (HTML, CSS, JS – the standard sheet music).\nThen learned to riff (React, Next.js, TypeScript).",
+      "hookType": "Educational",
+      "topic": "Next.js",
+      "hookLength": 172,
+      "openingWords": "Code is jazz. And I've",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644471_3ptzxpyy0",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-edgecomputing-serverless-share-7397701016143495169-T76b",
+      "publishedAt": "2025-11-20T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 147,
+      "engagementRate": 1.36,
+      "createdAt": "2026-06-19T08:10:44.471Z",
+      "updatedAt": "2026-06-19T08:11:22.246Z",
+      "postText": "Let's talk about the \"Edge\".\n...No, not the browser. Edge *computing*.\n\nThis is one of the *coolest* things in Next.js right now.\nWe all know \"Serverless\" (runs in one region).\nBut \"Edge\" functions... they run *everywhere*.\nThey're \"serverless functions\" that run at the datacenter *closest to your user*.\n\nWhat can you do with it?\n✅ **Blazing-fast personalization:** Show a US user different content than an Indian user.\n✅ **Super-low-latency redirects.**\n✅ **A/B testing... at the *network level*.**\n\nIt's a new way of thinking. You're not just \"frontend\" or \"backend.\" You're... \"everywhere.\"\nI'm *so* excited to build with this.\n\nWhat's the *coolest* use-case you've seen for Edge functions?\n\n#nextjs #edgecomputing #serverless #fullstackdeveloper #webdev",
+      "hook": "Let's talk about the \"Edge\".\n...No, not the browser. Edge *computing*.\nThis is one of the *coolest* things in Next.js right now.",
+      "hookType": "Curiosity",
+      "topic": "Next.js",
+      "hookLength": 128,
+      "openingWords": "Let's talk about the \"Edge\".",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644473_puwdydae8",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_hiring-freshers-entrylevel-share-7396543417335377920-j7Uv",
+      "publishedAt": "2025-11-17T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 198,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.473Z",
+      "updatedAt": "2026-06-19T08:11:26.535Z",
+      "postText": "The Experience Paradox: Why are we asking Interns for 3 years of experience? \n.\nTo the Human Resources leaders, Recruiters, and Hiring Managers shaping the workforce:\nWe are facing a vicious cycle in the recruitment landscape today. When a Fresher applies for a job, the rejection is standard: \"You lack experience.\" \nBut when they pivot to apply for Internships to gain that experience, the response is often the same.\nNo Internship = No Experience. No Experience = No Job.\nSo, how does a skilled Full Stack Developer or a creative graduate break into the industry?\nThousands of educated candidates proficient in React, NodeJS, and Web Development sit idle, not because they lack skill, but because they lack a \"corporate stamp\" on their resume. \nMeanwhile, we often see roles filled based on referrals rather than raw technical capability.\nFreshers aren't asking for shortcuts or sympathy. We are asking for a platform.\nTo the companies looking for the next unicorn employee: Remember that every Senior Developer, CTO, and Manager was once a fresher who just needed one opportunity.\nIf you close the door on fresh talent today, you stifle the experts of tomorrow.\nLet’s shift the hiring culture. Let’s value Potential and Portfolio over years on paper. Give us a chance to code, design, and deliver. You might just find your best asset.\n👇 HRs, let’s discuss: Are entry-level standards becoming unrealistic?\n.\n#Hiring #Freshers #EntryLevel #Recruitment #FullStackDeveloper #WebDevelopment #Frontend #Backend #JavaScript #ReactJS #NodeJS #SoftwareEngineering #TechTalent #OpenToWork #MumbaiJobs #Developers #GenZWorkforce #HumanResources #TalentAcquisition",
+      "hook": "The Experience Paradox: Why are we asking Interns for 3 years of experience? \n.\nTo the Human Resources leaders, Recruiters, and Hiring Managers shaping the workforce:",
+      "hookType": "Question",
+      "topic": "React",
+      "hookLength": 166,
+      "openingWords": "The Experience Paradox: Why are",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644474_yihj1q0r9",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_personalbranding-uidesign-webdeveloper-share-7397507301789818880-99K_",
+      "publishedAt": "2025-11-20T18:30:00.000Z",
+      "engagements": 2,
+      "impressions": 146,
+      "engagementRate": 1.37,
+      "createdAt": "2026-06-19T08:10:44.474Z",
+      "updatedAt": "2026-06-19T08:11:23.911Z",
+      "postText": "I'm a \"developer artist.\" Here's my manifesto.\n\nTo me, code is just a medium. Like paint, or clay.\n\"Web developer\" is the job title. \"Artist\" is the *approach*.\n\n➡️ **It's not just \"functional.\"** It has to be *beautiful*. (My UI/UX focus).\n➡️ **It's not just \"fast.\"** It has to be *smooth*. (My obsession with animation & performance).\n➡️ **It's not just \"done.\"** It has to be *elegant*. (My belief in clean code & smart architecture).\n\nI built the \"SparkVista\" site not just as a \"frontend dev,\" but as a designer.\nI'm not here to just... translate tickets.\nI'm here to build *cool and useful websites*.\n\nAre you a \"developer,\" an \"engineer,\" an \"artist,\" or something else?\n\n#personalbranding #uidesign #webdeveloper #fullstackdeveloper #passion",
+      "hook": "I'm a \"developer artist.\" Here's my manifesto.\nTo me, code is just a medium. Like paint, or clay.\n\"Web developer\" is the job title. \"Artist\" is the *approach*.",
+      "hookType": "Career",
+      "topic": "UI/UX",
+      "hookLength": 159,
+      "openingWords": "I'm a \"developer artist.\" Here's",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644475_jkpm95yfm",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uidesign-uxdesign-webdevelopment-ugcPost-7390288119780237312-YvaF",
+      "publishedAt": "2025-10-31T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 198,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.476Z",
+      "updatedAt": "2026-06-19T08:11:47.050Z",
+      "postText": "Dark Mode or Light Mode — What Defines a Great UI in 2025?\n#UIDesign #UXDesign #WebDevelopment #FullStackDeveloper #Frontend #DarkMode #DesignTrends2025 #UserExperience #WebAppDesign #TechCommunity",
+      "hook": "Dark Mode or Light Mode — What Defines a Great UI in 2025?",
+      "hookType": "Question",
+      "topic": "UI/UX",
+      "hookLength": 58,
+      "openingWords": "Dark Mode or Light Mode",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644479_kutpa9lkr",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_uiux-webdesign-figma-ugcPost-7388424050110382080-iGes",
+      "publishedAt": "2025-10-26T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 197,
+      "engagementRate": 0.51,
+      "createdAt": "2026-06-19T08:10:44.479Z",
+      "updatedAt": "2026-06-19T08:11:57.388Z",
+      "postText": "Developers, you're designers too. Here are 3 UI/UX principles I learned from my High-End Real Estate project.\n.\n.\n.\nYour design might look busy, but it's costing you conversions.\n.\nA \"premium\" feel isn't an accident. It's a choice.\n.\nUsers decide if your site is credible in milliseconds, often before they even read your headline. A cluttered, confusing layout screams \"unprofessional.\n.\n.\n\n-[BAD ❌]\n*A box with all text the same size and weight. It's hard to know where to look.\n*Headline\n*Some paragraph text that is just as big.\n*Button\n\n+[GOOD ✅]\n*A box with clear differences in font weight and size.\n*Main Headline (Large & Bold)\n*Supporting subtext (Smaller & lighter)\n*[ A Clear Button ]\n\n\n\n\n#uiux #webdesign #figma #webdevelopment #uxdesign #uidesign",
+      "hook": "Developers, you're designers too. Here are 3 UI/UX principles I learned from my High-End Real Estate project.\n.\n.",
+      "hookType": "Educational",
+      "topic": "UI/UX",
+      "hookLength": 113,
+      "openingWords": "Developers, you're designers too. Here",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644480_uwjxeknna",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_ugcPost-7390617942498975744-4EIf",
+      "publishedAt": "2025-11-01T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 190,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.480Z",
+      "updatedAt": "2026-06-19T08:11:45.338Z",
+      "postText": "Yuvraj Mishra posted on LinkedIn",
+      "hook": "Yuvraj Mishra posted on LinkedIn",
+      "hookType": "Career",
+      "topic": "Personal Branding",
+      "hookLength": 32,
+      "openingWords": "Yuvraj Mishra posted on LinkedIn",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644481_1sckpp0jx",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_freelancing-remotework-buildinginpublic-share-7472162721166188544-L65F",
+      "publishedAt": "2026-06-14T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 184,
+      "engagementRate": 0.54,
+      "createdAt": "2026-06-19T08:10:44.481Z",
+      "updatedAt": "2026-06-19T08:10:53.983Z",
+      "postText": "A year ago I was debugging auth at 2am for a startup I'd never met in person.\nNo call. No intro. Just a Vercel link, and a \"lmk when it's done.\"\nI was 18. Working from Kolkata. They were in Netherlands.\nAnd the wildest part? They trusted me completely.\nNo micromanagement. No \"are you sure you know what you're doing?\" Just results, async, across time zones.\nThat freedom felt incredible for about 4 days.\nThen the loneliness hit.\nNo team standup to complain to. No one to notice when I shipped something clean. No \"nice work\" that wasn't a Slack emoji at 11pm.\nFreelancing as a teenager teaches you discipline fast.\nIt also teaches you that autonomy and isolation look identical from the outside.\nI kept shipping. Built their entire auth flow, fixed 3 prod bugs they didn't know existed, handed it off clean.\nGot paid.\nNever heard from them again.\nThat's the gap nobody talks about. The trust is real. The work is real. The loneliness is also real.\nI don't say this to complain. I say it because I see a lot of \"freelance = freedom\" takes and very few honest ones.\nHas remote work ever felt isolating to you?\n#Freelancing #RemoteWork #BuildingInPublic",
+      "hook": "A year ago I was debugging auth at 2am for a startup I'd never met in person.\nNo call. No intro. Just a Vercel link, and a \"lmk when it's done.\"\nI was 18. Working from Kolkata. They were in Netherlands.",
+      "hookType": "Story",
+      "topic": "Startups",
+      "hookLength": 202,
+      "openingWords": "A year ago I was",
+      "sentenceStructure": "Negative/Contrarian Assertion",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644484_t2fpmj9mt",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_sql-nosql-mongodb-ugcPost-7391414058324807680-oHRC",
+      "publishedAt": "2025-11-03T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 180,
+      "engagementRate": 0.56,
+      "createdAt": "2026-06-19T08:10:44.484Z",
+      "updatedAt": "2026-06-19T08:11:43.477Z",
+      "postText": "As a MERN dev, I'm deep in MongoDB. But I'm also learning SQL for my BCA degree. Both have their strengths! \n#SQL #NoSQL #MongoDB #Developer #StudentLife #Database",
+      "hook": "As a MERN dev, I'm deep in MongoDB. But I'm also learning SQL for my BCA degree. Both have their strengths!",
+      "hookType": "Opinion",
+      "topic": "Full Stack",
+      "hookLength": 107,
+      "openingWords": "As a MERN dev, I'm",
+      "sentenceStructure": "Declarative Statement",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644495_q1e33vkad",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_webdevelopment-nextjs-vite-share-7404176467858735105-2Or5",
+      "publishedAt": "2025-12-08T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 180,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.495Z",
+      "updatedAt": "2026-06-19T08:11:08.571Z",
+      "postText": "\"Just use Vite. You don't need Next.js.\"\nI hear this advice a lot. And honestly? It's dangerous. Yes, Vite is faster to set up. Yes, it's great for Single Page Apps (SPAs).\nBut in 2025, clients don't just want an \"App.\" They want SEO. They want OG tags for social sharing. They want blazing fast initial loads (SSR). They want API routes built-in.\nIf you start with Vite, you eventually end up manually building a router, installing an SEO library, and setting up a separate Express server.\nYou end up \"reinventing\" Next.js, but worse.\nNext.js isn't \"overkill.\" It's \"future-proofing.\"\nUnless I'm building a dashboard behind a login wall, I’m defaulting to Next. Every. Single. Time.\nIs there any scenario where you'd still choose a plain CRA/Vite setup over Next.js?\n#webdevelopment #nextjs #vite #frontend #coding",
+      "hook": "\"Just use Vite. You don't need Next.js.\"\nI hear this advice a lot. And honestly? It's dangerous. Yes, Vite is faster to set up. Yes, it's great for Single Page Apps (SPAs).\nBut in 2025, clients don't just want an \"App.\" They want SEO. They want OG tags for social sharing. They want blazing fast initial loads (SSR). They want API routes built-in.",
+      "hookType": "Question",
+      "topic": "Next.js",
+      "hookLength": 347,
+      "openingWords": "\"Just use Vite. You don't",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644496_8v98itx3y",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_photoshop-uidesign-webdesign-share-7393967245380599808-iYi9",
+      "publishedAt": "2025-11-10T18:30:00.000Z",
+      "engagements": 1,
+      "impressions": 139,
+      "engagementRate": 0.72,
+      "createdAt": "2026-06-19T08:10:44.497Z",
+      "updatedAt": "2026-06-19T08:11:32.171Z",
+      "postText": "Confession: I still use Adobe Photoshop.\n\nI know, I know. Figma is my daily driver for UI. FigJam is for whiteboarding.\nBut when I need to do *real* image manipulation for a client?\n➡️ Creating complex textures for a \"luxury\" site.\n➡️ Editing a CEO's headshot.\n➡️ Compositing 3 images into one hero banner.\n...Figma just can't do it.\n\nKnowing how to *properly* edit, composite, and export assets from Photoshop is a seriously underrated skill for a \"full stack\" dev who also... *designs*.\nIt's part of the \"artist\" toolkit.\n\nWhat's one \"old\" tool you refuse to give up?\n\n#photoshop #uidesign #webdesign #figma #fullstack",
+      "hook": "Confession: I still use Adobe Photoshop.\nI know, I know. Figma is my daily driver for UI. FigJam is for whiteboarding.\nBut when I need to do *real* image manipulation for a client?",
+      "hookType": "Question",
+      "topic": "UI/UX",
+      "hookLength": 180,
+      "openingWords": "Confession: I still use Adobe",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    },
+    {
+      "id": "post_1781856644498_zqsjmvpva",
+      "postUrl": "https://www.linkedin.com/posts/the-yuvraj-mishra_tailwindcss-typescript-frontend-share-7394990475172028416-p1ZG",
+      "publishedAt": "2025-11-13T18:30:00.000Z",
+      "engagements": 0,
+      "impressions": 140,
+      "engagementRate": 0,
+      "createdAt": "2026-06-19T08:10:44.498Z",
+      "updatedAt": "2026-06-19T08:11:29.526Z",
+      "postText": "Let's talk about the \"T\" in your stack: TypeScript... or Tailwind?\n\nFor me, the \"T\" in my stack (React, Next.js, Node.js) has become TailwindCSS.\nI know, I know. TypeScript is crucial. I use it on every project.\nBut... Tailwind has *fundamentally* changed *how* I build and *think* about UI.\n\nIt connected my Figma designs directly to my code.\nIt forced a \"systems-first\" approach.\nIt made \"responsive design\" a joy instead of a chore.\nTypeScript makes my app *robust*. Tailwind makes my app *beautiful* (and maintainable).\n\nIf you *had* to give one up on your next project... which \"T\" would it be?\n\n#tailwindcss #typescript #frontend #reactjs #webdev",
+      "hook": "Let's talk about the \"T\" in your stack: TypeScript... or Tailwind?\nFor me, the \"T\" in my stack (React, Next.js, Node.js) has become TailwindCSS.\nI know, I know. TypeScript is crucial. I use it on every project.",
+      "hookType": "Question",
+      "topic": "Next.js",
+      "hookLength": 210,
+      "openingWords": "Let's talk about the \"T\"",
+      "sentenceStructure": "Interrogative/Question",
+      "analyzed": true
+    }
+  ],
+  "dailyMetrics": [
+    {
+      "id": "metric_1781856644500_5059p9zwc",
+      "date": "2025-06-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_lvi7kok1u",
+      "date": "2025-06-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_86f328u5w",
+      "date": "2025-06-21T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_99ktry8e8",
+      "date": "2025-06-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_2975rwbh0",
+      "date": "2025-06-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_fthmgr0fx",
+      "date": "2025-06-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_7ug64rr65",
+      "date": "2025-06-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_jcbmlgos8",
+      "date": "2025-06-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_qvxfneh6z",
+      "date": "2025-06-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_q777t9p64",
+      "date": "2025-06-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_z2a4wr4cd",
+      "date": "2025-06-29T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_m3bmbhuhj",
+      "date": "2025-06-30T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_94s90tez3",
+      "date": "2025-07-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_ayske5wr6",
+      "date": "2025-07-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_3v6zhbxn9",
+      "date": "2025-07-03T18:30:00.000Z",
+      "impressions": 48,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644500_ks9opxhts",
+      "date": "2025-07-04T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_ewqcj78og",
+      "date": "2025-07-05T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_6379z83qo",
+      "date": "2025-07-06T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_2nqa72ygf",
+      "date": "2025-07-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_401u6y8p5",
+      "date": "2025-07-08T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_bvhpqxvph",
+      "date": "2025-07-09T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_avofxkg2q",
+      "date": "2025-07-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_nyugsc0p7",
+      "date": "2025-07-11T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_b9fwzm9ih",
+      "date": "2025-07-12T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_bu43srq3d",
+      "date": "2025-07-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_yu4afrm67",
+      "date": "2025-07-14T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_kuvawj1yp",
+      "date": "2025-07-15T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_0kpbxzwim",
+      "date": "2025-07-16T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_4ia65fav9",
+      "date": "2025-07-17T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_054fx1q8p",
+      "date": "2025-07-18T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_n1xx1vvfj",
+      "date": "2025-07-19T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_6ciijdic2",
+      "date": "2025-07-20T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_4j5vfq5tq",
+      "date": "2025-07-21T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_8j3d4jd4t",
+      "date": "2025-07-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_sa41kjduw",
+      "date": "2025-07-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_wsuahppks",
+      "date": "2025-07-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_ed2zhmvg3",
+      "date": "2025-07-25T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_doyjk4k74",
+      "date": "2025-07-26T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_lzkqe1ool",
+      "date": "2025-07-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_kfqojdqo6",
+      "date": "2025-07-28T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_y0j9qhbwv",
+      "date": "2025-07-29T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_rb5kmreuu",
+      "date": "2025-07-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_13h6y2aab",
+      "date": "2025-07-31T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_go3rj2zwp",
+      "date": "2025-08-01T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_1it40fftk",
+      "date": "2025-08-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_91akxs2rc",
+      "date": "2025-08-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_skzw7ri9l",
+      "date": "2025-08-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_xnbew7qvs",
+      "date": "2025-08-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_zaiix66nj",
+      "date": "2025-08-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_p56m2adke",
+      "date": "2025-08-07T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_w74pvb9g7",
+      "date": "2025-08-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_6lkvrsflp",
+      "date": "2025-08-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_qalod2yvw",
+      "date": "2025-08-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_42k4c3ser",
+      "date": "2025-08-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_tca8w6l7f",
+      "date": "2025-08-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_f8zglbdhk",
+      "date": "2025-08-13T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_xcza656w9",
+      "date": "2025-08-14T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_rntmoe2a5",
+      "date": "2025-08-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_6swv0l3tx",
+      "date": "2025-08-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_gg5u2w1yo",
+      "date": "2025-08-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_e4wiawsc6",
+      "date": "2025-08-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_l2apxh43n",
+      "date": "2025-08-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_zdjml31lv",
+      "date": "2025-08-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_0mdv04xm8",
+      "date": "2025-08-21T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_5gcps92ft",
+      "date": "2025-08-22T18:30:00.000Z",
+      "impressions": 43,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644500_gts2jv9f1",
+      "date": "2025-08-23T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_4h4rskei6",
+      "date": "2025-08-24T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644500_cgub4fkkx",
+      "date": "2025-08-25T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_86wl63976",
+      "date": "2025-08-26T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_kj5w8td8w",
+      "date": "2025-08-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_cno0nfkq4",
+      "date": "2025-08-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_vy9r7txm0",
+      "date": "2025-08-29T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_rnbtsqgfg",
+      "date": "2025-08-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_t8xnhi34z",
+      "date": "2025-08-31T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_o0j38g7e0",
+      "date": "2025-09-01T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_t87v6vrk2",
+      "date": "2025-09-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_pg3xgsx1v",
+      "date": "2025-09-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_4nx9j2evn",
+      "date": "2025-09-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_1eqfond0x",
+      "date": "2025-09-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_1nii0ohhq",
+      "date": "2025-09-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_qrvvadg6f",
+      "date": "2025-09-07T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_2ups9pmuj",
+      "date": "2025-09-08T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_l0acqij0x",
+      "date": "2025-09-09T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_78pjtqp8z",
+      "date": "2025-09-10T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_vaw1i1q8p",
+      "date": "2025-09-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_2k5ki6iaq",
+      "date": "2025-09-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_url8m2q98",
+      "date": "2025-09-13T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_m08laxofz",
+      "date": "2025-09-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_3xzlf459d",
+      "date": "2025-09-15T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_1qc6j1bts",
+      "date": "2025-09-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_u40lqedr6",
+      "date": "2025-09-17T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_5l1xa7tlc",
+      "date": "2025-09-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_immmrorzf",
+      "date": "2025-09-19T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_3ho01bmxo",
+      "date": "2025-09-20T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_d5aedd3dv",
+      "date": "2025-09-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_kjl81pncj",
+      "date": "2025-09-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_jdkr4esul",
+      "date": "2025-09-23T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_97ns9nxk9",
+      "date": "2025-09-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_zkqoc4bib",
+      "date": "2025-09-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_0ctgoqehk",
+      "date": "2025-09-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_za0etcs0v",
+      "date": "2025-09-27T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_ko3ocwopb",
+      "date": "2025-09-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_al1q0kvlm",
+      "date": "2025-09-29T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_0w93x4et7",
+      "date": "2025-09-30T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_llkkkb9oh",
+      "date": "2025-10-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_xp8epenjo",
+      "date": "2025-10-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_ucxo3muo4",
+      "date": "2025-10-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_gf4hq1vkc",
+      "date": "2025-10-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_hn2320eov",
+      "date": "2025-10-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_cjc3e60n8",
+      "date": "2025-10-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_896vu4qq9",
+      "date": "2025-10-07T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_znvu7p26h",
+      "date": "2025-10-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_hn3wwh1pf",
+      "date": "2025-10-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_l0800atj8",
+      "date": "2025-10-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_j4kpzhbim",
+      "date": "2025-10-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_raq41vkzq",
+      "date": "2025-10-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_z7t0q4ypi",
+      "date": "2025-10-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_i67q117in",
+      "date": "2025-10-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_vpzr7dff0",
+      "date": "2025-10-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_szb6kmyfq",
+      "date": "2025-10-16T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_7u6o3hwpi",
+      "date": "2025-10-17T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_o8d0tmqtv",
+      "date": "2025-10-18T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_qvfi5e2xa",
+      "date": "2025-10-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_j16k9kvi6",
+      "date": "2025-10-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_kpcw8ttt0",
+      "date": "2025-10-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644500_d02pustso",
+      "date": "2025-10-22T18:30:00.000Z",
+      "impressions": 54,
+      "engagements": 12
+    },
+    {
+      "id": "metric_1781856644500_t7hslldth",
+      "date": "2025-10-23T18:30:00.000Z",
+      "impressions": 108,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_km5q1ak3j",
+      "date": "2025-10-24T18:30:00.000Z",
+      "impressions": 172,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_1mdce15qj",
+      "date": "2025-10-25T18:30:00.000Z",
+      "impressions": 351,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_inbfwnzkc",
+      "date": "2025-10-26T18:30:00.000Z",
+      "impressions": 404,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_2f5xj92rg",
+      "date": "2025-10-27T18:30:00.000Z",
+      "impressions": 392,
+      "engagements": 10
+    },
+    {
+      "id": "metric_1781856644501_1wf9c3fw9",
+      "date": "2025-10-28T18:30:00.000Z",
+      "impressions": 582,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_9jzxpfhph",
+      "date": "2025-10-29T18:30:00.000Z",
+      "impressions": 278,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_vvcxnuv49",
+      "date": "2025-10-30T18:30:00.000Z",
+      "impressions": 475,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_qizvkhgbo",
+      "date": "2025-10-31T18:30:00.000Z",
+      "impressions": 386,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_7ri21cotr",
+      "date": "2025-11-01T18:30:00.000Z",
+      "impressions": 329,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_jj7r3zvlf",
+      "date": "2025-11-02T18:30:00.000Z",
+      "impressions": 317,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_yde7lc0wf",
+      "date": "2025-11-03T18:30:00.000Z",
+      "impressions": 419,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_s3s9wes94",
+      "date": "2025-11-04T18:30:00.000Z",
+      "impressions": 382,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_l81ocvnfy",
+      "date": "2025-11-05T18:30:00.000Z",
+      "impressions": 208,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_id0oe8cnz",
+      "date": "2025-11-06T18:30:00.000Z",
+      "impressions": 310,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_ag3wfwo9l",
+      "date": "2025-11-07T18:30:00.000Z",
+      "impressions": 364,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_9guvr0rum",
+      "date": "2025-11-08T18:30:00.000Z",
+      "impressions": 2171,
+      "engagements": 11
+    },
+    {
+      "id": "metric_1781856644501_hyqnuo77r",
+      "date": "2025-11-09T18:30:00.000Z",
+      "impressions": 1248,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644501_uj9c74tei",
+      "date": "2025-11-10T18:30:00.000Z",
+      "impressions": 925,
+      "engagements": 8
+    },
+    {
+      "id": "metric_1781856644501_pfq65p0cl",
+      "date": "2025-11-11T18:30:00.000Z",
+      "impressions": 1083,
+      "engagements": 10
+    },
+    {
+      "id": "metric_1781856644501_y1ldlysqm",
+      "date": "2025-11-12T18:30:00.000Z",
+      "impressions": 1423,
+      "engagements": 7
+    },
+    {
+      "id": "metric_1781856644501_ofiflan1j",
+      "date": "2025-11-13T18:30:00.000Z",
+      "impressions": 816,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_mku1jj916",
+      "date": "2025-11-14T18:30:00.000Z",
+      "impressions": 397,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_ybfq2fsi6",
+      "date": "2025-11-15T18:30:00.000Z",
+      "impressions": 310,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_yfgoomrko",
+      "date": "2025-11-16T18:30:00.000Z",
+      "impressions": 251,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_g1ayr2w14",
+      "date": "2025-11-17T18:30:00.000Z",
+      "impressions": 303,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_swuowhojh",
+      "date": "2025-11-18T18:30:00.000Z",
+      "impressions": 185,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_cfrmv0y31",
+      "date": "2025-11-19T18:30:00.000Z",
+      "impressions": 168,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_165u49xln",
+      "date": "2025-11-20T18:30:00.000Z",
+      "impressions": 220,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_b68jziphp",
+      "date": "2025-11-21T18:30:00.000Z",
+      "impressions": 228,
+      "engagements": 6
+    },
+    {
+      "id": "metric_1781856644501_ypa5nelpl",
+      "date": "2025-11-22T18:30:00.000Z",
+      "impressions": 190,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_l0s0n0inm",
+      "date": "2025-11-23T18:30:00.000Z",
+      "impressions": 317,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_lr5jybmv6",
+      "date": "2025-11-24T18:30:00.000Z",
+      "impressions": 389,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_eb847ahmo",
+      "date": "2025-11-25T18:30:00.000Z",
+      "impressions": 389,
+      "engagements": 15
+    },
+    {
+      "id": "metric_1781856644501_0o1ucpgde",
+      "date": "2025-11-26T18:30:00.000Z",
+      "impressions": 261,
+      "engagements": 6
+    },
+    {
+      "id": "metric_1781856644501_8hf03xkt8",
+      "date": "2025-11-27T18:30:00.000Z",
+      "impressions": 434,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_4bm4anenv",
+      "date": "2025-11-28T18:30:00.000Z",
+      "impressions": 257,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_ycnntowg0",
+      "date": "2025-11-29T18:30:00.000Z",
+      "impressions": 259,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_ow9z6oir4",
+      "date": "2025-11-30T18:30:00.000Z",
+      "impressions": 173,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_8fjezofu7",
+      "date": "2025-12-01T18:30:00.000Z",
+      "impressions": 207,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_bxyl24s8m",
+      "date": "2025-12-02T18:30:00.000Z",
+      "impressions": 82,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_l2o3kbnm4",
+      "date": "2025-12-03T18:30:00.000Z",
+      "impressions": 495,
+      "engagements": 7
+    },
+    {
+      "id": "metric_1781856644501_sgnhz0urg",
+      "date": "2025-12-04T18:30:00.000Z",
+      "impressions": 2193,
+      "engagements": 34
+    },
+    {
+      "id": "metric_1781856644501_j349jry87",
+      "date": "2025-12-05T18:30:00.000Z",
+      "impressions": 4113,
+      "engagements": 22
+    },
+    {
+      "id": "metric_1781856644501_axg3424oa",
+      "date": "2025-12-06T18:30:00.000Z",
+      "impressions": 1225,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_v5heblqxy",
+      "date": "2025-12-07T18:30:00.000Z",
+      "impressions": 3005,
+      "engagements": 15
+    },
+    {
+      "id": "metric_1781856644501_mgu3wtccy",
+      "date": "2025-12-08T18:30:00.000Z",
+      "impressions": 963,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644501_tr8erlfgk",
+      "date": "2025-12-09T18:30:00.000Z",
+      "impressions": 686,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_oo1i1x25j",
+      "date": "2025-12-10T18:30:00.000Z",
+      "impressions": 407,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644501_w73i7csph",
+      "date": "2025-12-11T18:30:00.000Z",
+      "impressions": 107,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_kz81pejp7",
+      "date": "2025-12-12T18:30:00.000Z",
+      "impressions": 76,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644501_dsow8row6",
+      "date": "2025-12-13T18:30:00.000Z",
+      "impressions": 100,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_l65j4yump",
+      "date": "2025-12-14T18:30:00.000Z",
+      "impressions": 91,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_xkool9iu6",
+      "date": "2025-12-15T18:30:00.000Z",
+      "impressions": 59,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_bgqd4vakg",
+      "date": "2025-12-16T18:30:00.000Z",
+      "impressions": 52,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_e2ao8m2ed",
+      "date": "2025-12-17T18:30:00.000Z",
+      "impressions": 67,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_jegmb3rox",
+      "date": "2025-12-18T18:30:00.000Z",
+      "impressions": 23,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_z7k7g5luz",
+      "date": "2025-12-19T18:30:00.000Z",
+      "impressions": 36,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_ya2tdy4mh",
+      "date": "2025-12-20T18:30:00.000Z",
+      "impressions": 15,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_xidvdzza9",
+      "date": "2025-12-21T18:30:00.000Z",
+      "impressions": 27,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_8lnnnrjd4",
+      "date": "2025-12-22T18:30:00.000Z",
+      "impressions": 33,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_rbugxgtkw",
+      "date": "2025-12-23T18:30:00.000Z",
+      "impressions": 27,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_bgcv394jh",
+      "date": "2025-12-24T18:30:00.000Z",
+      "impressions": 32,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_h8wzzs5wh",
+      "date": "2025-12-25T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_goe3vs1mr",
+      "date": "2025-12-26T18:30:00.000Z",
+      "impressions": 37,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_b8v597lkt",
+      "date": "2025-12-27T18:30:00.000Z",
+      "impressions": 23,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_azlv5w6fp",
+      "date": "2025-12-28T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_lhxasctvj",
+      "date": "2025-12-29T18:30:00.000Z",
+      "impressions": 17,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_orhdl3epo",
+      "date": "2025-12-30T18:30:00.000Z",
+      "impressions": 24,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_jat2cgo7h",
+      "date": "2025-12-31T18:30:00.000Z",
+      "impressions": 26,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_5rmsikin9",
+      "date": "2026-01-01T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_51gpydftk",
+      "date": "2026-01-02T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_qz9yhf9s1",
+      "date": "2026-01-03T18:30:00.000Z",
+      "impressions": 8,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_u86whz46x",
+      "date": "2026-01-04T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_u9vtgnx1o",
+      "date": "2026-01-05T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_z5fewmixc",
+      "date": "2026-01-06T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_q3idfdhbg",
+      "date": "2026-01-07T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_1y05zl0jl",
+      "date": "2026-01-08T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_ciib3tizl",
+      "date": "2026-01-09T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_jz5tl9158",
+      "date": "2026-01-10T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_14znovpq6",
+      "date": "2026-01-11T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_zw7k5ko6j",
+      "date": "2026-01-12T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644501_70zsyq12s",
+      "date": "2026-01-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_36is62fca",
+      "date": "2026-01-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_1vvx9jan8",
+      "date": "2026-01-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_xk3ahr7di",
+      "date": "2026-01-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_lknzdckm7",
+      "date": "2026-01-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_483vtmo1m",
+      "date": "2026-01-18T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_cmuluai0j",
+      "date": "2026-01-19T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_5g7momzsw",
+      "date": "2026-01-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_503zcf82o",
+      "date": "2026-01-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_h4rwa9jgk",
+      "date": "2026-01-22T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_q2fymah60",
+      "date": "2026-01-23T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_iiq17y0uy",
+      "date": "2026-01-24T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_e8fnbcg1d",
+      "date": "2026-01-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_fp1d8lz67",
+      "date": "2026-01-26T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_pumyvyw3j",
+      "date": "2026-01-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_mihnlzpg4",
+      "date": "2026-01-28T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_zwdw3k1bu",
+      "date": "2026-01-29T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_jdbpo1zj5",
+      "date": "2026-01-30T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_haapu88zq",
+      "date": "2026-01-31T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_1xypgtodx",
+      "date": "2026-02-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_ro5dfukte",
+      "date": "2026-02-02T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_auns55cew",
+      "date": "2026-02-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_j3x05pe3f",
+      "date": "2026-02-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_6n5kk4e9n",
+      "date": "2026-02-05T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_ckmo0diws",
+      "date": "2026-02-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_xpub86k6y",
+      "date": "2026-02-07T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_xglhnxsgx",
+      "date": "2026-02-08T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644501_cmrqmf519",
+      "date": "2026-02-09T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_5evidaboq",
+      "date": "2026-02-10T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_s20u4g3b9",
+      "date": "2026-02-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_uj1hcdza2",
+      "date": "2026-02-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_uoppjn8fm",
+      "date": "2026-02-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_ny5pz2zcb",
+      "date": "2026-02-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_yhaexjt7e",
+      "date": "2026-02-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_x0ktiqsqw",
+      "date": "2026-02-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_viftuc14p",
+      "date": "2026-02-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_o5kreseq6",
+      "date": "2026-02-18T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_w2al79mj8",
+      "date": "2026-02-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_or91kevko",
+      "date": "2026-02-20T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_b19px6aeb",
+      "date": "2026-02-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_b15v2xywe",
+      "date": "2026-02-22T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_fb9dh7lfq",
+      "date": "2026-02-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_6x1jncfr0",
+      "date": "2026-02-24T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_pwbwsl95n",
+      "date": "2026-02-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_gpgdd2x6b",
+      "date": "2026-02-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_g6elgt756",
+      "date": "2026-02-27T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_e8rrt37by",
+      "date": "2026-02-28T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_5pha06f19",
+      "date": "2026-03-01T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_dyg8hembb",
+      "date": "2026-03-02T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_0wsvepbzj",
+      "date": "2026-03-03T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_xhy7a3e28",
+      "date": "2026-03-04T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_w1kmtib9k",
+      "date": "2026-03-05T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_fnfgnoqsl",
+      "date": "2026-03-06T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_zyjik4bez",
+      "date": "2026-03-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_77mimo9z7",
+      "date": "2026-03-08T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_njm9o74y3",
+      "date": "2026-03-09T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_n84z8u2xz",
+      "date": "2026-03-10T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_f2daa111y",
+      "date": "2026-03-11T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_ug2jdhzj3",
+      "date": "2026-03-12T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_j70ebf51l",
+      "date": "2026-03-13T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_eefig4dml",
+      "date": "2026-03-14T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_gwiglipc0",
+      "date": "2026-03-15T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_tpcugwt6a",
+      "date": "2026-03-16T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_3sqwfam9u",
+      "date": "2026-03-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_6pqr56q2i",
+      "date": "2026-03-18T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_cnuft4cbe",
+      "date": "2026-03-19T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_cmrwsj050",
+      "date": "2026-03-20T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_fxdxtqdmg",
+      "date": "2026-03-21T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_uam0z7w8j",
+      "date": "2026-03-22T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_tx3y4qin7",
+      "date": "2026-03-23T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_cwep3vdwz",
+      "date": "2026-03-24T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_rv0zlzy0c",
+      "date": "2026-03-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_4sefr43m8",
+      "date": "2026-03-26T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_jyf7ru8c5",
+      "date": "2026-03-27T18:30:00.000Z",
+      "impressions": 105,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_402smpswv",
+      "date": "2026-03-28T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_bq7cwf0tn",
+      "date": "2026-03-29T18:30:00.000Z",
+      "impressions": 11,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_g0p6ml090",
+      "date": "2026-03-30T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_h5qlu3ccl",
+      "date": "2026-03-31T18:30:00.000Z",
+      "impressions": 169,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644506_h76ld6tdw",
+      "date": "2026-04-01T18:30:00.000Z",
+      "impressions": 257,
+      "engagements": 9
+    },
+    {
+      "id": "metric_1781856644506_cgu358gq9",
+      "date": "2026-04-02T18:30:00.000Z",
+      "impressions": 271,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644506_6peoa6ggq",
+      "date": "2026-04-03T18:30:00.000Z",
+      "impressions": 578,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_txuzgu3c3",
+      "date": "2026-04-04T18:30:00.000Z",
+      "impressions": 302,
+      "engagements": -1
+    },
+    {
+      "id": "metric_1781856644506_4wyp8r9ty",
+      "date": "2026-04-05T18:30:00.000Z",
+      "impressions": 138,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_rmk77u1aa",
+      "date": "2026-04-06T18:30:00.000Z",
+      "impressions": 64,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_xr8ecwsl9",
+      "date": "2026-04-07T18:30:00.000Z",
+      "impressions": 79,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_2z18hbldp",
+      "date": "2026-04-08T18:30:00.000Z",
+      "impressions": 362,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_futfap0c1",
+      "date": "2026-04-09T18:30:00.000Z",
+      "impressions": 81,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_63takhtxm",
+      "date": "2026-04-10T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_eup3f5scm",
+      "date": "2026-04-11T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_2rgffwgh6",
+      "date": "2026-04-12T18:30:00.000Z",
+      "impressions": 19,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_8zv498560",
+      "date": "2026-04-13T18:30:00.000Z",
+      "impressions": 18,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_an4q453w0",
+      "date": "2026-04-14T18:30:00.000Z",
+      "impressions": 7,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_fe7vc4ghs",
+      "date": "2026-04-15T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_ra7vwzhsq",
+      "date": "2026-04-16T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_6r48hvknn",
+      "date": "2026-04-17T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_rsr6vj8ca",
+      "date": "2026-04-18T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_ek57gyspc",
+      "date": "2026-04-19T18:30:00.000Z",
+      "impressions": 188,
+      "engagements": 3
+    },
+    {
+      "id": "metric_1781856644506_eli8wi7gn",
+      "date": "2026-04-20T18:30:00.000Z",
+      "impressions": 168,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_06u8ecvb5",
+      "date": "2026-04-21T18:30:00.000Z",
+      "impressions": 197,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644506_veu1x2e1c",
+      "date": "2026-04-22T18:30:00.000Z",
+      "impressions": 90,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_ta59hilr0",
+      "date": "2026-04-23T18:30:00.000Z",
+      "impressions": 29,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_y3s6vtc1g",
+      "date": "2026-04-24T18:30:00.000Z",
+      "impressions": 41,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_r6ebbvb16",
+      "date": "2026-04-25T18:30:00.000Z",
+      "impressions": 832,
+      "engagements": 20
+    },
+    {
+      "id": "metric_1781856644506_0e4x3ojq6",
+      "date": "2026-04-26T18:30:00.000Z",
+      "impressions": 1439,
+      "engagements": 16
+    },
+    {
+      "id": "metric_1781856644506_f65q9n8bv",
+      "date": "2026-04-27T18:30:00.000Z",
+      "impressions": 58,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_l1ia9ni3c",
+      "date": "2026-04-28T18:30:00.000Z",
+      "impressions": 21,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_ekjtvcvmj",
+      "date": "2026-04-29T18:30:00.000Z",
+      "impressions": 65,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_63yq3jbxs",
+      "date": "2026-04-30T18:30:00.000Z",
+      "impressions": 34,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_i038hoyhi",
+      "date": "2026-05-01T18:30:00.000Z",
+      "impressions": 24,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_bf89wgvpz",
+      "date": "2026-05-02T18:30:00.000Z",
+      "impressions": 29,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_kqvhzaq2n",
+      "date": "2026-05-03T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_u1bgm0yhz",
+      "date": "2026-05-04T18:30:00.000Z",
+      "impressions": 156,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_lhv95q824",
+      "date": "2026-05-05T18:30:00.000Z",
+      "impressions": 18,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_1hjhpw2ai",
+      "date": "2026-05-06T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_135or74h1",
+      "date": "2026-05-07T18:30:00.000Z",
+      "impressions": 36,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_pkf85i1dw",
+      "date": "2026-05-08T18:30:00.000Z",
+      "impressions": 14,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_sv29xe8vi",
+      "date": "2026-05-09T18:30:00.000Z",
+      "impressions": 10,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_0im5b1jx8",
+      "date": "2026-05-10T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_claliend1",
+      "date": "2026-05-11T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_di9tfzj6d",
+      "date": "2026-05-12T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_21g3swtpv",
+      "date": "2026-05-13T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_w9j75lmow",
+      "date": "2026-05-14T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_idttw95ah",
+      "date": "2026-05-15T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_xuc1lbvjg",
+      "date": "2026-05-16T18:30:00.000Z",
+      "impressions": 143,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_gvd77jtge",
+      "date": "2026-05-17T18:30:00.000Z",
+      "impressions": 55,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_47ubh0uuv",
+      "date": "2026-05-18T18:30:00.000Z",
+      "impressions": 46,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_zcfr9sdz2",
+      "date": "2026-05-19T18:30:00.000Z",
+      "impressions": 20,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_cx856k6if",
+      "date": "2026-05-20T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_487vg8zgj",
+      "date": "2026-05-21T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_vasvst84t",
+      "date": "2026-05-22T18:30:00.000Z",
+      "impressions": 6,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_6549ecq3f",
+      "date": "2026-05-23T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_v9y42a5me",
+      "date": "2026-05-24T18:30:00.000Z",
+      "impressions": 4,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_xopjvf7zi",
+      "date": "2026-05-25T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_pah869l71",
+      "date": "2026-05-26T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_qotafaitj",
+      "date": "2026-05-27T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_9iplt7mvs",
+      "date": "2026-05-28T18:30:00.000Z",
+      "impressions": 12,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_ln4aqpi68",
+      "date": "2026-05-29T18:30:00.000Z",
+      "impressions": 2,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_fbjmtt43j",
+      "date": "2026-05-30T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_b3f4dg536",
+      "date": "2026-05-31T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_gyhx93m6h",
+      "date": "2026-06-01T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_nhy3ux8fw",
+      "date": "2026-06-02T18:30:00.000Z",
+      "impressions": 1,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_scnrjmiu3",
+      "date": "2026-06-03T18:30:00.000Z",
+      "impressions": 5,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_04trji4ji",
+      "date": "2026-06-04T18:30:00.000Z",
+      "impressions": 3,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_b4354go6g",
+      "date": "2026-06-05T18:30:00.000Z",
+      "impressions": 9,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_tnjo6opng",
+      "date": "2026-06-06T18:30:00.000Z",
+      "impressions": 22,
+      "engagements": -4
+    },
+    {
+      "id": "metric_1781856644506_dgtltw3a2",
+      "date": "2026-06-07T18:30:00.000Z",
+      "impressions": 0,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_3pyz5c923",
+      "date": "2026-06-08T18:30:00.000Z",
+      "impressions": 137,
+      "engagements": 5
+    },
+    {
+      "id": "metric_1781856644506_hpry3l8ja",
+      "date": "2026-06-09T18:30:00.000Z",
+      "impressions": 40,
+      "engagements": 1
+    },
+    {
+      "id": "metric_1781856644506_hdjdseug5",
+      "date": "2026-06-10T18:30:00.000Z",
+      "impressions": 13,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_71b9bcp71",
+      "date": "2026-06-11T18:30:00.000Z",
+      "impressions": 83,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_5ainrqqbn",
+      "date": "2026-06-12T18:30:00.000Z",
+      "impressions": 30,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_902vdv3ob",
+      "date": "2026-06-13T18:30:00.000Z",
+      "impressions": 33,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_yudm9w240",
+      "date": "2026-06-14T18:30:00.000Z",
+      "impressions": 165,
+      "engagements": 0
+    },
+    {
+      "id": "metric_1781856644506_8cqjpfdug",
+      "date": "2026-06-15T18:30:00.000Z",
+      "impressions": 110,
+      "engagements": 4
+    },
+    {
+      "id": "metric_1781856644506_dot8hremv",
+      "date": "2026-06-16T18:30:00.000Z",
+      "impressions": 120,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_yc254aldf",
+      "date": "2026-06-17T18:30:00.000Z",
+      "impressions": 181,
+      "engagements": 2
+    },
+    {
+      "id": "metric_1781856644506_weog22uyt",
+      "date": "2026-06-18T18:30:00.000Z",
+      "impressions": 52,
+      "engagements": 0
+    }
+  ],
+  "followerMetrics": [
+    {
+      "id": "follower_1781856644511_w7dmaf4ts",
+      "date": "2025-06-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_npj25unyl",
+      "date": "2025-06-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_ycze2tolu",
+      "date": "2025-06-21T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644511_xdhzls1v4",
+      "date": "2025-06-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_2nauwwz79",
+      "date": "2025-06-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_bnivkdnio",
+      "date": "2025-06-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_tnjc5wnrs",
+      "date": "2025-06-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_ugbne9wv4",
+      "date": "2025-06-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_sfj82uitf",
+      "date": "2025-06-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_w9rrzkoka",
+      "date": "2025-06-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644511_swhdhacu0",
+      "date": "2025-06-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4d9lbola8",
+      "date": "2025-06-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_burfik0ud",
+      "date": "2025-07-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ndb1ci18y",
+      "date": "2025-07-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_7nobikpia",
+      "date": "2025-07-03T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644512_19z0bhgzp",
+      "date": "2025-07-04T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_lo8aewk9a",
+      "date": "2025-07-05T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_6xl55lpko",
+      "date": "2025-07-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_v3efyb0ht",
+      "date": "2025-07-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_gh9v4ie14",
+      "date": "2025-07-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_vudiqx6nq",
+      "date": "2025-07-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_b0mxqu0tp",
+      "date": "2025-07-10T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644512_siu91ik8f",
+      "date": "2025-07-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_u05mk4iyi",
+      "date": "2025-07-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ufxdpcm1j",
+      "date": "2025-07-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_zr6k3mr67",
+      "date": "2025-07-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_hrliscgxm",
+      "date": "2025-07-15T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644512_e4q6edlcy",
+      "date": "2025-07-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4yyb84j5q",
+      "date": "2025-07-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_j6kt76maj",
+      "date": "2025-07-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_see14srnk",
+      "date": "2025-07-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_cd2t789xh",
+      "date": "2025-07-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_7gmtlq5nh",
+      "date": "2025-07-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_qulevcu21",
+      "date": "2025-07-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_zy6hmpq2i",
+      "date": "2025-07-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_05t6xzt4j",
+      "date": "2025-07-24T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_suvqlppkj",
+      "date": "2025-07-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_0g1w85jd2",
+      "date": "2025-07-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_o7xg003in",
+      "date": "2025-07-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ngxl2j0n7",
+      "date": "2025-07-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_g14q3q7zv",
+      "date": "2025-07-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_we4jzzwif",
+      "date": "2025-07-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_2y9d0uw5i",
+      "date": "2025-07-31T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_phh4ctgo3",
+      "date": "2025-08-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_s0ie6nabl",
+      "date": "2025-08-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_5o03agqy4",
+      "date": "2025-08-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4ddxufdwt",
+      "date": "2025-08-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_8hhwyobhq",
+      "date": "2025-08-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_t2of57zx9",
+      "date": "2025-08-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_bt48j6cvf",
+      "date": "2025-08-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_exceufdap",
+      "date": "2025-08-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_biz8v8zm9",
+      "date": "2025-08-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_i4fwfsq5z",
+      "date": "2025-08-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_83gntk82w",
+      "date": "2025-08-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_mdw4840v6",
+      "date": "2025-08-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_kuxypqvob",
+      "date": "2025-08-13T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_ai0zfae4k",
+      "date": "2025-08-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_1ydr1ldo0",
+      "date": "2025-08-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_zg8g1ywwq",
+      "date": "2025-08-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_20edfefmv",
+      "date": "2025-08-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_0kbf39iq8",
+      "date": "2025-08-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_mr320ho9d",
+      "date": "2025-08-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_0htye8pd8",
+      "date": "2025-08-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_mv16g8j0b",
+      "date": "2025-08-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_64u0b1sam",
+      "date": "2025-08-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_utf1bxnyp",
+      "date": "2025-08-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_hn942thiy",
+      "date": "2025-08-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_9b0ww7dv4",
+      "date": "2025-08-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_5doxqugbf",
+      "date": "2025-08-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_6xnc6n8f7",
+      "date": "2025-08-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4m7eshnbu",
+      "date": "2025-08-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_247xu5jgw",
+      "date": "2025-08-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ucy8lanup",
+      "date": "2025-08-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ar8ocv165",
+      "date": "2025-08-31T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_t8n2xw4cr",
+      "date": "2025-09-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ta1akv68c",
+      "date": "2025-09-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_jb47sfy5l",
+      "date": "2025-09-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_q0polgek2",
+      "date": "2025-09-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_nqww65fgz",
+      "date": "2025-09-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_fe7g73tjl",
+      "date": "2025-09-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ikebv8ib6",
+      "date": "2025-09-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_gcq12qiqb",
+      "date": "2025-09-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_m17z5qsot",
+      "date": "2025-09-09T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644512_gcpw9q65o",
+      "date": "2025-09-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_zj9myhcat",
+      "date": "2025-09-11T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644512_y2m5h2pqc",
+      "date": "2025-09-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_k6rfmobi7",
+      "date": "2025-09-13T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644512_zjvlj8nu6",
+      "date": "2025-09-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_9s3gpmlp6",
+      "date": "2025-09-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_xac9bcvbr",
+      "date": "2025-09-16T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644512_x2bql289k",
+      "date": "2025-09-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_gvaysvorz",
+      "date": "2025-09-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_u3zyyy7u8",
+      "date": "2025-09-19T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_ntgszndip",
+      "date": "2025-09-20T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_0d1nrnnu6",
+      "date": "2025-09-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_m4po0qq5e",
+      "date": "2025-09-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_v7l88fxrl",
+      "date": "2025-09-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_o4cho5q8f",
+      "date": "2025-09-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_s71sh576o",
+      "date": "2025-09-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_fv9zv9ckd",
+      "date": "2025-09-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_aqb1v7408",
+      "date": "2025-09-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_etvhg2y4p",
+      "date": "2025-09-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4jcvl77ed",
+      "date": "2025-09-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_jl10if1w5",
+      "date": "2025-09-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_tob7h39y1",
+      "date": "2025-10-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_6fii3p4p3",
+      "date": "2025-10-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_zv9qvzeiv",
+      "date": "2025-10-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ilk3dol1n",
+      "date": "2025-10-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4pw01y7yf",
+      "date": "2025-10-05T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644512_ud7992anr",
+      "date": "2025-10-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_4obvmcllf",
+      "date": "2025-10-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_phq7q0a3m",
+      "date": "2025-10-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_eq442waxi",
+      "date": "2025-10-09T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_lg7z15wi8",
+      "date": "2025-10-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_1xexnw80w",
+      "date": "2025-10-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_i94hjy5of",
+      "date": "2025-10-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_kq6njkur7",
+      "date": "2025-10-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_d93u9d8qp",
+      "date": "2025-10-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_xanzy8w9c",
+      "date": "2025-10-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_xd59mhb3h",
+      "date": "2025-10-16T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644512_4wi9u0ka3",
+      "date": "2025-10-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_rez2p5plq",
+      "date": "2025-10-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_ywr795ear",
+      "date": "2025-10-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_x8ct44wx2",
+      "date": "2025-10-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_jdqh812b8",
+      "date": "2025-10-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_kc6o8wz7n",
+      "date": "2025-10-22T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644512_3fv8v19zv",
+      "date": "2025-10-23T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644512_we5lw0n11",
+      "date": "2025-10-24T18:30:00.000Z",
+      "newFollowers": 41
+    },
+    {
+      "id": "follower_1781856644512_are6ejrhm",
+      "date": "2025-10-25T18:30:00.000Z",
+      "newFollowers": 17
+    },
+    {
+      "id": "follower_1781856644512_o5kshj7ec",
+      "date": "2025-10-26T18:30:00.000Z",
+      "newFollowers": 80
+    },
+    {
+      "id": "follower_1781856644512_hnvreoxuz",
+      "date": "2025-10-27T18:30:00.000Z",
+      "newFollowers": 57
+    },
+    {
+      "id": "follower_1781856644512_1lsz2fuqi",
+      "date": "2025-10-28T18:30:00.000Z",
+      "newFollowers": 24
+    },
+    {
+      "id": "follower_1781856644512_0o9o5vs1y",
+      "date": "2025-10-29T18:30:00.000Z",
+      "newFollowers": 29
+    },
+    {
+      "id": "follower_1781856644512_lcunkkbny",
+      "date": "2025-10-30T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644512_r8q4ti4r4",
+      "date": "2025-10-31T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644512_harmr37j9",
+      "date": "2025-11-01T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644512_bocdm00in",
+      "date": "2025-11-02T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644512_cs00hh0k0",
+      "date": "2025-11-03T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781856644512_szei4lgey",
+      "date": "2025-11-04T18:30:00.000Z",
+      "newFollowers": 94
+    },
+    {
+      "id": "follower_1781856644512_r0b94fmf8",
+      "date": "2025-11-05T18:30:00.000Z",
+      "newFollowers": 45
+    },
+    {
+      "id": "follower_1781856644512_lbblqiurl",
+      "date": "2025-11-06T18:30:00.000Z",
+      "newFollowers": 19
+    },
+    {
+      "id": "follower_1781856644512_6d9yfp3lc",
+      "date": "2025-11-07T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644512_pj77mslbn",
+      "date": "2025-11-08T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781856644512_4aoh7dp1z",
+      "date": "2025-11-09T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644512_be2x80nmw",
+      "date": "2025-11-10T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781856644512_x20gsyfp8",
+      "date": "2025-11-11T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781856644512_cp3cirbts",
+      "date": "2025-11-12T18:30:00.000Z",
+      "newFollowers": 46
+    },
+    {
+      "id": "follower_1781856644512_93llng27g",
+      "date": "2025-11-13T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781856644512_egrrq1eri",
+      "date": "2025-11-14T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781856644512_r77bb56x5",
+      "date": "2025-11-15T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781856644512_y8g5dd7uh",
+      "date": "2025-11-16T18:30:00.000Z",
+      "newFollowers": 13
+    },
+    {
+      "id": "follower_1781856644512_7xjtlswjt",
+      "date": "2025-11-17T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644512_chb9ot36n",
+      "date": "2025-11-18T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644512_8ufyy9gaq",
+      "date": "2025-11-19T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644512_a61sp9kh7",
+      "date": "2025-11-20T18:30:00.000Z",
+      "newFollowers": 30
+    },
+    {
+      "id": "follower_1781856644512_yhep3rgxj",
+      "date": "2025-11-21T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781856644512_qg5xt2rwg",
+      "date": "2025-11-22T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_k5dg95jp3",
+      "date": "2025-11-23T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_98rboy88x",
+      "date": "2025-11-24T18:30:00.000Z",
+      "newFollowers": 39
+    },
+    {
+      "id": "follower_1781856644513_ek5rwupod",
+      "date": "2025-11-25T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781856644513_d3c1nqlby",
+      "date": "2025-11-26T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_vrzb5s95m",
+      "date": "2025-11-27T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_tk2cv08a3",
+      "date": "2025-11-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_9d3nft77s",
+      "date": "2025-11-29T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_5b1dzkcnw",
+      "date": "2025-11-30T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_xdde6rcj8",
+      "date": "2025-12-01T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_kvlo3ys5q",
+      "date": "2025-12-02T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_96qj3atbb",
+      "date": "2025-12-03T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_tw9it2uac",
+      "date": "2025-12-04T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_ah4y1p5k9",
+      "date": "2025-12-05T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_9hp9ujwyo",
+      "date": "2025-12-06T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_lbvwrjui3",
+      "date": "2025-12-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_iq85nors1",
+      "date": "2025-12-08T18:30:00.000Z",
+      "newFollowers": 26
+    },
+    {
+      "id": "follower_1781856644513_e6tppk7ow",
+      "date": "2025-12-09T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781856644513_7q2d0vpo9",
+      "date": "2025-12-10T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644513_s9z9bwh7h",
+      "date": "2025-12-11T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781856644513_8qnc2xv7c",
+      "date": "2025-12-12T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644513_5dqnrclcm",
+      "date": "2025-12-13T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644513_v3txn67h6",
+      "date": "2025-12-14T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_cd0rmv4au",
+      "date": "2025-12-15T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_tisjzi7hz",
+      "date": "2025-12-16T18:30:00.000Z",
+      "newFollowers": 63
+    },
+    {
+      "id": "follower_1781856644513_hxo4e0dm5",
+      "date": "2025-12-17T18:30:00.000Z",
+      "newFollowers": 23
+    },
+    {
+      "id": "follower_1781856644513_cfo9rqboa",
+      "date": "2025-12-18T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_svq1kr553",
+      "date": "2025-12-19T18:30:00.000Z",
+      "newFollowers": 27
+    },
+    {
+      "id": "follower_1781856644513_icp06a1zq",
+      "date": "2025-12-20T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_dfh2iquhe",
+      "date": "2025-12-21T18:30:00.000Z",
+      "newFollowers": 111
+    },
+    {
+      "id": "follower_1781856644513_ql8oi22n2",
+      "date": "2025-12-22T18:30:00.000Z",
+      "newFollowers": 39
+    },
+    {
+      "id": "follower_1781856644513_etzhnggnk",
+      "date": "2025-12-23T18:30:00.000Z",
+      "newFollowers": 26
+    },
+    {
+      "id": "follower_1781856644513_qkb458ck0",
+      "date": "2025-12-24T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_25hqn72zr",
+      "date": "2025-12-25T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_0ze02jm7g",
+      "date": "2025-12-26T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_zooq1y42w",
+      "date": "2025-12-27T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_nrvpj27o6",
+      "date": "2025-12-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_k5fer0fnt",
+      "date": "2025-12-29T18:30:00.000Z",
+      "newFollowers": 147
+    },
+    {
+      "id": "follower_1781856644513_xi4ozp46f",
+      "date": "2025-12-30T18:30:00.000Z",
+      "newFollowers": 29
+    },
+    {
+      "id": "follower_1781856644513_v8joqc3m4",
+      "date": "2025-12-31T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_75veqpelz",
+      "date": "2026-01-01T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781856644513_5dymh71s4",
+      "date": "2026-01-02T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_6lq953032",
+      "date": "2026-01-03T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_vbojbxv6u",
+      "date": "2026-01-04T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_nt2hgzrxx",
+      "date": "2026-01-05T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781856644513_124x8e2zb",
+      "date": "2026-01-06T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_bi474ibs5",
+      "date": "2026-01-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_61rq7vjnw",
+      "date": "2026-01-08T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_yjtxgem2r",
+      "date": "2026-01-09T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_59gnc7v80",
+      "date": "2026-01-10T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_81qsb5l08",
+      "date": "2026-01-11T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781856644513_rhfb1mm7c",
+      "date": "2026-01-12T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_a9zicy8a7",
+      "date": "2026-01-13T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_9zetx7m0p",
+      "date": "2026-01-14T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_mfan5rany",
+      "date": "2026-01-15T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644513_b8q2iim97",
+      "date": "2026-01-16T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781856644513_3kndeorc2",
+      "date": "2026-01-17T18:30:00.000Z",
+      "newFollowers": 45
+    },
+    {
+      "id": "follower_1781856644513_8kvmzbf8s",
+      "date": "2026-01-18T18:30:00.000Z",
+      "newFollowers": 24
+    },
+    {
+      "id": "follower_1781856644513_lmqq9anmy",
+      "date": "2026-01-19T18:30:00.000Z",
+      "newFollowers": 14
+    },
+    {
+      "id": "follower_1781856644513_g4zgeqikg",
+      "date": "2026-01-20T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781856644513_wrzg7vj4s",
+      "date": "2026-01-21T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_ods7bniqp",
+      "date": "2026-01-22T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_d7q4lnzbi",
+      "date": "2026-01-23T18:30:00.000Z",
+      "newFollowers": 78
+    },
+    {
+      "id": "follower_1781856644513_0rutb4vnd",
+      "date": "2026-01-24T18:30:00.000Z",
+      "newFollowers": 43
+    },
+    {
+      "id": "follower_1781856644513_50ekssil3",
+      "date": "2026-01-25T18:30:00.000Z",
+      "newFollowers": 28
+    },
+    {
+      "id": "follower_1781856644513_zcjfa383m",
+      "date": "2026-01-26T18:30:00.000Z",
+      "newFollowers": 15
+    },
+    {
+      "id": "follower_1781856644513_yuhyrusk1",
+      "date": "2026-01-27T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_pooye8ybh",
+      "date": "2026-01-28T18:30:00.000Z",
+      "newFollowers": 11
+    },
+    {
+      "id": "follower_1781856644513_nnfuygdb3",
+      "date": "2026-01-29T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_cxtoreeyd",
+      "date": "2026-01-30T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_fy95ia6es",
+      "date": "2026-01-31T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_t3n2cdssd",
+      "date": "2026-02-01T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_ihm4e8628",
+      "date": "2026-02-02T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_xxrcttzix",
+      "date": "2026-02-03T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_ycqh9yawl",
+      "date": "2026-02-04T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_ydyac79xe",
+      "date": "2026-02-05T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_9s3qj8fc4",
+      "date": "2026-02-06T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_xf872biva",
+      "date": "2026-02-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_881gg0uk8",
+      "date": "2026-02-08T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_iywzwh07a",
+      "date": "2026-02-09T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_kcoap0g5a",
+      "date": "2026-02-10T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_xczq9y1ox",
+      "date": "2026-02-11T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_xi4h53j5f",
+      "date": "2026-02-12T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_1hpbwoax2",
+      "date": "2026-02-13T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_2flbferad",
+      "date": "2026-02-14T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_pn3o9d04q",
+      "date": "2026-02-15T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781856644513_l3qacvdjp",
+      "date": "2026-02-16T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_8zdepgu26",
+      "date": "2026-02-17T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_sqxk9p20e",
+      "date": "2026-02-18T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_e5ubkhi1p",
+      "date": "2026-02-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_0hdfj1fws",
+      "date": "2026-02-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_0q3e7x9yk",
+      "date": "2026-02-21T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_xzmolwqzo",
+      "date": "2026-02-22T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_u21ma56vs",
+      "date": "2026-02-23T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_q11htmi57",
+      "date": "2026-02-24T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_6a4v74ych",
+      "date": "2026-02-25T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_b7sz0ul6m",
+      "date": "2026-02-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_2zwxu1vd0",
+      "date": "2026-02-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_46xvhnii2",
+      "date": "2026-02-28T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_jsa7guzpx",
+      "date": "2026-03-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_o690bcid7",
+      "date": "2026-03-02T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_ewmjnubp1",
+      "date": "2026-03-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_i30rgtnse",
+      "date": "2026-03-04T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_su7h7icjr",
+      "date": "2026-03-05T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_6mnqbybis",
+      "date": "2026-03-06T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_flleepjct",
+      "date": "2026-03-07T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_usgm6vks0",
+      "date": "2026-03-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_azeqryky7",
+      "date": "2026-03-09T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_i1uz4vs12",
+      "date": "2026-03-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_ocygju2u6",
+      "date": "2026-03-11T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_kz2114ij8",
+      "date": "2026-03-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_215szfso5",
+      "date": "2026-03-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_vmg87aeou",
+      "date": "2026-03-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_kp0tx3tsf",
+      "date": "2026-03-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_mhz9crevx",
+      "date": "2026-03-16T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_pa1mdyttj",
+      "date": "2026-03-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_z8dnzsk5b",
+      "date": "2026-03-18T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_gx3e62os6",
+      "date": "2026-03-19T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_4zvj204cu",
+      "date": "2026-03-20T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_qomhyahyd",
+      "date": "2026-03-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_xuss1fx3m",
+      "date": "2026-03-22T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_2e0tey5so",
+      "date": "2026-03-23T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_p5agyckp3",
+      "date": "2026-03-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_zve2qhi21",
+      "date": "2026-03-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_6mjqkiqzh",
+      "date": "2026-03-26T18:30:00.000Z",
+      "newFollowers": 8
+    },
+    {
+      "id": "follower_1781856644513_20wic6bw1",
+      "date": "2026-03-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_59vrk67m8",
+      "date": "2026-03-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_p3mh68pjm",
+      "date": "2026-03-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_qzr89wn8b",
+      "date": "2026-03-30T18:30:00.000Z",
+      "newFollowers": 7
+    },
+    {
+      "id": "follower_1781856644513_jbffty5uj",
+      "date": "2026-03-31T18:30:00.000Z",
+      "newFollowers": 9
+    },
+    {
+      "id": "follower_1781856644513_jyjfgf7t6",
+      "date": "2026-04-01T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_r02hgd41x",
+      "date": "2026-04-02T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_uw8chxwdm",
+      "date": "2026-04-03T18:30:00.000Z",
+      "newFollowers": 12
+    },
+    {
+      "id": "follower_1781856644513_4x6kmybrs",
+      "date": "2026-04-04T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_1ns7rz4w4",
+      "date": "2026-04-05T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_nb56idqct",
+      "date": "2026-04-06T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_wouthyqrk",
+      "date": "2026-04-07T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_kb7h77pvy",
+      "date": "2026-04-08T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_w2wnhd7oo",
+      "date": "2026-04-09T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_fixvu9jym",
+      "date": "2026-04-10T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_g7y0ka5u9",
+      "date": "2026-04-11T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_jjnfgqmcy",
+      "date": "2026-04-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_vxv17fwh8",
+      "date": "2026-04-13T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_zpnz7klc6",
+      "date": "2026-04-14T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_pju7kvl3u",
+      "date": "2026-04-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_en46pwmic",
+      "date": "2026-04-16T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_2evhy3smn",
+      "date": "2026-04-17T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_wgdtl24cz",
+      "date": "2026-04-18T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_ooqld3cbw",
+      "date": "2026-04-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_mp7bwsu6m",
+      "date": "2026-04-20T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_t4t0tk989",
+      "date": "2026-04-21T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_ujn8q5lp6",
+      "date": "2026-04-22T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_tu7sd40u4",
+      "date": "2026-04-23T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_bkd5ac88q",
+      "date": "2026-04-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_l66opyz4k",
+      "date": "2026-04-25T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_pvh1ng507",
+      "date": "2026-04-26T18:30:00.000Z",
+      "newFollowers": 10
+    },
+    {
+      "id": "follower_1781856644513_rs0tqo3yq",
+      "date": "2026-04-27T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_x4ydwa0if",
+      "date": "2026-04-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_iq1ezuwxy",
+      "date": "2026-04-29T18:30:00.000Z",
+      "newFollowers": 4
+    },
+    {
+      "id": "follower_1781856644513_oyq29iwke",
+      "date": "2026-04-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_kqvr9p7be",
+      "date": "2026-05-01T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_7forayv48",
+      "date": "2026-05-02T18:30:00.000Z",
+      "newFollowers": 3
+    },
+    {
+      "id": "follower_1781856644513_1nt9yrhqf",
+      "date": "2026-05-03T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_n8d0uqvvk",
+      "date": "2026-05-04T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_77ypbio8g",
+      "date": "2026-05-05T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_1b03fgjkr",
+      "date": "2026-05-06T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_fviz2qdak",
+      "date": "2026-05-07T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_zdm2s0tt6",
+      "date": "2026-05-08T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_tyngki40n",
+      "date": "2026-05-09T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_u9kkupdos",
+      "date": "2026-05-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_nphyx0wfz",
+      "date": "2026-05-11T18:30:00.000Z",
+      "newFollowers": 2
+    },
+    {
+      "id": "follower_1781856644513_68x1mu4s3",
+      "date": "2026-05-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_puzlhqjla",
+      "date": "2026-05-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_bl3j8pmg2",
+      "date": "2026-05-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_u3tiw2odg",
+      "date": "2026-05-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_vaiibu2fo",
+      "date": "2026-05-16T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644513_ifr9xxfq6",
+      "date": "2026-05-17T18:30:00.000Z",
+      "newFollowers": 6
+    },
+    {
+      "id": "follower_1781856644513_21vrgl2mg",
+      "date": "2026-05-18T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_5tfmnxdiu",
+      "date": "2026-05-19T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_b1jgdmbvy",
+      "date": "2026-05-20T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_826c15ua7",
+      "date": "2026-05-21T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_kfkkzi7jj",
+      "date": "2026-05-22T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_05b43b7iv",
+      "date": "2026-05-23T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644513_6xcseyf3t",
+      "date": "2026-05-24T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_hsxbpyajz",
+      "date": "2026-05-25T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_25ok786gq",
+      "date": "2026-05-26T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_eprb6l9j3",
+      "date": "2026-05-27T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_k581glypy",
+      "date": "2026-05-28T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_thaprrn8d",
+      "date": "2026-05-29T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644513_tdixiyeno",
+      "date": "2026-05-30T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_43fmj3rkh",
+      "date": "2026-05-31T18:30:00.000Z",
+      "newFollowers": 1
+    },
+    {
+      "id": "follower_1781856644514_4cx8y02ab",
+      "date": "2026-06-01T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_hh2ftqeop",
+      "date": "2026-06-02T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_4isclpofs",
+      "date": "2026-06-03T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_al8ywfgbn",
+      "date": "2026-06-04T18:30:00.000Z",
+      "newFollowers": 19
+    },
+    {
+      "id": "follower_1781856644514_oyjwlzhxh",
+      "date": "2026-06-05T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_t8doxpfsx",
+      "date": "2026-06-06T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_xkf33cmyh",
+      "date": "2026-06-07T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_6ljdmmuz4",
+      "date": "2026-06-08T18:30:00.000Z",
+      "newFollowers": 5
+    },
+    {
+      "id": "follower_1781856644514_ghzvsx6k7",
+      "date": "2026-06-09T18:30:00.000Z",
+      "newFollowers": 16
+    },
+    {
+      "id": "follower_1781856644514_iuxkdyqpm",
+      "date": "2026-06-10T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_kfci5kgsm",
+      "date": "2026-06-11T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_0cw69ictn",
+      "date": "2026-06-12T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_qdfafkk9q",
+      "date": "2026-06-13T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_fjcis6p3j",
+      "date": "2026-06-14T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_8kpwg256h",
+      "date": "2026-06-15T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_oy926eqpu",
+      "date": "2026-06-16T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_qheu9o4tv",
+      "date": "2026-06-17T18:30:00.000Z",
+      "newFollowers": 0
+    },
+    {
+      "id": "follower_1781856644514_n9onoetul",
+      "date": "2026-06-18T18:30:00.000Z",
+      "newFollowers": 0
+    }
+  ],
+  "demographicMetrics": [
+    {
+      "id": "demo_1781856644519_76ao67j2n",
+      "category": "Company",
+      "value": "WEBSKITTERS TECHNOLOGY SOLUTIONS PRIVATE LIMITED",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781856644519_8iu71qu3e",
+      "category": "Company",
+      "value": "Tata Consultancy Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_g2rbab2ac",
+      "category": "Company",
+      "value": "WebSkitters Academy",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_bogq880nw",
+      "category": "Company",
+      "value": "Accenture",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_d0n94q8mq",
+      "category": "Company",
+      "value": "CodeClouds",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_lt0w0blj0",
+      "category": "Company",
+      "value": "Cognizant",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_xlq2bj5di",
+      "category": "Company",
+      "value": "Techno Exponent (T-Web Exponent Services Pvt. Ltd)",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_jkr3k0swy",
+      "category": "Company",
+      "value": "Capgemini",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_n9gjae159",
+      "category": "Company",
+      "value": "WebArt Technology Pvt. Ltd.",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_3tplc5mnh",
+      "category": "Location",
+      "value": "Greater Kolkata Area",
+      "percentage": 49
+    },
+    {
+      "id": "demo_1781856644519_huy4rlihn",
+      "category": "Location",
+      "value": "Greater Delhi Area",
+      "percentage": 8
+    },
+    {
+      "id": "demo_1781856644519_vj86aooo4",
+      "category": "Location",
+      "value": "Greater Bengaluru Area",
+      "percentage": 5
+    },
+    {
+      "id": "demo_1781856644519_p9a45n3aj",
+      "category": "Location",
+      "value": "Noida",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_q8a92iqhm",
+      "category": "Location",
+      "value": "Greater Hyderabad Area",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_fyqjejgof",
+      "category": "Location",
+      "value": "Mumbai Metropolitan Region",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_8y46mya4v",
+      "category": "Location",
+      "value": "Greater Ahmedabad Area",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_cr6zu0599",
+      "category": "Location",
+      "value": "Greater Chennai Area",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_0azl557yi",
+      "category": "Location",
+      "value": "Greater Surat Area",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_h75x2sbfb",
+      "category": "Company size",
+      "value": "11-50 employees",
+      "percentage": 20
+    },
+    {
+      "id": "demo_1781856644519_v53enxncz",
+      "category": "Company size",
+      "value": "51-200 employees",
+      "percentage": 16
+    },
+    {
+      "id": "demo_1781856644519_ycewysyb7",
+      "category": "Company size",
+      "value": "10,001+ employees",
+      "percentage": 9
+    },
+    {
+      "id": "demo_1781856644519_tqunouftl",
+      "category": "Company size",
+      "value": "2-10 employees",
+      "percentage": 9
+    },
+    {
+      "id": "demo_1781856644519_fh7axq4z5",
+      "category": "Company size",
+      "value": "501-1,000 employees",
+      "percentage": 7
+    },
+    {
+      "id": "demo_1781856644519_pge8xf8nw",
+      "category": "Company size",
+      "value": "201-500 employees",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781856644519_9rm9hsq14",
+      "category": "Company size",
+      "value": "1,001-5,000 employees",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781856644519_io6qn9nrd",
+      "category": "Company size",
+      "value": "0-1 employees",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_k11btlyzf",
+      "category": "Company size",
+      "value": "5,001-10,000 employees",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_i5gk38t8k",
+      "category": "Seniority",
+      "value": "Entry",
+      "percentage": 48
+    },
+    {
+      "id": "demo_1781856644519_rdg1tc923",
+      "category": "Seniority",
+      "value": "Senior",
+      "percentage": 21
+    },
+    {
+      "id": "demo_1781856644519_bxkxckw74",
+      "category": "Seniority",
+      "value": "Training",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781856644519_3hae1s3t3",
+      "category": "Seniority",
+      "value": "Owner",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_48c551nvo",
+      "category": "Seniority",
+      "value": "Manager",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_87iuf7m45",
+      "category": "Seniority",
+      "value": "Director",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_rqpdt7r18",
+      "category": "Seniority",
+      "value": "CXO",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_ndnqchqql",
+      "category": "Seniority",
+      "value": "VP",
+      "percentage": 0.5
+    },
+    {
+      "id": "demo_1781856644519_j8z2ivibx",
+      "category": "Job title",
+      "value": "Software Engineer",
+      "percentage": 16
+    },
+    {
+      "id": "demo_1781856644519_r83nffxp6",
+      "category": "Job title",
+      "value": "Full Stack Engineer",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781856644519_bv6rut455",
+      "category": "Job title",
+      "value": "Frontend Developer",
+      "percentage": 6
+    },
+    {
+      "id": "demo_1781856644519_4asye2gzd",
+      "category": "Job title",
+      "value": "Web Developer",
+      "percentage": 5
+    },
+    {
+      "id": "demo_1781856644519_5qf8t812y",
+      "category": "Job title",
+      "value": "Interface Specialist",
+      "percentage": 3
+    },
+    {
+      "id": "demo_1781856644519_bj1oytalb",
+      "category": "Job title",
+      "value": "User Interface Designer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_ssbp6124a",
+      "category": "Job title",
+      "value": "Founder",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_zhbndj95j",
+      "category": "Job title",
+      "value": "User Experience Designer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_kiisn7e0b",
+      "category": "Job title",
+      "value": "Javascript Developer",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_5emiy67l8",
+      "category": "Industry",
+      "value": "IT Services and IT Consulting",
+      "percentage": 44
+    },
+    {
+      "id": "demo_1781856644519_k9kv2t49c",
+      "category": "Industry",
+      "value": "Software Development",
+      "percentage": 22
+    },
+    {
+      "id": "demo_1781856644519_6redadvzi",
+      "category": "Industry",
+      "value": "Technology, Information and Internet",
+      "percentage": 8
+    },
+    {
+      "id": "demo_1781856644519_tzkb4cz84",
+      "category": "Industry",
+      "value": "IT System Custom Software Development",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_k9lvzahkd",
+      "category": "Industry",
+      "value": "Design Services",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_ewvr0g519",
+      "category": "Industry",
+      "value": "Graphic Design",
+      "percentage": 2
+    },
+    {
+      "id": "demo_1781856644519_lsn0062dl",
+      "category": "Industry",
+      "value": "Business Consulting and Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_sy086envm",
+      "category": "Industry",
+      "value": "Marketing Services",
+      "percentage": 1
+    },
+    {
+      "id": "demo_1781856644519_lahvk5rpi",
+      "category": "Industry",
+      "value": "IT System Design Services",
+      "percentage": 1
+    }
+  ],
+  "analysisResults": [
+    {
+      "id": "analysis_1781856729768",
+      "winningHooks": [
+        "Hook style \"Curiosity\" is your primary engagement engine. It achieved a reliable average engagement rate of 1.28% across 17 posts.",
+        "Your best performing post opened with a hook style classified as \"Question\" (\"Just shipped my new portfolio site and honestly? Pretty stoked with how it turned out 🚀\"). Showing real-world details drives immediate comments."
+      ],
+      "winningTopics": [
+        "Posts covering \"Next.js\" show the highest resonance with your audience, leading other topics in average engagement rate (1.74% across 10 posts).",
+        "Content focused on \"AI\" is a strong second, yielding 717 average impressions per post."
+      ],
+      "recommendations": [
+        "Double down on \"Next.js\" posts. When writing, use a \"Curiosity\" styled hook structure to capture high engagement early.",
+        "Structure your opening hooks using \"Declarative Statement\" styles with a target length of \"Long (> 200 chars)\", as this combination has proven most effective in your dataset.",
+        "Model your opening copy length after your highest performing post (165 characters). Keep sentences short and use line breaks between assertions."
+      ],
+      "suggestedHooks": [
+        {
+          "hookTemplate": "I spent 30 days building a project with Next.js.\n\nHere is the single biggest mistake that cost me [Insert Time/Money/Traction]:",
+          "hookType": "Curiosity",
+          "topic": "Next.js",
+          "explanation": "Designed to replicate your top post style. Combines your highest-converting topic (Next.js) with your best hook archetype (Curiosity)."
+        },
+        {
+          "hookTemplate": "Everyone tells you to [Insert Common Advice] when building in Next.js.\n\nBut after working on it for [Insert Time], I realized it's a trap.\n\nHere is what you should do instead:",
+          "hookType": "Building In Public",
+          "topic": "Next.js",
+          "explanation": "A high-conversion contrarian hook designed to disrupt the feed and capture click-throughs about Next.js."
+        },
+        {
+          "hookTemplate": "How to master AI in [Insert Timeframe] without [Insert Common Struggle].\n\nNo courses. No bootcamps. Just these 3 simple rules:",
+          "hookType": "Educational",
+          "topic": "AI",
+          "explanation": "Authority-building educational template tailored to your second most successful topic (AI)."
+        }
+      ],
+      "createdAt": "2026-06-19T08:12:09.768Z"
+    }
+  ]
 }
