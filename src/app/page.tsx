@@ -430,51 +430,61 @@ export default function Home() {
 
   // --- Aggregate Charts Calculations ---
   const getHookTypeChartData = () => {
-    const hookTypesMap: { [type: string]: { impSum: number; engSum: number; count: number } } = {};
+    const hookTypesMap: { [type: string]: { impSum: number; engSum: number; erSum: number; count: number } } = {};
     posts.forEach((p) => {
       if (!p.analyzed || !p.hookType) return;
       if (!hookTypesMap[p.hookType]) {
-        hookTypesMap[p.hookType] = { impSum: 0, engSum: 0, count: 0 };
+        hookTypesMap[p.hookType] = { impSum: 0, engSum: 0, erSum: 0, count: 0 };
       }
       hookTypesMap[p.hookType].impSum += p.impressions;
       hookTypesMap[p.hookType].engSum += p.engagements;
+      hookTypesMap[p.hookType].erSum += p.engagementRate;
       hookTypesMap[p.hookType].count += 1;
     });
 
     return Object.entries(hookTypesMap).map(([type, s]) => ({
       name: type,
       avgImpressions: Math.round(s.impSum / s.count),
-      avgEngagementRate: parseFloat(((s.engSum / s.impSum) * 100).toFixed(2)),
+      avgEngagementRate: parseFloat((s.erSum / s.count).toFixed(2)),
       count: s.count,
-    })).sort((a, b) => b.avgEngagementRate - a.avgEngagementRate);
+    })).sort((a, b) => {
+      const scoreA = a.avgEngagementRate * (a.count / (a.count + 4));
+      const scoreB = b.avgEngagementRate * (b.count / (b.count + 4));
+      return scoreB - scoreA;
+    });
   };
 
   const getTopicChartData = () => {
-    const topicsMap: { [topic: string]: { impSum: number; engSum: number; count: number } } = {};
+    const topicsMap: { [topic: string]: { impSum: number; engSum: number; erSum: number; count: number } } = {};
     posts.forEach((p) => {
       if (!p.analyzed || !p.topic) return;
       if (!topicsMap[p.topic]) {
-        topicsMap[p.topic] = { impSum: 0, engSum: 0, count: 0 };
+        topicsMap[p.topic] = { impSum: 0, engSum: 0, erSum: 0, count: 0 };
       }
       topicsMap[p.topic].impSum += p.impressions;
       topicsMap[p.topic].engSum += p.engagements;
+      topicsMap[p.topic].erSum += p.engagementRate;
       topicsMap[p.topic].count += 1;
     });
 
     return Object.entries(topicsMap).map(([topic, s]) => ({
       name: topic,
       avgImpressions: Math.round(s.impSum / s.count),
-      avgEngagementRate: parseFloat(((s.engSum / s.impSum) * 100).toFixed(2)),
+      avgEngagementRate: parseFloat((s.erSum / s.count).toFixed(2)),
       count: s.count,
-    })).sort((a, b) => b.avgEngagementRate - a.avgEngagementRate);
+    })).sort((a, b) => {
+      const scoreA = a.avgEngagementRate * (a.count / (a.count + 4));
+      const scoreB = b.avgEngagementRate * (b.count / (b.count + 4));
+      return scoreB - scoreA;
+    });
   };
 
   const getHookLengthChartData = () => {
     // Length categories
     const categories = [
-      { name: "Short (0-100 chars)", min: 0, max: 100, impSum: 0, engSum: 0, count: 0 },
-      { name: "Medium (101-200 chars)", min: 101, max: 200, impSum: 0, engSum: 0, count: 0 },
-      { name: "Long (200+ chars)", min: 201, max: 9999, impSum: 0, engSum: 0, count: 0 },
+      { name: "Short (0-100 chars)", min: 0, max: 100, impSum: 0, engSum: 0, erSum: 0, count: 0 },
+      { name: "Medium (101-200 chars)", min: 101, max: 200, impSum: 0, engSum: 0, erSum: 0, count: 0 },
+      { name: "Long (200+ chars)", min: 201, max: 9999, impSum: 0, engSum: 0, erSum: 0, count: 0 },
     ];
 
     posts.forEach((p) => {
@@ -483,6 +493,7 @@ export default function Home() {
       if (cat) {
         cat.impSum += p.impressions;
         cat.engSum += p.engagements;
+        cat.erSum += p.engagementRate;
         cat.count += 1;
       }
     });
@@ -492,29 +503,34 @@ export default function Home() {
       .map((c) => ({
         name: c.name,
         avgImpressions: Math.round(c.impSum / c.count),
-        avgEngagementRate: parseFloat(((c.engSum / c.impSum) * 100).toFixed(2)),
+        avgEngagementRate: parseFloat((c.erSum / c.count).toFixed(2)),
         count: c.count,
       }));
   };
 
   const getSentenceStructureChartData = () => {
-    const structMap: { [struct: string]: { impSum: number; engSum: number; count: number } } = {};
+    const structMap: { [struct: string]: { impSum: number; engSum: number; erSum: number; count: number } } = {};
     posts.forEach((p) => {
       if (!p.analyzed || !p.sentenceStructure) return;
       if (!structMap[p.sentenceStructure]) {
-        structMap[p.sentenceStructure] = { impSum: 0, engSum: 0, count: 0 };
+        structMap[p.sentenceStructure] = { impSum: 0, engSum: 0, erSum: 0, count: 0 };
       }
       structMap[p.sentenceStructure].impSum += p.impressions;
       structMap[p.sentenceStructure].engSum += p.engagements;
+      structMap[p.sentenceStructure].erSum += p.engagementRate;
       structMap[p.sentenceStructure].count += 1;
     });
 
     return Object.entries(structMap).map(([struct, s]) => ({
       name: struct,
       avgImpressions: Math.round(s.impSum / s.count),
-      avgEngagementRate: parseFloat(((s.engSum / s.impSum) * 100).toFixed(2)),
+      avgEngagementRate: parseFloat((s.erSum / s.count).toFixed(2)),
       count: s.count,
-    })).sort((a, b) => b.avgEngagementRate - a.avgEngagementRate);
+    })).sort((a, b) => {
+      const scoreA = a.avgEngagementRate * (a.count / (a.count + 4));
+      const scoreB = b.avgEngagementRate * (b.count / (b.count + 4));
+      return scoreB - scoreA;
+    });
   };
 
   const getTopOpeningWords = () => {

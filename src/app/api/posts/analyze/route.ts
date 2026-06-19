@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { scrapePostText } from "@/lib/scraper";
-import { extractHook, classifyHookType, classifyTopic } from "@/lib/ai";
+import { analyzePostContent } from "@/lib/ai";
 
 function detectSentenceStructure(hook: string): string {
   const clean = hook.trim().toLowerCase();
@@ -38,14 +38,8 @@ export async function POST(req: NextRequest) {
     // 1. Scrape the full text of the post
     const postText = await scrapePostText(postUrl);
     
-    // 2. Extract the hook using AI
-    const hook = await extractHook(postText);
-    
-    // 3. Classify Hook Type
-    const hookType = await classifyHookType(hook);
-    
-    // 4. Classify Topic
-    const topic = await classifyTopic(postText);
+    // 2. Extract hook, classify hook type and topic using AI (single combined call)
+    const { hook, hookType, topic } = await analyzePostContent(postText);
     
     // 5. Calculate hook analytics properties
     const hookLength = hook.length;
@@ -69,10 +63,11 @@ export async function POST(req: NextRequest) {
       success: true,
       post: updatedPost,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Post analysis handler error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Failed to analyze post.";
     return NextResponse.json(
-      { error: error.message || "Failed to analyze post." },
+      { error: errorMessage },
       { status: 500 }
     );
   }
