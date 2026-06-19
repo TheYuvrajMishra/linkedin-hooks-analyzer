@@ -706,7 +706,9 @@ export default function Home() {
         <div className="pointer-events-auto flex w-full max-w-7xl items-center justify-between rounded-full border border-white/10 bg-zinc-950/65 px-6 py-3.5 backdrop-blur-xl shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:border-white/15">
           <div className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5">
-              <Sparkles className="h-4.5 w-4.5 text-white" strokeWidth={1.2} />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4.5 w-4.5 text-white">
+                <path d="M12 24c0-6.627-5.373-12-12-12 6.627 0 12-5.373 12-12 0 6.627 5.373 12 12 12-6.627 0-12 5.373-12 12z" />
+              </svg>
             </div>
             <div>
               <h1 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">Linkedin Looker</h1>
