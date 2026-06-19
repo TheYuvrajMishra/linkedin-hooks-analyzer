@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { PrismaClient } from "@/generated/prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
-import { Pool } from "pg";
 
 const DB_FILE = path.join(process.cwd(), "data", "local_db.json");
 
@@ -64,25 +62,18 @@ let prisma: PrismaClient | null = null;
 let useFallback = false;
 
 // Initialize Prisma connection
-if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes("localhost:51213")) {
-  console.log("No PostgreSQL database configured (or default dev database URL detected). Falling back to JSON file storage.");
+if (!process.env.DATABASE_URL || !process.env.DATABASE_URL.startsWith("mongodb")) {
+  console.log("No MongoDB database configured. Falling back to JSON file storage.");
   useFallback = true;
 } else {
   try {
-    const pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
-      connectionTimeoutMillis: 2000,
-    });
-    // Check connection
-    pool.query("SELECT 1").then(() => {
-      console.log("Connected to PostgreSQL database successfully.");
-    }).catch((err) => {
-      console.warn("PostgreSQL connection failed, falling back to JSON storage:", err.message);
-      useFallback = true;
-    });
+    const globalForPrisma = globalThis as unknown as {
+      prisma: PrismaClient;
+    };
 
-    const adapter = new PrismaPg(pool);
-    prisma = new PrismaClient({ adapter });
+    prisma = globalForPrisma.prisma ?? new PrismaClient();
+
+    if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
   } catch (error: any) {
     console.warn("Failed to initialize Prisma Client, falling back to JSON storage:", error.message);
     useFallback = true;

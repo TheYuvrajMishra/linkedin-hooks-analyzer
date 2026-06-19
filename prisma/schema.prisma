@@ -9,11 +9,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider  = "mongodb"
+  url       = env("DATABASE_URL")
 }
 
 model Post {
-  id                String   @id @default(uuid())
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
   postUrl           String   @unique
   publishedAt       DateTime?
   impressions       Int      @default(0)
@@ -32,27 +33,27 @@ model Post {
 }
 
 model DailyMetric {
-  id          String   @id @default(uuid())
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
   date        DateTime @unique
   impressions Int      @default(0)
   engagements Int      @default(0)
 }
 
 model FollowerMetric {
-  id           String   @id @default(uuid())
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
   date         DateTime @unique
   newFollowers Int      @default(0)
 }
 
 model DemographicMetric {
-  id         String @id @default(uuid())
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
   category   String // Company, Seniority, Location, etc.
   value      String
   percentage Float
 }
 
 model AnalysisResult {
-  id              String   @id @default(uuid())
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
   winningHooks    Json     // String array
   winningTopics   Json     // String array
   recommendations Json     // String array
