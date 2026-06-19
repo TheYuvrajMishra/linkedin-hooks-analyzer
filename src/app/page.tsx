@@ -4,13 +4,12 @@ import { useState, useEffect, Fragment } from "react";
 import {
   BarChart,
   Bar,
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
   Cell,
 } from "recharts";
@@ -591,7 +590,7 @@ export default function Home() {
   const bestPerformingHook = hookChartData[0]?.name || "N/A";
   const bestPerformingTopic = topicChartData[0]?.name || "N/A";
 
-  const chartColors = ["#818cf8", "#c084fc", "#fb7185", "#34d399", "#fbbf24", "#38bdf8"];
+  const chartColors = ["#ffffff", "#d4d4d8", "#a1a1aa", "#71717a", "#52525b", "#3f3f46"];
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
@@ -612,21 +611,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] font-sans text-zinc-200 antialiased selection:bg-indigo-600 selection:text-white relative overflow-hidden pb-12">
-      {/* Cinematic ambient background gradients */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[-25%] left-[-20%] w-[60dvw] h-[60dvw] rounded-full bg-violet-600/10 blur-[130px] pointer-events-none" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50dvw] h-[50dvw] rounded-full bg-indigo-500/10 blur-[120px] pointer-events-none" />
-        <div className="absolute top-[30%] right-[15%] w-[45dvw] h-[45dvw] rounded-full bg-emerald-500/5 blur-[150px] pointer-events-none" />
-      </div>
+    <div className="min-h-screen bg-[#050505] font-sans text-zinc-200 antialiased selection:bg-white/20 selection:text-white relative overflow-hidden pb-12">
+      {/* Subtle noise overlay only */}
       <div className="noise-overlay" />
 
       {/* Floating Glass Navbar */}
       <header className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
         <div className="pointer-events-auto flex w-full max-w-7xl items-center justify-between rounded-full border border-white/10 bg-zinc-950/65 px-6 py-3.5 backdrop-blur-xl shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:border-white/15">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-tr from-violet-600 to-indigo-600 shadow-md shadow-indigo-500/20">
-              <Sparkles className="h-4.5 w-4.5 text-white animate-pulse" strokeWidth={1.2} />
+            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5">
+              <Sparkles className="h-4.5 w-4.5 text-white" strokeWidth={1.2} />
             </div>
             <div>
               <h1 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">HookCraft AI</h1>
@@ -638,7 +632,7 @@ export default function Home() {
               <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1.5 text-[10px] font-medium border border-white/5">
                 <Database className="h-3 w-3 text-zinc-400" strokeWidth={1.2} />
                 <span className="text-zinc-500 hidden sm:inline">Mode:</span>
-                <span className={dbStatus.isFallback ? "text-amber-400 font-semibold" : "text-emerald-400 font-semibold"}>
+                <span className="text-zinc-300 font-semibold">
                   {dbStatus.databaseType}
                 </span>
               </div>
@@ -648,7 +642,7 @@ export default function Home() {
               <button
                 onClick={handleClearDatabase}
                 disabled={actionLoading}
-                className="flex items-center gap-1.5 rounded-full border border-red-500/20 bg-red-500/10 px-3.5 py-1.5 text-[10px] font-bold text-red-400 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-red-500/20 active:scale-[0.98] disabled:opacity-50 cursor-pointer"
+                className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[10px] font-bold text-zinc-400 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/10 hover:text-white active:scale-[0.98] disabled:opacity-50 cursor-pointer"
               >
                 <Trash2 className="h-3.5 w-3.5" strokeWidth={1.2} />
                 <span className="hidden sm:inline">Reset</span>
@@ -664,7 +658,7 @@ export default function Home() {
         {/* Loading Spinner */}
         {loadingStatus ? (
           <div className="flex h-96 flex-col items-center justify-center gap-4">
-            <RefreshCw className="h-10 w-10 animate-spin text-indigo-500" strokeWidth={1.2} />
+            <RefreshCw className="h-10 w-10 animate-spin text-white/60" strokeWidth={1.2} />
             <p className="text-sm text-zinc-400 font-medium">Initializing workspace database connection...</p>
           </div>
         ) : !dbStatus || dbStatus.stats.totalPosts === 0 ? (
@@ -673,8 +667,8 @@ export default function Home() {
           <div className="mx-auto max-w-2xl">
             <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 backdrop-blur-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.01] hover:border-white/10 shadow-2xl">
               <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 mb-6 shadow-inner animate-pulse">
-                  <Upload className="h-6 w-6 text-indigo-400" strokeWidth={1.2} />
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 mb-6 shadow-inner">
+                  <Upload className="h-6 w-6 text-zinc-300" strokeWidth={1.2} />
                 </div>
                 <h2 className="font-display text-2xl font-bold text-white mb-2 tracking-wide">Analyze Your LinkedIn Performance</h2>
                 <p className="text-sm text-zinc-400 mb-8 max-w-md mx-auto">
@@ -683,7 +677,7 @@ export default function Home() {
 
                 {/* Action Progress Info */}
                 {uploadProgress && (
-                  <div className="mb-6 rounded-lg border border-indigo-900/30 bg-indigo-950/20 p-3.5 text-xs text-indigo-300 flex items-center justify-center gap-2">
+                  <div className="mb-6 rounded-lg border border-white/10 bg-white/5 p-3.5 text-xs text-zinc-300 flex items-center justify-center gap-2">
                     <RefreshCw className="h-3.5 w-3.5 animate-spin" strokeWidth={1.2} />
                     <span>{uploadProgress}</span>
                   </div>
@@ -696,7 +690,7 @@ export default function Home() {
                   <div className="rounded-2xl border border-white/5 bg-[#0e0e11]/50 p-6 text-left hover:border-white/10 transition-all duration-550">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                       <div>
-                        <span className="inline-block rounded-full bg-indigo-950 border border-indigo-900 px-3 py-0.5 text-[9px] font-bold text-indigo-400 uppercase tracking-wider mb-2">
+                        <span className="inline-block rounded-full bg-white/5 border border-white/10 px-3 py-0.5 text-[9px] font-bold text-zinc-400 uppercase tracking-wider mb-2">
                           Fast Track
                         </span>
                         <h3 className="text-sm font-bold text-white font-display">Load Root Workspace Report</h3>
@@ -707,11 +701,11 @@ export default function Home() {
                       <button
                         onClick={handleAutoLoad}
                         disabled={actionLoading}
-                        className="group flex items-center justify-between gap-4 rounded-full bg-indigo-600 pl-6 pr-2 py-2 text-xs font-bold text-white shadow-lg shadow-indigo-500/20 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 cursor-pointer w-full sm:w-auto"
+                        className="group flex items-center justify-between gap-4 rounded-full bg-white pl-6 pr-2 py-2 text-xs font-bold text-black shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 cursor-pointer w-full sm:w-auto"
                       >
                         <span>Load Account Report</span>
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:-translate-y-[1px] group-hover:scale-105">
-                          <ChevronRight className="h-4 w-4 text-white" strokeWidth={1.2} />
+                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-black/15 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:-translate-y-[1px] group-hover:scale-105">
+                          <ChevronRight className="h-4 w-4 text-black" strokeWidth={1.2} />
                         </div>
                       </button>
                     </div>
@@ -737,7 +731,7 @@ export default function Home() {
                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                       />
                       <div className="flex flex-col items-center">
-                        <FileText className="h-8 w-8 text-zinc-500 group-hover:text-indigo-400 transition-colors mb-2" strokeWidth={1.2} />
+                        <FileText className="h-8 w-8 text-zinc-500 group-hover:text-zinc-300 transition-colors mb-2" strokeWidth={1.2} />
                         <span className="text-xs font-semibold text-zinc-300 font-display">
                           {selectedFile ? selectedFile.name : "Select LinkedIn Excel report (.xlsx)"}
                         </span>
@@ -749,7 +743,7 @@ export default function Home() {
                       <button
                         type="submit"
                         disabled={actionLoading}
-                        className="w-full flex h-11 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white shadow-lg shadow-indigo-500/20 transition-all hover:bg-indigo-500 disabled:opacity-50 cursor-pointer"
+                        className="w-full flex h-11 items-center justify-center rounded-full bg-white text-xs font-bold text-black shadow-lg transition-all hover:bg-zinc-100 disabled:opacity-50 cursor-pointer"
                       >
                         Upload & Parse Selected File
                       </button>
@@ -766,12 +760,12 @@ export default function Home() {
             
             {/* 1. Header Analysis Pipeline Status */}
             {dbStatus.stats.analyzedPosts < dbStatus.stats.totalPosts && (
-              <div className="animate-on-scroll relative overflow-hidden rounded-[2.5rem] border border-indigo-500/10 bg-indigo-950/5 p-2 shadow-xl backdrop-blur-md">
-                <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(99,102,241,0.12)]">
+              <div className="animate-on-scroll relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-white/[0.03] p-2 shadow-xl backdrop-blur-md">
+                <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)]">
                   <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
-                        <Sparkles className="h-4.5 w-4.5 text-indigo-400 animate-pulse" strokeWidth={1.2} />
+                        <Sparkles className="h-4.5 w-4.5 text-zinc-300" strokeWidth={1.2} />
                         <h2 className="font-display text-sm font-bold text-white uppercase tracking-wider">AI Hook Processing Pending</h2>
                       </div>
                       <p className="text-xs text-zinc-400 max-w-xl leading-relaxed">
@@ -781,7 +775,7 @@ export default function Home() {
                       
                       {/* Scraper Status Info */}
                       <div className="flex items-center gap-2 pt-1 text-[10px] text-zinc-500">
-                        <Shield className="h-3.5 w-3.5 text-emerald-500" strokeWidth={1.2} />
+                        <Shield className="h-3.5 w-3.5 text-zinc-400" strokeWidth={1.2} />
                         <span>Headless Puppeteer Scraper active (visits live URLs to extract actual post content).</span>
                       </div>
                     </div>
@@ -790,11 +784,11 @@ export default function Home() {
                       <button
                         onClick={runAnalysisPipeline}
                         disabled={analyzing || actionLoading}
-                        className="group relative flex items-center justify-between gap-6 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 pl-6 pr-2 py-2 text-xs font-bold text-white shadow-lg shadow-indigo-500/20 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 cursor-pointer"
+                        className="group relative flex items-center justify-between gap-6 rounded-full bg-white pl-6 pr-2 py-2 text-xs font-bold text-black shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 cursor-pointer"
                       >
                         <span className="tracking-wide">{analyzing ? "Analyzing Dataset..." : "Run AI Analysis Pipeline"}</span>
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:-translate-y-[1px] group-hover:scale-105">
-                          <Zap className="h-4 w-4 text-white" strokeWidth={1.2} />
+                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-black/10 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:-translate-y-[1px] group-hover:scale-105">
+                          <Zap className="h-4 w-4 text-black" strokeWidth={1.2} />
                         </div>
                       </button>
                     </div>
@@ -805,11 +799,11 @@ export default function Home() {
                     <div className="mt-6 space-y-2">
                       <div className="flex items-center justify-between text-xs font-semibold">
                         <span className="text-zinc-400">Processing Progress</span>
-                        <span className="text-indigo-400 font-mono">{analysisProgress}% Complete</span>
+                        <span className="text-zinc-300 font-mono">{analysisProgress}% Complete</span>
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-zinc-950 overflow-hidden">
                         <div
-                          className="h-full bg-gradient-to-r from-violet-500 to-indigo-500 rounded-full transition-all duration-300"
+                          className="h-full bg-white/70 rounded-full transition-all duration-300"
                           style={{ width: `${analysisProgress}%` }}
                         ></div>
                       </div>
@@ -824,7 +818,7 @@ export default function Home() {
                         <span>Analysis Engine Console logs</span>
                       </div>
                       {analysisLogs.map((log, idx) => (
-                        <div key={idx} className={log.startsWith("⚠️") ? "text-amber-400" : log.startsWith("❌") ? "text-red-400" : log.startsWith("⭐") ? "text-emerald-400" : ""}>
+                        <div key={idx} className={log.startsWith("⚠️") ? "text-zinc-300" : log.startsWith("❌") ? "text-zinc-400" : log.startsWith("⭐") ? "text-white" : ""}>
                           {log}
                         </div>
                       ))}
@@ -886,16 +880,16 @@ export default function Home() {
               </div>
 
               {/* Card 4: Avg. ER% - Span 4 (Highlighted in bento) */}
-              <div className="animate-on-scroll lg:col-span-4 rounded-[2rem] border border-indigo-500/20 bg-indigo-500/5 p-1.5 backdrop-blur-md shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] hover:border-indigo-500/30">
-                <div className="h-full rounded-[calc(2rem-0.375rem)] bg-[#09090b]/80 p-5 shadow-[inset_0_1px_1px_rgba(99,102,241,0.15)] flex flex-col justify-between">
+              <div className="animate-on-scroll lg:col-span-4 rounded-[2rem] border border-white/10 bg-white/5 p-1.5 backdrop-blur-md shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] hover:border-white/15">
+                <div className="h-full rounded-[calc(2rem-0.375rem)] bg-[#09090b]/80 p-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] flex flex-col justify-between">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 font-display">Avg. ER%</span>
-                    <TrendingUp className="h-4 w-4 text-indigo-400" strokeWidth={1.2} />
+                    <TrendingUp className="h-4 w-4 text-zinc-300" strokeWidth={1.2} />
                   </div>
                   <div className="mt-4 flex items-baseline gap-2">
-                    <span className="text-3xl font-display font-bold text-indigo-400 font-mono">{avgER}%</span>
+                    <span className="text-3xl font-display font-bold text-white font-mono">{avgER}%</span>
                   </div>
-                  <div className="mt-2 text-[10px] text-indigo-500 font-medium">Benchmark industry rate: 2.0%</div>
+                  <div className="mt-2 text-[10px] text-zinc-500 font-medium">Benchmark industry rate: 2.0%</div>
                 </div>
               </div>
 
@@ -904,10 +898,10 @@ export default function Home() {
                 <div className="h-full rounded-[calc(2rem-0.375rem)] bg-[#09090b]/80 p-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] flex flex-col justify-between">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 font-display">Best Hook Style</span>
-                    <Sparkles className="h-4 w-4 text-purple-400" strokeWidth={1.2} />
+                    <Sparkles className="h-4 w-4 text-zinc-300" strokeWidth={1.2} />
                   </div>
                   <div className="mt-4 flex items-baseline gap-2">
-                    <span className="text-lg font-display font-bold text-purple-400 truncate max-w-full">
+                    <span className="text-lg font-display font-bold text-white truncate max-w-full">
                       {bestPerformingHook}
                     </span>
                   </div>
@@ -920,10 +914,10 @@ export default function Home() {
                 <div className="h-full rounded-[calc(2rem-0.375rem)] bg-[#09090b]/80 p-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] flex flex-col justify-between">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 font-display">Top Content Topic</span>
-                    <BookOpen className="h-4 w-4 text-sky-400" strokeWidth={1.2} />
+                    <BookOpen className="h-4 w-4 text-zinc-300" strokeWidth={1.2} />
                   </div>
                   <div className="mt-4 flex items-baseline gap-2">
-                    <span className="text-lg font-display font-bold text-sky-400 truncate max-w-full">
+                    <span className="text-lg font-display font-bold text-white truncate max-w-full">
                       {bestPerformingTopic}
                     </span>
                   </div>
@@ -953,11 +947,11 @@ export default function Home() {
                       }}
                       className={`group flex items-center gap-2 border-b-2 py-3.5 px-1 text-xs font-semibold tracking-wider uppercase transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-95 cursor-pointer ${
                         isActive
-                          ? "border-indigo-500 text-white font-bold"
+                          ? "border-white text-white font-bold"
                           : "border-transparent text-zinc-500 hover:border-zinc-800 hover:text-zinc-300"
                       }`}
                     >
-                      <Icon className={`h-3.5 w-3.5 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-110 ${isActive ? "text-indigo-400" : "text-zinc-500"}`} strokeWidth={1.2} />
+                      <Icon className={`h-3.5 w-3.5 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-110 ${isActive ? "text-white" : "text-zinc-500"}`} strokeWidth={1.2} />
                       <span>{tab.label}</span>
                     </button>
                   );
@@ -971,56 +965,78 @@ export default function Home() {
             {activeTab === "dashboard" && (
               <div className="space-y-6">
                 
-                {/* Daily Engagement trend lines */}
+                {/* Daily Engagement trend lines — split layout */}
                 {dailyMetrics.length > 0 && (
                   <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 backdrop-blur-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] shadow-xl">
                     <div className="rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)]">
                       <h3 className="font-display text-sm font-bold text-white mb-6 uppercase tracking-wider">Daily Audience Reach & Actions</h3>
-                      <div className="h-72 w-full">
-                        {isMounted && (
-                          <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={dailyMetrics}>
-                              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.03)" />
-                              <XAxis
-                                dataKey="date"
-                                stroke="#6b7280"
-                                fontSize={9}
-                                tickLine={false}
-                                tickFormatter={(date) => {
-                                  try {
-                                    const d = new Date(date);
-                                    return `${d.getMonth() + 1}/${d.getDate()}`;
-                                  } catch (e) {
-                                    return date;
-                                  }
-                                }}
-                              />
-                              <YAxis yAxisId="left" stroke="#818cf8" fontSize={9} tickLine={false} />
-                              <YAxis yAxisId="right" orientation="right" stroke="#34d399" fontSize={9} tickLine={false} />
-                              <Tooltip content={<CustomTooltip />} />
-                              <Legend wrapperStyle={{ fontSize: 11, paddingTop: 10 }} />
-                              <Line
-                                yAxisId="left"
-                                type="monotone"
-                                dataKey="impressions"
-                                name="Impressions"
-                                stroke="#818cf8"
-                                strokeWidth={1.5}
-                                dot={false}
-                              />
-                              <Line
-                                yAxisId="right"
-                                type="monotone"
-                                dataKey="engagements"
-                                name="Engagements"
-                                stroke="#34d399"
-                                strokeWidth={1.5}
-                                dot={false}
-                              />
-                            </LineChart>
-                          </ResponsiveContainer>
-                        )}
+
+                      {/* Top: Impressions area */}
+                      <div>
+                        <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest font-display">Impressions</span>
+                        <div className="h-44 w-full mt-2">
+                          {isMounted && (
+                            <ResponsiveContainer width="100%" height="100%">
+                              <AreaChart data={dailyMetrics} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
+                                <defs>
+                                  <linearGradient id="impGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="5%" stopColor="#ffffff" stopOpacity={0.12} />
+                                    <stop offset="95%" stopColor="#ffffff" stopOpacity={0} />
+                                  </linearGradient>
+                                </defs>
+                                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.03)" />
+                                <XAxis
+                                  dataKey="date"
+                                  stroke="#52525b"
+                                  fontSize={9}
+                                  tickLine={false}
+                                  tickFormatter={(date) => {
+                                    try { const d = new Date(date); return `${d.getMonth()+1}/${d.getDate()}`; } catch(e) { return date; }
+                                  }}
+                                />
+                                <YAxis stroke="#52525b" fontSize={9} tickLine={false} />
+                                <Tooltip content={<CustomTooltip />} />
+                                <Area
+                                  type="monotone"
+                                  dataKey="impressions"
+                                  name="Impressions"
+                                  stroke="#ffffff"
+                                  strokeWidth={1.5}
+                                  fill="url(#impGrad)"
+                                  dot={false}
+                                />
+                              </AreaChart>
+                            </ResponsiveContainer>
+                          )}
+                        </div>
                       </div>
+
+                      {/* Bottom: Engagements bar */}
+                      <div className="mt-6 border-t border-white/5 pt-4">
+                        <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest font-display">Engagements</span>
+                        <div className="h-28 w-full mt-2">
+                          {isMounted && (
+                            <ResponsiveContainer width="100%" height="100%">
+                              <BarChart data={dailyMetrics} margin={{ top: 0, right: 4, left: -20, bottom: 0 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.03)" />
+                                <XAxis
+                                  dataKey="date"
+                                  stroke="#52525b"
+                                  fontSize={9}
+                                  tickLine={false}
+                                  tickFormatter={(date) => {
+                                    try { const d = new Date(date); return `${d.getMonth()+1}/${d.getDate()}`; } catch(e) { return date; }
+                                  }}
+                                />
+                                <YAxis stroke="#52525b" fontSize={9} tickLine={false} />
+                                <Tooltip content={<CustomTooltip />} />
+                                <Bar dataKey="engagements" name="Engagements" fill="#ffffff" fillOpacity={0.18} radius={[2, 2, 0, 0]} />
+                              </BarChart>
+                            </ResponsiveContainer>
+                          )}
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 )}
@@ -1043,7 +1059,7 @@ export default function Home() {
                               <XAxis dataKey="name" stroke="#6b7280" fontSize={9} tickLine={false} />
                               <YAxis stroke="#6b7280" fontSize={9} tickLine={false} label={{ value: 'ER %', angle: -90, position: 'insideLeft', style: { fill: '#6b7280', fontSize: 9 } }} />
                               <Tooltip content={<CustomTooltip />} />
-                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill="#a78bfa" radius={[3, 3, 0, 0]}>
+                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill={chartColors[0]} radius={[3, 3, 0, 0]}>
                                 {hookChartData.map((entry, index) => (
                                   <Cell key={`cell-${index}`} fill={chartColors[index % chartColors.length]} />
                                 ))}
@@ -1074,9 +1090,9 @@ export default function Home() {
                               <XAxis dataKey="name" stroke="#6b7280" fontSize={9} tickLine={false} />
                               <YAxis stroke="#6b7280" fontSize={9} tickLine={false} label={{ value: 'ER %', angle: -90, position: 'insideLeft', style: { fill: '#6b7280', fontSize: 9 } }} />
                               <Tooltip content={<CustomTooltip />} />
-                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill="#38bdf8" radius={[3, 3, 0, 0]}>
+                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill={chartColors[0]} radius={[3, 3, 0, 0]}>
                                 {topicChartData.map((entry, index) => (
-                                  <Cell key={`cell-${index}`} fill={chartColors[(index + 2) % chartColors.length]} />
+                                  <Cell key={`cell-${index}`} fill={chartColors[index % chartColors.length]} />
                                 ))}
                               </Bar>
                             </BarChart>
@@ -1100,11 +1116,17 @@ export default function Home() {
                       <div className="h-64 w-full">
                         {isMounted && (
                           <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={followerMetrics}>
+                            <AreaChart data={followerMetrics} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
+                              <defs>
+                                <linearGradient id="followerGrad" x1="0" y1="0" x2="0" y2="1">
+                                  <stop offset="5%" stopColor="#ffffff" stopOpacity={0.10} />
+                                  <stop offset="95%" stopColor="#ffffff" stopOpacity={0} />
+                                </linearGradient>
+                              </defs>
                               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.03)" />
                               <XAxis
                                 dataKey="date"
-                                stroke="#6b7280"
+                                stroke="#52525b"
                                 fontSize={9}
                                 tickLine={false}
                                 tickFormatter={(date) => {
@@ -1116,18 +1138,18 @@ export default function Home() {
                                   }
                                 }}
                               />
-                              <YAxis stroke="#c084fc" fontSize={9} tickLine={false} />
+                              <YAxis stroke="#52525b" fontSize={9} tickLine={false} />
                               <Tooltip content={<CustomTooltip />} />
-                              <Legend wrapperStyle={{ fontSize: 11, paddingTop: 10 }} />
-                              <Line
+                              <Area
                                 type="monotone"
                                 dataKey="newFollowers"
                                 name="New Followers"
-                                stroke="#c084fc"
+                                stroke="#a1a1aa"
                                 strokeWidth={1.5}
+                                fill="url(#followerGrad)"
                                 dot={false}
                               />
-                            </LineChart>
+                            </AreaChart>
                           </ResponsiveContainer>
                         )}
                       </div>
@@ -1155,7 +1177,7 @@ export default function Home() {
                           setSearchTerm(e.target.value);
                           setCurrentPage(1);
                         }}
-                        className="w-full rounded-full border border-white/10 bg-[#0e0e11] py-2 pl-9 pr-4 text-xs text-zinc-300 placeholder-zinc-500 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all font-sans"
+                        className="w-full rounded-full border border-white/10 bg-[#0e0e11] py-2 pl-9 pr-4 text-xs text-zinc-300 placeholder-zinc-500 focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all font-sans"
                       />
                     </div>
 
@@ -1169,7 +1191,7 @@ export default function Home() {
                             setFilterHookType(e.target.value);
                             setCurrentPage(1);
                           }}
-                          className="rounded-full border border-white/10 bg-[#0e0e11] py-1.5 px-3 text-xs text-zinc-300 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all cursor-pointer font-sans"
+                          className="rounded-full border border-white/10 bg-[#0e0e11] py-1.5 px-3 text-xs text-zinc-300 focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all cursor-pointer font-sans"
                         >
                           <option value="all">All Hooks</option>
                           {Array.from(new Set(posts.map((p) => p.hookType).filter(Boolean))).map((ht) => (
@@ -1186,7 +1208,7 @@ export default function Home() {
                             setFilterTopic(e.target.value);
                             setCurrentPage(1);
                           }}
-                          className="rounded-full border border-white/10 bg-[#0e0e11] py-1.5 px-3 text-xs text-zinc-300 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all cursor-pointer font-sans"
+                          className="rounded-full border border-white/10 bg-[#0e0e11] py-1.5 px-3 text-xs text-zinc-300 focus:border-white/20 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all cursor-pointer font-sans"
                         >
                           <option value="all">All Topics</option>
                           {Array.from(new Set(posts.map((p) => p.topic).filter(Boolean))).map((t) => (
@@ -1254,7 +1276,7 @@ export default function Home() {
                                   <td className="p-4 font-normal">
                                     {post.analyzed ? (
                                       <div className="flex items-center gap-2">
-                                        <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 flex-shrink-0 ${isPostExpanded ? "rotate-90 text-indigo-400" : ""}`} strokeWidth={1.2} />
+                                        <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 flex-shrink-0 ${isPostExpanded ? "rotate-90 text-white" : ""}`} strokeWidth={1.2} />
                                         <div className={`text-zinc-200 pr-4 italic ${isPostExpanded ? "" : "line-clamp-2"}`}>
                                           "{post.hook}"
                                         </div>
@@ -1268,7 +1290,7 @@ export default function Home() {
                                   </td>
                                   <td className="p-4">
                                     {post.hookType ? (
-                                      <span className="inline-block rounded bg-purple-950/40 border border-purple-800/40 px-2.5 py-0.5 text-[9px] font-semibold text-purple-400 tracking-wide font-sans">
+                                      <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
                                         {post.hookType}
                                       </span>
                                     ) : (
@@ -1277,7 +1299,7 @@ export default function Home() {
                                   </td>
                                   <td className="p-4">
                                     {post.topic ? (
-                                      <span className="inline-block rounded bg-sky-950/40 border border-sky-800/40 px-2.5 py-0.5 text-[9px] font-semibold text-sky-400 tracking-wide font-sans">
+                                      <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
                                         {post.topic}
                                       </span>
                                     ) : (
@@ -1290,7 +1312,7 @@ export default function Home() {
                                   <td className="p-4 text-right text-zinc-300 font-semibold font-mono">
                                     {post.engagements.toLocaleString()}
                                   </td>
-                                  <td className="p-4 text-right text-indigo-400 font-bold font-mono">
+                                  <td className="p-4 text-right text-zinc-200 font-bold font-mono">
                                     {post.engagementRate.toFixed(2)}%
                                   </td>
                                   <td className="p-4 text-center" onClick={(e) => e.stopPropagation()}>
@@ -1298,7 +1320,7 @@ export default function Home() {
                                       href={post.postUrl}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 hover:border-white/20 bg-zinc-950 hover:bg-white/5 text-zinc-500 hover:text-white transition-all cursor-pointer"
+                                      className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 hover:border-white/20 bg-zinc-950 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
                                     >
                                       <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
                                     </a>
@@ -1389,7 +1411,7 @@ export default function Home() {
                               <XAxis dataKey="name" stroke="#6b7280" fontSize={8} tickLine={false} />
                               <YAxis stroke="#6b7280" fontSize={9} tickLine={false} />
                               <Tooltip content={<CustomTooltip />} />
-                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill="#a78bfa" radius={[3, 3, 0, 0]}>
+                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill={chartColors[0]} radius={[3, 3, 0, 0]}>
                                 {getHookLengthChartData().map((entry, index) => (
                                   <Cell key={`cell-${index}`} fill={chartColors[index % chartColors.length]} />
                                 ))}
@@ -1420,9 +1442,9 @@ export default function Home() {
                               <XAxis dataKey="name" stroke="#6b7280" fontSize={8} tickLine={false} tickFormatter={(val) => val.split(" ")[0]} />
                               <YAxis stroke="#6b7280" fontSize={9} tickLine={false} />
                               <Tooltip content={<CustomTooltip />} />
-                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill="#fb7185" radius={[3, 3, 0, 0]}>
+                              <Bar dataKey="avgEngagementRate" name="Avg. Engagement Rate" fill={chartColors[0]} radius={[3, 3, 0, 0]}>
                                 {getSentenceStructureChartData().map((entry, index) => (
-                                  <Cell key={`cell-${index}`} fill={chartColors[(index + 3) % chartColors.length]} />
+                                  <Cell key={`cell-${index}`} fill={chartColors[index % chartColors.length]} />
                                 ))}
                               </Bar>
                             </BarChart>
@@ -1450,11 +1472,11 @@ export default function Home() {
                               <div className="flex items-center gap-2">
                                 <span className="text-[10px] font-bold text-zinc-500 font-mono">#{idx + 1}</span>
                                 <span className="text-xs font-bold text-white font-mono">"{wordData.word}"</span>
-                                <span className="text-[9px] text-zinc-655 font-mono">({wordData.count} posts)</span>
+                                <span className="text-[9px] text-zinc-600 font-mono">({wordData.count} posts)</span>
                               </div>
                               <div className="flex items-center gap-3">
                                 <span className="text-[10px] text-zinc-400 font-mono">{wordData.avgImpressions.toLocaleString()} imp</span>
-                                <span className="text-xs font-bold text-indigo-400 font-mono">{wordData.avgEngagementRate}% ER</span>
+                                <span className="text-xs font-bold text-zinc-200 font-mono">{wordData.avgEngagementRate}% ER</span>
                               </div>
                             </div>
                           ))
@@ -1502,13 +1524,13 @@ export default function Home() {
                                   >
                                     <td className="p-3 font-semibold text-zinc-200">
                                       <div className="flex items-center gap-2">
-                                        <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 ${isExpanded ? "rotate-90 text-indigo-400" : ""}`} strokeWidth={1.2} />
+                                        <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 ${isExpanded ? "rotate-90 text-white" : ""}`} strokeWidth={1.2} />
                                         <span>{struct.name}</span>
                                       </div>
                                     </td>
                                     <td className="p-3 text-zinc-500 font-mono">{struct.count} posts</td>
                                     <td className="p-3 text-right text-zinc-300 font-mono">{struct.avgImpressions.toLocaleString()}</td>
-                                    <td className="p-3 text-right text-indigo-400 font-bold font-mono">{struct.avgEngagementRate.toFixed(2)}%</td>
+                                    <td className="p-3 text-right text-zinc-200 font-bold font-mono">{struct.avgEngagementRate.toFixed(2)}%</td>
                                     <td className="p-3 text-zinc-500 italic max-w-sm truncate">"{examples}"</td>
                                   </tr>
                                   {isExpanded && (
@@ -1525,7 +1547,7 @@ export default function Home() {
                                               .map((p, pIdx) => (
                                                 <div key={p.id || pIdx} className="rounded-xl border border-white/5 bg-[#09090b] p-4 shadow-md hover:border-white/10 transition-all duration-550 hover:scale-[1.01]">
                                                   <div className="flex items-start justify-between gap-2 mb-3">
-                                                    <span className="inline-flex items-center gap-1 rounded bg-indigo-950 px-1.5 py-0.5 text-[9px] font-bold text-indigo-400 border border-indigo-900 font-mono">
+                                                    <span className="inline-flex items-center gap-1 rounded bg-white/5 px-1.5 py-0.5 text-[9px] font-bold text-zinc-400 border border-white/10 font-mono">
                                                       #{pIdx + 1}
                                                     </span>
                                                     <a
@@ -1551,7 +1573,7 @@ export default function Home() {
                                                     </div>
                                                     <div>
                                                       <span className="block text-zinc-500">ER</span>
-                                                      <span className="text-indigo-400 font-bold font-mono">{p.engagementRate.toFixed(2)}%</span>
+                                                      <span className="text-zinc-200 font-bold font-mono">{p.engagementRate.toFixed(2)}%</span>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1583,7 +1605,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                       <div>
                         <h3 className="font-display text-sm font-bold text-white flex items-center gap-1.5 uppercase tracking-wider">
-                          <Zap className="h-4 w-4 text-amber-400 animate-pulse" strokeWidth={1.2} />
+                          <Zap className="h-4 w-4 text-zinc-300" strokeWidth={1.2} />
                           <span>🏆 Hook Performance Deep-Dive Explorer</span>
                         </h3>
                         <p className="text-[10px] text-zinc-500 mt-1">Select a metric segment below to see the exact LinkedIn posts that used it and won</p>
@@ -1606,7 +1628,7 @@ export default function Home() {
                                 setExplorerValue("Medium (101-200 chars)");
                               }
                             }}
-                            className="rounded-full border border-white/10 bg-[#0e0e11] px-3 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 cursor-pointer"
+                            className="rounded-full border border-white/10 bg-[#0e0e11] px-3 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-white/10 cursor-pointer"
                           >
                             <option value="hookType">Hook Style (AI)</option>
                             <option value="sentenceStructure">Sentence Structure</option>
@@ -1620,7 +1642,7 @@ export default function Home() {
                           <select
                             value={explorerValue}
                             onChange={(e) => setExplorerValue(e.target.value)}
-                            className="rounded-full border border-white/10 bg-[#0e0e11] px-3 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 cursor-pointer"
+                            className="rounded-full border border-white/10 bg-[#0e0e11] px-3 py-1 text-xs text-white focus:outline-none focus:ring-1 focus:ring-white/10 cursor-pointer"
                           >
                             {explorerDimension === "hookType" && [
                               "Curiosity", "Contrarian", "Story", "Failure", "Achievement", "Opinion", "Question", "Educational", "Building In Public", "Career"
@@ -1676,12 +1698,12 @@ export default function Home() {
                                 key={post.id || idx}
                                 className={`group relative rounded-2xl border p-5 shadow-lg transition-all duration-350 hover:scale-[1.01] ${
                                   idx === 0 
-                                    ? "border-amber-500/20 bg-amber-950/5 hover:border-amber-500/40" 
+                                    ? "border-white/15 bg-white/[0.03] hover:border-white/20" 
                                     : "border-white/5 bg-[#09090b] hover:border-white/10"
                                 }`}
                               >
                                 {idx === 0 && (
-                                  <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-amber-500 text-xs font-bold text-black shadow-lg">
+                                  <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-black shadow-lg">
                                     🏆
                                   </span>
                                 )}
@@ -1692,7 +1714,7 @@ export default function Home() {
                                     href={post.postUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1 font-bold text-indigo-400 group-hover:text-indigo-300 transition-colors"
+                                    className="inline-flex items-center gap-1 font-bold text-zinc-400 group-hover:text-white transition-colors"
                                   >
                                     Open Post <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
                                   </a>
@@ -1713,7 +1735,7 @@ export default function Home() {
                                   </div>
                                   <div>
                                     <span className="text-zinc-500 block">Engagement Rate</span>
-                                    <span className="text-indigo-400 font-extrabold font-mono text-[11px]">{post.engagementRate.toFixed(2)}%</span>
+                                    <span className="text-zinc-200 font-extrabold font-mono text-[11px]">{post.engagementRate.toFixed(2)}%</span>
                                   </div>
                                 </div>
                               </div>
@@ -1741,17 +1763,17 @@ export default function Home() {
                     <div className="grid gap-6 md:grid-cols-3">
                     
                     {/* Winning Hooks Card */}
-                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-gradient-to-b from-purple-950/10 to-zinc-950/50 p-2 shadow-xl backdrop-blur-md">
-                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(167,139,250,0.12)] flex flex-col justify-between">
+                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 shadow-xl backdrop-blur-md">
+                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex flex-col justify-between">
                         <div>
                           <div className="flex items-center gap-2 mb-6">
-                            <Sparkles className="h-4.5 w-4.5 text-purple-400" strokeWidth={1.2} />
+                            <Sparkles className="h-4.5 w-4.5 text-zinc-300" strokeWidth={1.2} />
                             <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">Winning Hook Patterns</h3>
                           </div>
                           <ul className="space-y-4 font-sans">
                             {aiAnalysis.winningHooks.map((hookInsight, idx) => (
                               <li key={idx} className="flex gap-3 text-xs leading-relaxed text-zinc-300">
-                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-purple-950/50 text-[10px] font-bold text-purple-400 border border-purple-900/30 font-mono">
+                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-white/5 text-[10px] font-bold text-zinc-300 border border-white/10 font-mono">
                                   {idx + 1}
                                 </span>
                                 <span>{hookInsight}</span>
@@ -1763,17 +1785,17 @@ export default function Home() {
                     </div>
 
                     {/* Winning Topics Card */}
-                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-gradient-to-b from-sky-950/10 to-zinc-950/50 p-2 shadow-xl backdrop-blur-md">
-                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(56,189,248,0.12)] flex flex-col justify-between">
+                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 shadow-xl backdrop-blur-md">
+                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex flex-col justify-between">
                         <div>
                           <div className="flex items-center gap-2 mb-6">
-                            <TrendingUp className="h-4.5 w-4.5 text-sky-400" strokeWidth={1.2} />
+                            <TrendingUp className="h-4.5 w-4.5 text-zinc-300" strokeWidth={1.2} />
                             <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">Winning Topics</h3>
                           </div>
                           <ul className="space-y-4 font-sans">
                             {aiAnalysis.winningTopics.map((topicInsight, idx) => (
                               <li key={idx} className="flex gap-3 text-xs leading-relaxed text-zinc-300">
-                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-sky-950/50 text-[10px] font-bold text-sky-400 border border-sky-900/30 font-mono">
+                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-white/5 text-[10px] font-bold text-zinc-300 border border-white/10 font-mono">
                                   {idx + 1}
                                 </span>
                                 <span>{topicInsight}</span>
@@ -1785,17 +1807,17 @@ export default function Home() {
                     </div>
 
                     {/* Actionable Recommendations Card */}
-                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-gradient-to-b from-emerald-950/10 to-zinc-950/50 p-2 shadow-xl backdrop-blur-md">
-                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(52,211,153,0.12)] flex flex-col justify-between">
+                    <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 shadow-xl backdrop-blur-md">
+                      <div className="h-full rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex flex-col justify-between">
                         <div>
                           <div className="flex items-center gap-2 mb-6">
-                            <Lightbulb className="h-4.5 w-4.5 text-emerald-400" strokeWidth={1.2} />
+                            <Lightbulb className="h-4.5 w-4.5 text-zinc-300" strokeWidth={1.2} />
                             <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">Strategic Copywriting Advice</h3>
                           </div>
                           <ul className="space-y-4 font-sans">
                             {aiAnalysis.recommendations.map((rec, idx) => (
                               <li key={idx} className="flex gap-3 text-xs leading-relaxed text-zinc-300">
-                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-emerald-950/50 text-[10px] font-bold text-emerald-400 border border-emerald-900/30 font-mono">
+                                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-white/5 text-[10px] font-bold text-zinc-300 border border-white/10 font-mono">
                                   {idx + 1}
                                 </span>
                                 <span>{rec}</span>
@@ -1814,10 +1836,10 @@ export default function Home() {
                       <div className="rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)]">
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/5 pb-4 mb-6 gap-2">
                           <div className="flex items-center gap-2">
-                            <Sparkles className="h-5 w-5 text-indigo-400" strokeWidth={1.2} />
+                            <Sparkles className="h-5 w-5 text-zinc-300" strokeWidth={1.2} />
                             <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">Suggested Hooks to Write Next</h3>
                           </div>
-                          <span className="rounded-full bg-indigo-950 px-3 py-0.5 text-[9px] font-bold text-indigo-400 border border-indigo-900 uppercase tracking-widest self-start sm:self-auto font-display">
+                          <span className="rounded-full bg-white/5 px-3 py-0.5 text-[9px] font-bold text-zinc-400 border border-white/10 uppercase tracking-widest self-start sm:self-auto font-display">
                             ⭐ Copy-Pasteable Templates
                           </span>
                         </div>
@@ -1827,10 +1849,10 @@ export default function Home() {
                               <div className="space-y-3">
                                 <div className="flex items-center justify-between">
                                   <div className="flex flex-wrap gap-1.5">
-                                    <span className="rounded bg-purple-950/40 border border-purple-900/40 px-2 py-0.5 text-[8px] font-bold text-purple-400 uppercase tracking-wider font-display">
+                                    <span className="rounded bg-white/5 border border-white/10 px-2 py-0.5 text-[8px] font-bold text-zinc-400 uppercase tracking-wider font-display">
                                       {sh.hookType}
                                     </span>
-                                    <span className="rounded bg-sky-950/40 border border-sky-900/40 px-2 py-0.5 text-[8px] font-bold text-sky-400 uppercase tracking-wider font-display">
+                                    <span className="rounded bg-white/[0.03] border border-white/5 px-2 py-0.5 text-[8px] font-bold text-zinc-500 uppercase tracking-wider font-display">
                                       {sh.topic}
                                     </span>
                                   </div>
@@ -1838,18 +1860,18 @@ export default function Home() {
                                     onClick={() => copyToClipboard(sh.hookTemplate, idx)}
                                     className={`flex h-7 px-3.5 items-center justify-center gap-1 rounded-full text-[10px] font-bold transition-all duration-500 cursor-pointer font-sans ${
                                       copiedHookIdx === idx
-                                        ? "bg-emerald-950/60 border border-emerald-900/60 text-emerald-400"
+                                        ? "bg-white/10 border border-white/20 text-white"
                                         : "border border-white/10 bg-zinc-900 hover:text-white hover:bg-white/5 text-zinc-400"
                                     }`}
                                   >
                                     {copiedHookIdx === idx ? (
                                       <>
-                                        <CheckCircle className="h-3 w-3 text-emerald-400" strokeWidth={1.2} />
+                                        <CheckCircle className="h-3 w-3 text-white" strokeWidth={1.2} />
                                         <span>Copied!</span>
                                       </>
                                     ) : (
                                       <>
-                                        <Zap className="h-3 w-3 text-indigo-400 animate-pulse" strokeWidth={1.2} />
+                                        <Zap className="h-3 w-3 text-zinc-400" strokeWidth={1.2} />
                                         <span>Copy Hook</span>
                                       </>
                                     )}
@@ -1872,14 +1894,14 @@ export default function Home() {
               ) : (
                 <div className="animate-on-scroll rounded-[2.5rem] border border-white/5 bg-white/5 p-2 backdrop-blur-2xl shadow-xl">
                   <div className="rounded-[calc(2.5rem-0.5rem)] bg-[#09090b]/80 p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] text-center">
-                    <Sparkles className="mx-auto h-8 w-8 text-indigo-400 animate-pulse mb-3" strokeWidth={1.2} />
+                    <Sparkles className="mx-auto h-8 w-8 text-zinc-300 mb-3" strokeWidth={1.2} />
                     <h3 className="font-display text-sm font-bold text-white mb-1 uppercase tracking-wider">AI Recommendation Insights Not Generated</h3>
                     <p className="text-xs text-zinc-400 max-w-sm mx-auto mb-6">
                       Complete the analysis pipeline for your posts to generate custom copywriting ideas and pattern checks.
                     </p>
                     <button
                       onClick={generateAIRecommendations}
-                      className="inline-flex h-10 items-center justify-center rounded-full bg-indigo-600 px-6 text-xs font-bold text-white shadow-lg transition-all hover:bg-indigo-500 cursor-pointer active:scale-98"
+                      className="inline-flex h-10 items-center justify-center rounded-full bg-white px-6 text-xs font-bold text-black shadow-lg transition-all hover:bg-zinc-100 cursor-pointer active:scale-98"
                     >
                       Run recommendations generator
                     </button>
@@ -1916,11 +1938,11 @@ export default function Home() {
                                       <span className="font-semibold text-zinc-300 truncate max-w-[200px]" title={item.value}>
                                         {item.value}
                                       </span>
-                                      <span className="font-bold text-indigo-400 font-mono">{item.percentage}%</span>
+                                      <span className="font-bold text-zinc-200 font-mono">{item.percentage}%</span>
                                     </div>
                                     <div className="h-1.5 w-full rounded-full bg-zinc-950 overflow-hidden">
                                       <div
-                                        className="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
+                                        className="h-full bg-white/50 rounded-full"
                                         style={{ width: `${item.percentage}%` }}
                                       ></div>
                                     </div>
