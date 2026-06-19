@@ -87,6 +87,7 @@ interface AIAnalysis {
   winningHooks: string[];
   winningTopics: string[];
   recommendations: string[];
+  suggestedHooks?: Array<{ hookTemplate: string; hookType: string; topic: string; explanation: string }>;
   createdAt: string;
 }
 
@@ -124,7 +125,7 @@ export default function Home() {
   const [analyzing, setAnalyzing] = useState(false);
   const [analysisProgress, setAnalysisProgress] = useState(0);
   const [analysisLogs, setAnalysisLogs] = useState<string[]>([]);
-  const [simulationMode, setSimulationMode] = useState(true); // default to fast simulation mode
+
 
   // Interactive controls
   const [activeTab, setActiveTab] = useState<"dashboard" | "posts" | "hook-intelligence" | "ai-insights" | "demographics">("dashboard");
@@ -138,6 +139,15 @@ export default function Home() {
 
   // Selected file for manual upload
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  
+  // Clipboard copy state
+  const [copiedHookIdx, setCopiedHookIdx] = useState<number | null>(null);
+
+  const copyToClipboard = (text: string, idx: number) => {
+    navigator.clipboard.writeText(text);
+    setCopiedHookIdx(idx);
+    setTimeout(() => setCopiedHookIdx(null), 2000);
+  };
 
   useEffect(() => {
     setIsMounted(true);
@@ -296,7 +306,7 @@ export default function Home() {
 
     setAnalyzing(true);
     setAnalysisProgress(0);
-    setAnalysisLogs([`Starting analysis of ${unanalyzedPosts.length} posts in ${simulationMode ? "Simulation Mode" : "Headless Browser Mode"}...`]);
+    setAnalysisLogs([`Starting analysis of ${unanalyzedPosts.length} posts using Headless Browser Scraping...`]);
     
     let processed = 0;
     let errors = 0;
@@ -311,7 +321,7 @@ export default function Home() {
         const res = await fetch("/api/posts/analyze", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ postUrl: post.postUrl, simulate: simulationMode }),
+          body: JSON.stringify({ postUrl: post.postUrl }),
         });
 
         if (!res.ok) {
@@ -733,23 +743,10 @@ export default function Home() {
                       The system needs to retrieve the post text and run classification models for Hook Type and Topics.
                     </p>
                     
-                    {/* Simulation Switch */}
-                    <div className="flex items-center gap-3 pt-2">
-                      <label className="flex items-center gap-2 text-xs text-zinc-300 font-medium cursor-pointer">
-                        <input
-                          type="checkbox"
-                          checked={simulationMode}
-                          disabled={analyzing}
-                          onChange={(e) => setSimulationMode(e.target.checked)}
-                          className="rounded border-zinc-800 bg-zinc-950 text-indigo-600 focus:ring-indigo-600"
-                        />
-                        <span>Quick AI Simulation Mode (Recommended - takes seconds)</span>
-                      </label>
-                      <span className="text-[10px] text-zinc-500">
-                        {simulationMode 
-                          ? "(Parses metadata from URL slugs instantly without network blocks)"
-                          : "(Loads Chromium to scrape actual post pages. Slower, subject to rate limits)"}
-                      </span>
+                    {/* Scraper Status Info */}
+                    <div className="flex items-center gap-2 pt-2 text-[10.5px] text-zinc-400">
+                      <Shield className="h-3.5 w-3.5 text-emerald-500" />
+                      <span>Headless Puppeteer Scraper active (visits live URLs to extract actual post content).</span>
                     </div>
                   </div>
 
@@ -1422,7 +1419,8 @@ export default function Home() {
                 
                 {/* AI Insights Card */}
                 {aiAnalysis ? (
-                  <div className="grid gap-6 md:grid-cols-3">
+                  <>
+                    <div className="grid gap-6 md:grid-cols-3">
                     
                     {/* Winning Hooks Card */}
                     <div className="rounded-2xl border border-zinc-900 bg-gradient-to-b from-purple-950/20 to-zinc-950/50 p-6 shadow-xl backdrop-blur-md">
@@ -1479,7 +1477,67 @@ export default function Home() {
                     </div>
 
                   </div>
-                ) : (
+
+                  {/* Suggested copy-pasteable Hooks */}
+                  {aiAnalysis.suggestedHooks && aiAnalysis.suggestedHooks.length > 0 && (
+                    <div className="mt-8 rounded-2xl border border-zinc-900 bg-zinc-900/10 p-6 shadow-xl backdrop-blur-md">
+                      <div className="flex items-center justify-between border-b border-zinc-800 pb-4 mb-6">
+                        <div className="flex items-center gap-2">
+                          <Sparkles className="h-5 w-5 text-indigo-400" />
+                          <h3 className="text-base font-bold text-white">Suggested Hooks to Write Next</h3>
+                        </div>
+                        <span className="rounded-full bg-indigo-950 px-2.5 py-0.5 text-[10px] font-bold text-indigo-400 border border-indigo-900">
+                          ⭐ Copy-Pasteable Templates
+                        </span>
+                      </div>
+                      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {aiAnalysis.suggestedHooks.map((sh, idx) => (
+                          <div key={idx} className="flex flex-col justify-between rounded-xl border border-zinc-800 bg-zinc-950/60 p-5 shadow-lg hover:border-zinc-700 transition-all">
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between">
+                                <div className="flex flex-wrap gap-1.5">
+                                  <span className="rounded bg-purple-950 border border-purple-900 px-1.5 py-0.5 text-[8px] font-bold text-purple-400 uppercase tracking-wider">
+                                    {sh.hookType}
+                                  </span>
+                                  <span className="rounded bg-sky-950 border border-sky-900 px-1.5 py-0.5 text-[8px] font-bold text-sky-400 uppercase tracking-wider">
+                                    {sh.topic}
+                                  </span>
+                                </div>
+                                <button
+                                  onClick={() => copyToClipboard(sh.hookTemplate, idx)}
+                                  className={`flex h-7 px-2.5 items-center justify-center gap-1 rounded-md text-[10px] font-bold transition-colors ${
+                                    copiedHookIdx === idx
+                                      ? "bg-emerald-950 border border-emerald-900 text-emerald-400"
+                                      : "border border-zinc-800 bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800"
+                                  }`}
+                                >
+                                  {copiedHookIdx === idx ? (
+                                    <>
+                                      <CheckCircle className="h-3.5 w-3.5 text-emerald-400" />
+                                      <span>Copied!</span>
+                                    </>
+                                  ) : (
+                                    <>
+                                      <Zap className="h-3.5 w-3.5 text-indigo-400" />
+                                      <span>Copy Hook</span>
+                                    </>
+                                  )}
+                                </button>
+                              </div>
+                              <div className="rounded-lg border border-zinc-900 bg-zinc-950 p-3.5 font-mono text-[10.5px] text-zinc-300 whitespace-pre-wrap leading-relaxed select-all">
+                                {sh.hookTemplate}
+                              </div>
+                            </div>
+                            <div className="mt-4 border-t border-zinc-900 pt-3 text-[10px] text-zinc-500 italic">
+                              {sh.explanation}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              ) : (
                   <div className="rounded-2xl border border-zinc-900 bg-zinc-900/20 p-8 shadow-xl text-center">
                     <Sparkles className="mx-auto h-8 w-8 text-indigo-400 animate-pulse mb-3" />
                     <h3 className="text-base font-bold text-white mb-1">AI Recommendation Insights Not Generated</h3>

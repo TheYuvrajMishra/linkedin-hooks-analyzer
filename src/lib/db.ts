@@ -324,6 +324,7 @@ export const db = {
             winningHooks: resultData.winningHooks,
             winningTopics: resultData.winningTopics,
             recommendations: resultData.recommendations,
+            suggestedHooks: resultData.suggestedHooks || [],
           },
         });
       } catch (err) {
@@ -336,6 +337,7 @@ export const db = {
       winningHooks: resultData.winningHooks,
       winningTopics: resultData.winningTopics,
       recommendations: resultData.recommendations,
+      suggestedHooks: resultData.suggestedHooks || [],
       createdAt: new Date().toISOString(),
     };
     data.analysisResults.push(newResult);

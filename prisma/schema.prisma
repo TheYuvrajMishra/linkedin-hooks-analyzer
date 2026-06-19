@@ -56,6 +56,7 @@ model AnalysisResult {
   winningHooks    Json     // String array
   winningTopics   Json     // String array
   recommendations Json     // String array
+  suggestedHooks  Json?    // Array of suggested hook templates
   createdAt       DateTime @default(now())
 }
 

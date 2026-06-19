@@ -42,8 +42,7 @@ export async function scrapePostText(url: string): Promise<string> {
         "article.main-content",
         ".main-content article",
         ".attributed-text-segment-list__content",
-        "[data-test-id='post-text']",
-        "article"
+        "[data-test-id='post-text']"
       ];
       
       let bodyText = "";
@@ -62,8 +61,8 @@ export async function scrapePostText(url: string): Promise<string> {
 
     await browser.close();
     
-    // Determine the best text source
-    let finalCode = result.bodyText || result.ogDesc || result.metaDesc || "";
+    // Determine the best text source (prioritize metadata descriptions which contain clean post bodies)
+    let finalCode = result.ogDesc || result.metaDesc || result.bodyText || "";
     
     if (finalCode) {
       // Clean up common LinkedIn meta prefixes
@@ -75,10 +74,13 @@ export async function scrapePostText(url: string): Promise<string> {
       for (const regex of cleaningRegexes) {
         finalCode = finalCode.replace(regex, "");
       }
+      
+      // Clean up trailing comment numbers e.g. " | 20 comments on LinkedIn"
+      finalCode = finalCode.replace(/\s*\|\s*\d+\s*comments\s*(?:on\s*LinkedIn)?\s*$/i, "");
       finalCode = finalCode.trim();
     }
     
-    if (finalCode && finalCode.length > 10) {
+    if (finalCode && finalCode.length > 5) {
       console.log(`Scraped post content successfully (${finalCode.length} chars).`);
       return finalCode;
     }

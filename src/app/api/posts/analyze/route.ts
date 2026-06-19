@@ -23,31 +23,9 @@ function detectSentenceStructure(hook: string): string {
   return "Declarative Statement";
 }
 
-function getFallbackPostText(url: string): string {
-  try {
-    const urlObj = new URL(url);
-    const pathname = urlObj.pathname;
-    const parts = pathname.split("/");
-    const lastPart = parts[parts.length - 1] || "";
-    const splitParts = lastPart.split("_");
-    const keywordSlug = splitParts[splitParts.length - 1] || lastPart;
-    const keywords = keywordSlug
-      .split("-")
-      .filter((w) => w && isNaN(Number(w)) && w.length > 2 && w !== "share" && w !== "ugcPost")
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-      .join(" ");
-      
-    if (keywords) {
-      return `Building and sharing insights about ${keywords} in my journey as a developer. (Note: Content parsed from post URL keywords).`;
-    }
-  } catch (e) {}
-  
-  return `Sharing my thoughts and updates on LinkedIn. (Note: Content simulated as LinkedIn is currently blocking scrapers).`;
-}
-
 export async function POST(req: NextRequest) {
   try {
-    const { postUrl, simulate } = await req.json();
+    const { postUrl } = await req.json();
     if (!postUrl) {
       return NextResponse.json({ error: "postUrl is required" }, { status: 400 });
     }
@@ -57,13 +35,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Post not found in database" }, { status: 444 });
     }
 
-    // 1. Scrape the full text or generate fallback in simulation mode
-    let postText = "";
-    if (simulate) {
-      postText = getFallbackPostText(postUrl);
-    } else {
-      postText = await scrapePostText(postUrl);
-    }
+    // 1. Scrape the full text of the post
+    const postText = await scrapePostText(postUrl);
     
     // 2. Extract the hook using AI
     const hook = await extractHook(postText);
