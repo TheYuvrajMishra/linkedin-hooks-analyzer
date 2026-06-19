@@ -62,7 +62,9 @@ let prisma: PrismaClient | null = null;
 let useFallback = false;
 
 // Initialize Prisma connection
-if (!process.env.DATABASE_URL || !process.env.DATABASE_URL.startsWith("mongodb")) {
+const dbUrl = process.env.DATABASE_URL || process.env.MONGODB_URI;
+
+if (!dbUrl || !dbUrl.startsWith("mongodb")) {
   console.log("No MongoDB database configured. Falling back to JSON file storage.");
   useFallback = true;
 } else {
@@ -71,7 +73,9 @@ if (!process.env.DATABASE_URL || !process.env.DATABASE_URL.startsWith("mongodb")
       prisma: PrismaClient;
     };
 
-    prisma = globalForPrisma.prisma ?? new PrismaClient();
+    prisma = globalForPrisma.prisma ?? new PrismaClient({
+      datasourceUrl: dbUrl,
+    });
 
     if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
   } catch (error: any) {
