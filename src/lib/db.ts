@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { PrismaClient } from "@/generated/prisma/client";
+import { PrismaClient } from "@prisma/client";
 
 const DB_FILE = path.join(process.cwd(), "data", "local_db.json");
 
