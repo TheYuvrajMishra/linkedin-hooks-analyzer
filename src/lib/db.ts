@@ -74,7 +74,11 @@ if (!dbUrl || !dbUrl.startsWith("mongodb")) {
     };
 
     prisma = globalForPrisma.prisma ?? new PrismaClient({
-      datasourceUrl: dbUrl,
+      datasources: {
+        db: {
+          url: dbUrl,
+        },
+      },
     });
 
     if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
