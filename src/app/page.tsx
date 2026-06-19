@@ -143,8 +143,12 @@ export default function Home() {
   const [explorerValue, setExplorerValue] = useState<string>("Curiosity");
   const [expandedStructure, setExpandedStructure] = useState<string | null>(null);
   
-  // Post Details expand state
+  // Post Details expand state (kept for hook-intelligence table)
   const [expandedPostId, setExpandedPostId] = useState<string | null>(null);
+
+  // Modal state — used in Posts Table AND Hook Intelligence cards
+  const [modalPost, setModalPost] = useState<Post | null>(null);
+  const closeModal = () => setModalPost(null);
 
   const copyToClipboard = (text: string, idx: number) => {
     navigator.clipboard.writeText(text);
@@ -1260,87 +1264,68 @@ export default function Home() {
                       </thead>
                       <tbody className="divide-y divide-white/5 bg-[#09090b]/20">
                         {paginatedPosts.length > 0 ? (
-                          paginatedPosts.map((post) => {
-                            const isPostExpanded = expandedPostId === post.id;
-                            return (
-                              <Fragment key={post.id}>
-                                <tr 
-                                  onClick={() => setExpandedPostId(isPostExpanded ? null : post.id)}
-                                  className="hover:bg-white/5 transition-colors cursor-pointer select-none"
-                                >
-                                  <td className="p-4 text-zinc-500 font-medium font-sans">
-                                    {post.publishedAt 
-                                      ? new Date(post.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
-                                      : "N/A"}
-                                  </td>
-                                  <td className="p-4 font-normal">
-                                    {post.analyzed ? (
-                                      <div className="flex items-center gap-2">
-                                        <ChevronRight className={`h-3.5 w-3.5 text-zinc-500 transition-transform duration-200 flex-shrink-0 ${isPostExpanded ? "rotate-90 text-white" : ""}`} strokeWidth={1.2} />
-                                        <div className={`text-zinc-200 pr-4 italic ${isPostExpanded ? "" : "line-clamp-2"}`}>
-                                          "{post.hook}"
-                                        </div>
-                                      </div>
-                                    ) : (
-                                      <div className="text-zinc-500 flex items-center gap-1.5">
-                                        <AlertCircle className="h-3 w-3 text-amber-500 flex-shrink-0" strokeWidth={1.2} />
-                                        <span className="truncate max-w-[200px] font-mono">{post.postUrl}</span>
-                                      </div>
-                                    )}
-                                  </td>
-                                  <td className="p-4">
-                                    {post.hookType ? (
-                                      <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
-                                        {post.hookType}
-                                      </span>
-                                    ) : (
-                                      <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
-                                    )}
-                                  </td>
-                                  <td className="p-4">
-                                    {post.topic ? (
-                                      <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
-                                        {post.topic}
-                                      </span>
-                                    ) : (
-                                      <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
-                                    )}
-                                  </td>
-                                  <td className="p-4 text-right text-zinc-300 font-semibold font-mono">
-                                    {post.impressions.toLocaleString()}
-                                  </td>
-                                  <td className="p-4 text-right text-zinc-300 font-semibold font-mono">
-                                    {post.engagements.toLocaleString()}
-                                  </td>
-                                  <td className="p-4 text-right text-zinc-200 font-bold font-mono">
-                                    {post.engagementRate.toFixed(2)}%
-                                  </td>
-                                  <td className="p-4 text-center" onClick={(e) => e.stopPropagation()}>
-                                    <a
-                                      href={post.postUrl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 hover:border-white/20 bg-zinc-950 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
-                                    >
-                                      <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
-                                    </a>
-                                  </td>
-                                </tr>
-                                {isPostExpanded && post.postText && (
-                                  <tr className="bg-zinc-950/20">
-                                    <td colSpan={8} className="p-4 border-b border-white/5">
-                                      <div className="rounded-2xl border border-white/5 bg-zinc-950/50 p-4 shadow-inner">
-                                        <div className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-2 font-display">Full Post Content</div>
-                                        <div className="text-xs text-zinc-300 leading-relaxed whitespace-pre-wrap font-mono select-text bg-[#030303]/30 p-4 rounded-xl border border-white/[0.02]">
-                                          {post.postText}
-                                        </div>
-                                      </div>
-                                    </td>
-                                  </tr>
+                          paginatedPosts.map((post) => (
+                            <tr
+                              key={post.id}
+                              onClick={() => setModalPost(post)}
+                              className="hover:bg-white/5 transition-colors cursor-pointer select-none group"
+                            >
+                              <td className="p-4 text-zinc-500 font-medium font-sans">
+                                {post.publishedAt
+                                  ? new Date(post.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+                                  : "N/A"}
+                              </td>
+                              <td className="p-4 font-normal">
+                                {post.analyzed ? (
+                                  <div className="text-zinc-200 pr-4 italic line-clamp-2">
+                                    "{post.hook}"
+                                  </div>
+                                ) : (
+                                  <div className="text-zinc-500 flex items-center gap-1.5">
+                                    <AlertCircle className="h-3 w-3 text-amber-500 flex-shrink-0" strokeWidth={1.2} />
+                                    <span className="truncate max-w-[200px] font-mono">{post.postUrl}</span>
+                                  </div>
                                 )}
-                              </Fragment>
-                            );
-                          })
+                              </td>
+                              <td className="p-4">
+                                {post.hookType ? (
+                                  <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
+                                    {post.hookType}
+                                  </span>
+                                ) : (
+                                  <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
+                                )}
+                              </td>
+                              <td className="p-4">
+                                {post.topic ? (
+                                  <span className="inline-block rounded-full bg-white/10 border border-white/5 px-2.5 py-1 text-[9px] font-semibold text-white tracking-wide font-sans">
+                                    {post.topic}
+                                  </span>
+                                ) : (
+                                  <span className="text-[10px] text-zinc-600 italic">Unprocessed</span>
+                                )}
+                              </td>
+                              <td className="p-4 text-right text-zinc-300 font-semibold font-mono">
+                                {post.impressions.toLocaleString()}
+                              </td>
+                              <td className="p-4 text-right text-zinc-300 font-semibold font-mono">
+                                {post.engagements.toLocaleString()}
+                              </td>
+                              <td className="p-4 text-right text-zinc-200 font-bold font-mono">
+                                {post.engagementRate.toFixed(2)}%
+                              </td>
+                              <td className="p-4 text-center" onClick={(e) => e.stopPropagation()}>
+                                <a
+                                  href={post.postUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 hover:border-white/20 bg-zinc-950 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
+                                >
+                                  <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
+                                </a>
+                              </td>
+                            </tr>
+                          ))
                         ) : (
                           <tr>
                             <td colSpan={8} className="p-8 text-center text-zinc-500 italic">
@@ -1545,19 +1530,18 @@ export default function Home() {
                                               .filter((p) => p.analyzed && p.sentenceStructure === struct.name)
                                               .sort((a, b) => b.engagementRate - a.engagementRate)
                                               .map((p, pIdx) => (
-                                                <div key={p.id || pIdx} className="rounded-xl border border-white/5 bg-[#09090b] p-4 shadow-md hover:border-white/10 transition-all duration-550 hover:scale-[1.01]">
+                                                <div
+                                                  key={p.id || pIdx}
+                                                  onClick={() => setModalPost(p)}
+                                                  className="rounded-xl border border-white/5 bg-[#09090b] p-4 shadow-md hover:border-white/10 transition-all duration-300 hover:scale-[1.01] cursor-pointer"
+                                                >
                                                   <div className="flex items-start justify-between gap-2 mb-3">
                                                     <span className="inline-flex items-center gap-1 rounded bg-white/5 px-1.5 py-0.5 text-[9px] font-bold text-zinc-400 border border-white/10 font-mono">
                                                       #{pIdx + 1}
                                                     </span>
-                                                    <a
-                                                      href={p.postUrl}
-                                                      target="_blank"
-                                                      rel="noopener noreferrer"
-                                                      className="inline-flex items-center gap-0.5 text-[10px] text-zinc-400 hover:text-white transition-colors"
-                                                    >
-                                                      View Post <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
-                                                    </a>
+                                                    <span className="inline-flex items-center gap-0.5 text-[10px] text-zinc-400">
+                                                      View Details <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
+                                                    </span>
                                                   </div>
                                                   <p className="text-[11px] text-zinc-300 line-clamp-3 mb-3 italic leading-relaxed">
                                                     "{p.hook || p.postText || "(No hook text)"}"
@@ -1696,9 +1680,10 @@ export default function Home() {
                             {matchingPosts.map((post, idx) => (
                               <div
                                 key={post.id || idx}
-                                className={`group relative rounded-2xl border p-5 shadow-lg transition-all duration-350 hover:scale-[1.01] ${
-                                  idx === 0 
-                                    ? "border-white/15 bg-white/[0.03] hover:border-white/20" 
+                                onClick={() => setModalPost(post)}
+                                className={`group relative rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:scale-[1.01] cursor-pointer ${
+                                  idx === 0
+                                    ? "border-white/15 bg-white/[0.03] hover:border-white/20"
                                     : "border-white/5 bg-[#09090b] hover:border-white/10"
                                 }`}
                               >
@@ -1707,23 +1692,18 @@ export default function Home() {
                                     🏆
                                   </span>
                                 )}
-                                
+
                                 <div className="flex items-center justify-between border-b border-white/5 pb-2 mb-3 text-[10px]">
                                   <span className="font-bold text-zinc-500 uppercase tracking-wider font-display">Post #{idx + 1}</span>
-                                  <a
-                                    href={post.postUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1 font-bold text-zinc-400 group-hover:text-white transition-colors"
-                                  >
-                                    Open Post <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
-                                  </a>
+                                  <span className="inline-flex items-center gap-1 font-bold text-zinc-400 group-hover:text-white transition-colors">
+                                    View Details <ExternalLink className="h-3 w-3" strokeWidth={1.2} />
+                                  </span>
                                 </div>
-                                
+
                                 <div className="min-h-[64px] text-xs text-zinc-200 leading-relaxed italic bg-black/40 border border-white/[0.02] rounded-xl p-3 mb-3 max-h-24 overflow-y-auto font-mono scrollbar-thin select-text">
                                   "{post.hook || post.postText || "(No hook content)"}"
                                 </div>
-                                
+
                                 <div className="grid grid-cols-3 gap-2 text-center text-[10px] border-t border-white/5 pt-3">
                                   <div className="border-r border-white/5">
                                     <span className="text-zinc-500 block">Impressions</span>
@@ -1974,6 +1954,132 @@ export default function Home() {
         )}
       </main>
       
+      {/* ====================== POST DETAIL MODAL ====================== */}
+      {modalPost && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center p-4"
+          style={{ backdropFilter: "blur(16px)", backgroundColor: "rgba(0,0,0,0.75)" }}
+          onClick={closeModal}
+        >
+          <style>{`@keyframes modalFadeIn { from { opacity:0; transform:scale(0.96) translateY(8px); } to { opacity:1; transform:scale(1) translateY(0); } }`}</style>
+          <div
+            className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[2rem] border border-white/10 bg-[#09090b] shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+            style={{ animation: "modalFadeIn 0.22s cubic-bezier(0.32,0.72,0,1)" }}
+          >
+            {/* Modal header */}
+            <div className="sticky top-0 z-10 flex items-center justify-between border-b border-white/5 bg-[#09090b]/95 px-6 py-4 backdrop-blur-xl">
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/5 border border-white/10">
+                  <FileText className="h-4 w-4 text-zinc-300" strokeWidth={1.2} />
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest text-zinc-500 font-display font-bold">Post Details</p>
+                  <p className="text-xs text-zinc-400 font-sans">
+                    {modalPost.publishedAt
+                      ? new Date(modalPost.publishedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
+                      : "Date unknown"}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href={modalPost.postUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] text-zinc-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all font-sans"
+                >
+                  <ExternalLink className="h-3 w-3" strokeWidth={1.2} /> Open on LinkedIn
+                </a>
+                <button
+                  onClick={closeModal}
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 transition-all text-lg leading-none cursor-pointer"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+
+            {/* Modal body */}
+            <div className="p-6 space-y-5">
+              {/* Hook */}
+              {modalPost.hook && (
+                <div>
+                  <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-500 font-display font-bold">Hook Opening</p>
+                  <div className="rounded-xl border border-white/5 bg-black/40 p-4">
+                    <p className="text-sm text-zinc-100 italic leading-relaxed font-mono">"{modalPost.hook}"</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Tags row */}
+              <div className="flex flex-wrap gap-3">
+                {modalPost.hookType && (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[9px] uppercase tracking-widest text-zinc-600 font-display font-bold">Hook Style</span>
+                    <span className="inline-block rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white font-sans">{modalPost.hookType}</span>
+                  </div>
+                )}
+                {modalPost.topic && (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[9px] uppercase tracking-widest text-zinc-600 font-display font-bold">Topic</span>
+                    <span className="inline-block rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white font-sans">{modalPost.topic}</span>
+                  </div>
+                )}
+                {modalPost.sentenceStructure && (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[9px] uppercase tracking-widest text-zinc-600 font-display font-bold">Structure</span>
+                    <span className="inline-block rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white font-sans">{modalPost.sentenceStructure}</span>
+                  </div>
+                )}
+                {modalPost.hookLength !== null && (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[9px] uppercase tracking-widest text-zinc-600 font-display font-bold">Hook Length</span>
+                    <span className="inline-block rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white font-sans">{modalPost.hookLength} chars</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Metrics row */}
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { label: "Impressions", value: modalPost.impressions.toLocaleString() },
+                  { label: "Engagements", value: modalPost.engagements.toLocaleString() },
+                  { label: "Engagement Rate", value: `${modalPost.engagementRate.toFixed(2)}%` },
+                ].map(({ label, value }) => (
+                  <div key={label} className="rounded-xl border border-white/5 bg-white/[0.02] p-3 text-center">
+                    <span className="block text-[10px] text-zinc-500 uppercase tracking-wider font-display mb-1">{label}</span>
+                    <span className="text-sm font-bold text-zinc-100 font-mono">{value}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Full post text */}
+              {modalPost.postText && (
+                <div>
+                  <p className="mb-2 text-[10px] uppercase tracking-widest text-zinc-500 font-display font-bold">Full Post Content</p>
+                  <div className="rounded-xl border border-white/[0.04] bg-[#030303]/60 p-4 max-h-72 overflow-y-auto">
+                    <p className="text-xs text-zinc-300 leading-relaxed whitespace-pre-wrap font-mono select-text">{modalPost.postText}</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Copy hook button */}
+              {modalPost.hook && (
+                <button
+                  onClick={() => { navigator.clipboard.writeText(modalPost.hook!); }}
+                  className="w-full rounded-full border border-white/10 bg-white/5 py-2.5 text-xs font-semibold text-zinc-300 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all font-sans cursor-pointer"
+                >
+                  Copy Hook to Clipboard
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+      {/* ============================================================== */}
+
       {/* Footer */}
       <footer className="relative z-10 mx-auto max-w-7xl px-4 mt-16 border-t border-white/5 py-8 text-center text-xs text-zinc-650 sm:px-6 lg:px-8">
         <p>© 2026 Linkedin Looker. All rights reserved. Locally executed for {dbStatus?.stats.totalPosts ? "Yuvraj Mishra" : "your account"}.</p>
