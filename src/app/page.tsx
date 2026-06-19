@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, Fragment, useMemo } from "react";
+import Link from "next/link";
 import {
   Upload,
   FileText,
@@ -806,6 +807,13 @@ export default function Home() {
                     {tab.replace("-", " ")}
                   </button>
                 ))}
+                <Link
+                  href="/post-writer"
+                  className="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 font-display bg-white/5 text-amber-400 hover:bg-white/10 hover:text-amber-300 border border-amber-500/20 inline-flex items-center gap-1.5 shadow-[0_0_10px_rgba(245,158,11,0.15)]"
+                >
+                  <Sparkles className="h-3 w-3" strokeWidth={1.5} />
+                  Post Writer
+                </Link>
               </div>
 
               {posts.some(p => !p.analyzed) && (

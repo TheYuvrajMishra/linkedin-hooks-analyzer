@@ -559,3 +559,245 @@ function calculateSimpleRecommendations(posts: AnalyzedPost[]): AIAnalysisResult
     ],
   };
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Post Writer & Programmatic Humanizer
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface GeneratePostParams {
+  topic: string;
+  angle: string;
+  audience: string;
+  length: string;
+  hookFormula: string;
+  anecdotes?: string;
+  specificNumbers?: string;
+  namedEntity?: string;
+  firstPersonDetail?: string;
+  vulnerability?: string;
+  pastPosts: any[];
+}
+
+export function programmaticallyScrubAndAudit(text: string): {
+  scrubbedText: string;
+  auditResults: {
+    passed: boolean;
+    checks: Array<{ name: string; status: "PASS" | "WARNING" | "FAIL"; message: string }>;
+  };
+} {
+  let scrubbed = text;
+  const checks: Array<{ name: string; status: "PASS" | "WARNING" | "FAIL"; message: string }> = [];
+
+  // 1. Programmatic Scrubbing (Forensic & Strict)
+  scrubbed = scrubbed.replace(/—/g, " - ");
+  scrubbed = scrubbed.replace(/--/g, " - ");
+
+  const vocabSwaps: Record<string, string> = {
+    "leverage": "use",
+    "utilize": "use",
+    "delve": "look",
+    "harness": "use",
+    "foster": "build",
+    "cultivate": "grow",
+    "vibrant": "alive",
+    "robust": "solid",
+    "intricate": "complex",
+    "garner": "get",
+    "showcase": "show",
+    "underscore": "show",
+    "game-changer": "major shift",
+    "deep dive": "close look",
+    "move the needle": "make a difference",
+    "in today's fast-paced world": "today",
+    "at the end of the day": "ultimately",
+  };
+
+  for (const [bad, good] of Object.entries(vocabSwaps)) {
+    const regex = new RegExp(`\\b${bad}\\b`, "gi");
+    scrubbed = scrubbed.replace(regex, good);
+  }
+
+  const fillers = ["fundamentally", "essentially", "ultimately", "crucially", "notably"];
+  for (const filler of fillers) {
+    const regex = new RegExp(`\\b${filler}\\b`, "gi");
+    scrubbed = scrubbed.replace(regex, "");
+  }
+
+  // Punctuation normalisation
+  scrubbed = scrubbed.replace(/[\u201C\u201D]/g, '"'); // curly double quotes
+  scrubbed = scrubbed.replace(/[\u2018\u2019]/g, "'"); // curly single quotes
+
+  // Clean cliché closers
+  scrubbed = scrubbed.replace(/what do you think\?/gi, "");
+  scrubbed = scrubbed.replace(/tag someone who needs this/gi, "");
+
+  // Clean empty lines or double spaces resulting from removals
+  scrubbed = scrubbed.replace(/[ \t]+/g, " ");
+
+  // 2. Perform Audit Heuristics
+  const charCount = scrubbed.length;
+  if (charCount >= 900 && charCount <= 1300) {
+    checks.push({ name: "Post Length", status: "PASS", message: `Post is ${charCount} characters (fits the 900-1300 sweet spot).` });
+  } else if (charCount >= 300 && charCount < 900) {
+    checks.push({ name: "Post Length", status: "PASS", message: `Post is ${charCount} characters (short form).` });
+  } else if (charCount > 1300 && charCount <= 1900) {
+    checks.push({ name: "Post Length", status: "WARNING", message: `Post is ${charCount} characters (long form, slightly above sweet spot).` });
+  } else {
+    checks.push({ name: "Post Length", status: "FAIL", message: `Post is ${charCount} characters (keep between 300 and 1900).` });
+  }
+
+  const lines = scrubbed.split("\n").filter(l => l.trim());
+  const hookText = lines.slice(0, 2).join("\n");
+  if (hookText.length <= 210) {
+    checks.push({ name: "Hook Length", status: "PASS", message: `First lines are ${hookText.length} characters (will display fully before 'see more').` });
+  } else {
+    checks.push({ name: "Hook Length", status: "FAIL", message: `First lines are ${hookText.length} characters (exceeds the 210-character limit).` });
+  }
+
+  if (/[—]/.test(text) || /--/.test(text)) {
+    checks.push({ name: "Em Dashes", status: "WARNING", message: "Em-dashes were detected in the draft and were programmatically replaced/removed." });
+  } else {
+    checks.push({ name: "Em Dashes", status: "PASS", message: "No em-dashes found." });
+  }
+
+  const detectedAIWords = Object.keys(vocabSwaps).concat(fillers).filter(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "i");
+    return regex.test(text);
+  });
+  if (detectedAIWords.length > 0) {
+    checks.push({ name: "AI Vocabulary", status: "WARNING", message: `Detected AI vocabulary words (${detectedAIWords.join(", ")}) which were cleaned.` });
+  } else {
+    checks.push({ name: "AI Vocabulary", status: "PASS", message: "No AI signature vocabulary detected." });
+  }
+
+  const emojiRegex = /[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu;
+  const emojis = text.match(emojiRegex) || [];
+  if (emojis.length > 3) {
+    checks.push({ name: "Emoji Density", status: "WARNING", message: `Found ${emojis.length} emojis. High emoji density can trigger LinkedIn spam filters.` });
+  } else {
+    checks.push({ name: "Emoji Density", status: "PASS", message: `Found ${emojis.length} emojis.` });
+  }
+
+  const passed = !checks.some(c => c.status === "FAIL");
+
+  return {
+    scrubbedText: scrubbed,
+    auditResults: {
+      passed,
+      checks
+    }
+  };
+}
+
+export async function generateAndHumanizePost(params: GeneratePostParams) {
+  const topicCounts: Record<string, number> = {};
+  const hookCounts: Record<string, number> = {};
+  const totalPostsCount = params.pastPosts.length;
+  
+  params.pastPosts.forEach(p => {
+    if (p.topic) topicCounts[p.topic] = (topicCounts[p.topic] || 0) + 1;
+    if (p.hookType) hookCounts[p.hookType] = (hookCounts[p.hookType] || 0) + 1;
+  });
+
+  const topPastPosts = [...params.pastPosts]
+    .sort((a, b) => (b.engagementRate || 0) - (a.engagementRate || 0))
+    .slice(0, 5)
+    .map(p => ({
+      topic: p.topic,
+      hookType: p.hookType,
+      er: p.engagementRate,
+      hook: p.hook ? p.hook.replace(/\n/g, " ").slice(0, 100) : ""
+    }));
+
+  const historySummary = {
+    totalPostsCount,
+    topicsDistribution: topicCounts,
+    hookTypesDistribution: hookCounts,
+    topPerformingPosts: topPastPosts
+  };
+
+  const formulas: Record<string, string> = {
+    "F1": "Platform Risk Anaphora: Repetitive starting lines pointing out platform risk, followed by your custom fix/product.",
+    "F2": "R.I.P. Obituary: Format post as obituary claiming an old strategy/norm is dead, and explain the new pivot.",
+    "F3": "Year-over-Year Pivot: Contrast what you did/thought in past years vs now.",
+    "F4": "Time-Anchor Confession: Start with a confession about something you did or believed X years ago, and reveal the truth.",
+    "F5": "Self-Proving Meta: Commit to a public challenge, detailing the plan and how readers can track your progress.",
+    "F6": "Comment-Gate Lead Magnet: Announce a valuable free resource and tell users to comment to get it.",
+    "F7": "Odd-Precision Money Ledger: Share precise financial figures (revenue/costs) with odd decimals or amounts, and break down why.",
+    "F8": "Paid-vs-Free Reversal: Contrast what people pay thousands of dollars for with what you give away for free.",
+    "F9": "Curiosity-Gap Teaser: Share a surprising, counter-intuitive data pattern or finding and trace it behind the scenes.",
+    "F10": "Contrarian + Historical Receipts: Share a sacred-cow tech/AI take, backed by historical context/analogies.",
+  };
+
+  const selectedFormulaDesc = formulas[params.hookFormula] || "Choose the best matching formula from F1 to F10 based on the topic.";
+
+  const systemPrompt = `You are an elite LinkedIn copywriter and positioning analyst.
+Analyze the user's past posting history, topic distribution, and performance.
+Create a LinkedIn post that:
+1. Aligns with their historical context (avoids direct duplicates, maintains style continuity).
+2. Adheres to the designated hook formula or picks the best matching one.
+3. Fits the length constraint: ${params.length} characters (short: 300-500, medium: 900-1300, long: 1500-1900).
+4. Integrates the user's provided anecdotes, specific numbers, and personal details.
+5. Employs aggressive sentence-length variance, breaks parallel lists, and inserts sentence fragments.
+6. Absolutely avoids em dashes (—), negative parallelisms, and corporate buzzwords ("delve", "leverage", "robust", etc.).
+
+Return ONLY JSON matching this format:
+{
+  "contextReport": {
+    "situationOverview": "<Analysis of what they have posted previously and how this topic fits in.>",
+    "topicCheck": "<Verification of whether they have already written about this specific angle.>",
+    "relevanceExplanation": "<Explanation of why this topic is relevant to their situation and target audience.>"
+  },
+  "chosenFormula": {
+    "code": "<Formula Code, e.g. F3>",
+    "name": "<Formula Name>",
+    "reason": "<Why this formula was selected>"
+  },
+  "initialDraft": "<The first draft of the post adhering to length and structure, before advanced humanizer passes.>",
+  "humanizedDraft": "<The post draft after applying the humanizer rules (Forensic, Strict, and Aesthetic passes, using variance, fragments, specific numbers, named entities, and vulnerability).>",
+  "humanizationDiff": [
+    { "original": "<Original phrase/word>", "replacement": "<Humanized phrase/word>", "reason": "<Why the change was made (e.g. AI Vocab word leverage replaced)>" }
+  ],
+  "messageOfRelevance": "<A message to the user explaining how the post fits their situation.>"
+}`;
+
+  const userPrompt = `
+Topic: ${params.topic}
+Angle: ${params.angle}
+Target Audience: ${params.audience}
+Target Length Category: ${params.length}
+Selected Hook Formula: ${params.hookFormula} (Description: ${selectedFormulaDesc})
+
+User Situation Context:
+- Specific Numbers: ${params.specificNumbers || "None provided"}
+- Named Entity: ${params.namedEntity || "None provided"}
+- First-Person Detail: ${params.firstPersonDetail || "None provided"}
+- Vulnerability / Stakes: ${params.vulnerability || "None provided"}
+- Anecdotes / Draft Ideas: ${params.anecdotes || "None provided"}
+
+User Past Posts Summary:
+${JSON.stringify(historySummary, null, 2)}
+`;
+
+  try {
+    const raw = await groqChat([
+      { role: "system", content: systemPrompt },
+      { role: "user", content: userPrompt }
+    ], 0.3);
+    
+    const data = JSON.parse(raw);
+    
+    // Apply strict programmatic cleanup and auditing as a safety net
+    const finalDraft = data.humanizedDraft || data.initialDraft || "";
+    const cleanResults = programmaticallyScrubAndAudit(finalDraft);
+    
+    return {
+      ...data,
+      humanizedDraft: cleanResults.scrubbedText,
+      audit: cleanResults.auditResults
+    };
+  } catch (error) {
+    console.error("Error in generateAndHumanizePost:", error);
+    throw error;
+  }
+}
