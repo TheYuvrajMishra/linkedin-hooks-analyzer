@@ -17,7 +17,7 @@ export async function POST() {
     }
     
     const buffer = fs.readFileSync(filepath);
-    const parsedData = parseLinkedInExcel(buffer);
+    const parsedData = parseLinkedInExcel(buffer as unknown as ArrayBuffer);
     
     // Clear database to ensure fresh metrics import
     await db.clearAll();
