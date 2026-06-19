@@ -834,7 +834,8 @@ export async function generateAndHumanizePost(params: GeneratePostParams) {
     topHashtagsString = allowedHashtags.join(", ") + " (recommended fallbacks)";
   }
 
-  const topPastPosts = [...params.pastPosts]
+  const topPastPosts = params.pastPosts
+    .filter(p => p.postText || p.hook)
     .sort((a, b) => (b.engagementRate || 0) - (a.engagementRate || 0))
     .slice(0, 5)
     .map(p => ({
@@ -931,13 +932,67 @@ ${JSON.stringify(historySummary, null, 2)}
     const data = JSON.parse(raw);
     
     // Apply strict programmatic cleanup and auditing as a safety net
-    const finalDraft = data.humanizedDraft || data.initialDraft || "";
-    const cleanResults = programmaticallyScrubAndAudit(finalDraft);
+    let finalDraft = data.humanizedDraft || data.initialDraft || "";
+    let cleanResults = programmaticallyScrubAndAudit(finalDraft);
+    
+    // Self-correcting Recalibration and Restructuring Feedback Loop
+    let attempts = 0;
+    const maxAttempts = 2;
+    
+    while (!cleanResults.auditResults.passed && attempts < maxAttempts) {
+      attempts++;
+      console.log(`[Audit] Post failed formatting checks on attempt ${attempts}. Restructuring and re-calibrating draft...`);
+      
+      const failedChecks = cleanResults.auditResults.checks
+        .filter(c => c.status === "FAIL")
+        .map(c => `- ${c.name}: ${c.message}`)
+        .join("\n");
+        
+      const refinementPrompt = `You are a strict LinkedIn editor. The generated post draft failed our mandatory formatting checklist.
+You must restructure, re-calibrate, and rewrite the post draft to resolve the following failures:
+${failedChecks}
+
+Here is the current post draft:
+---
+${cleanResults.scrubbedText}
+---
+
+CRITICAL EDITING DIRECTIONS:
+1. Ensure there is a blank line (double newline) separating every single paragraph. No consecutive text lines without empty space.
+2. Hook must land in the first 2 lines (max 210 characters total).
+3. Post length must fall strictly within the 900 to 1,300 characters sweet spot.
+4. Ensure the CTA forces a specific choice or answer related to the topic (avoid generic questions like "What do you think?").
+5. Place exactly 1 to 2 hashtags at the very end of the post.
+6. Absolutely no em dashes (—) or double hyphens (--).
+7. Maintain the user's authentic voice, tone, and provided situation context.
+
+Return ONLY JSON matching this format:
+{
+  "recalibratedDraft": "<The fully restructured and corrected post draft.>"
+}`;
+
+      try {
+        const rawRefine = await groqChat([
+          { role: "system", content: "You are a precise JSON restructuring assistant. Return ONLY the requested JSON format." },
+          { role: "user", content: refinementPrompt }
+        ], 0.1, 1500);
+        
+        const refineData = JSON.parse(rawRefine);
+        if (refineData.recalibratedDraft) {
+          finalDraft = refineData.recalibratedDraft;
+          cleanResults = programmaticallyScrubAndAudit(finalDraft);
+        }
+      } catch (refineError) {
+        console.error("[Audit Recalibration] Refinement loop call failed:", refineError);
+        break;
+      }
+    }
     
     return {
       ...data,
       humanizedDraft: cleanResults.scrubbedText,
-      audit: cleanResults.auditResults
+      audit: cleanResults.auditResults,
+      recalibrationsPerformed: attempts
     };
   } catch (error) {
     console.error("Error in generateAndHumanizePost:", error);

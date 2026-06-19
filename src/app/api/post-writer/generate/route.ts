@@ -27,16 +27,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Retrieve past posts for context awareness (if not passed in request body)
-    let pastPosts = passedPosts;
-    if (!pastPosts || !Array.isArray(pastPosts)) {
-      try {
-        const allPosts = await db.getPosts();
-        pastPosts = allPosts.filter((p: any) => p.analyzed);
-      } catch (dbError) {
-        console.warn("Could not load past posts from database, using empty context:", dbError);
-        pastPosts = [];
+    // Retrieve past posts for context awareness (always load from DB to get rich scraped text if available)
+    let pastPosts = passedPosts || [];
+    try {
+      const allPosts = await db.getPosts();
+      const analyzedDbPosts = allPosts.filter((p: any) => p.analyzed && (p.postText || p.hook));
+      if (analyzedDbPosts.length > 0) {
+        pastPosts = analyzedDbPosts;
       }
+    } catch (dbError) {
+      console.warn("Could not load past posts from database, using client context:", dbError);
     }
 
     // Invoke the AI generator & humanizer pipeline

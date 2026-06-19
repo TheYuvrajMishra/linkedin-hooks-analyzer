@@ -73,6 +73,7 @@ export default function PostWriterPage() {
       passed: boolean;
       checks: Array<{ name: string; status: "PASS" | "WARNING" | "FAIL"; message: string }>;
     };
+    recalibrationsPerformed?: number;
   } | null>(null);
 
   // Editable version of the drafted post
@@ -602,9 +603,15 @@ export default function PostWriterPage() {
                   <div className="space-y-4 rounded-3xl border border-white/5 bg-white/[0.01] p-6">
                     <div className="flex justify-between items-center mb-2">
                       <h3 className="text-xs font-bold text-white uppercase tracking-wider font-display">Algorithmic Checklist</h3>
-                      <div className="flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                        Audit Passed
-                      </div>
+                      {result.audit?.passed ? (
+                        <div className="flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                          Audit Passed {result.recalibrationsPerformed && result.recalibrationsPerformed > 0 ? `(Re-calibrated ${result.recalibrationsPerformed}x)` : "(Direct)"}
+                        </div>
+                      ) : (
+                        <div className="flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-rose-500/10 text-rose-400 border border-rose-500/20">
+                          Checklist Warnings (Audited {result.recalibrationsPerformed || 0}x)
+                        </div>
+                      )}
                     </div>
 
                     <div className="space-y-3">
