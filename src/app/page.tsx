@@ -623,7 +623,7 @@ export default function Home() {
               <Sparkles className="h-4.5 w-4.5 text-white" strokeWidth={1.2} />
             </div>
             <div>
-              <h1 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">HookCraft AI</h1>
+              <h1 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">Linkedin Looker</h1>
             </div>
           </div>
 
@@ -1976,7 +1976,7 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="relative z-10 mx-auto max-w-7xl px-4 mt-16 border-t border-white/5 py-8 text-center text-xs text-zinc-650 sm:px-6 lg:px-8">
-        <p>© 2026 HookCraft AI. All rights reserved. Locally executed for {dbStatus?.stats.totalPosts ? "Yuvraj Mishra" : "your account"}.</p>
+        <p>© 2026 Linkedin Looker. All rights reserved. Locally executed for {dbStatus?.stats.totalPosts ? "Yuvraj Mishra" : "your account"}.</p>
       </footer>
     </div>
   );

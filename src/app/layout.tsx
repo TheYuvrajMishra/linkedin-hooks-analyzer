@@ -23,7 +23,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "HookCraft AI — LinkedIn Hooks Intelligence Dashboard",
+  title: "Linkedin Looker — LinkedIn Hooks Intelligence Dashboard",
   description: "Analyze, classify, and generate winning LinkedIn hooks using AI.",
 };
 
