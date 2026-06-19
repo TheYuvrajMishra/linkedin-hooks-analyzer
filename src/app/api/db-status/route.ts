@@ -9,7 +9,7 @@ export async function GET() {
     const demo = await db.getDemographicMetrics();
     const latestAnalysis = await db.getLatestAnalysisResult();
     
-    const analyzedPostsCount = posts.filter((p) => p.analyzed).length;
+    const analyzedPostsCount = posts.filter((p: any) => p.analyzed).length;
     
     return NextResponse.json({
       isFallback: db.isFallback(),

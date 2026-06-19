@@ -7,7 +7,7 @@ export async function POST() {
     const posts = await db.getPosts();
     
     // Filter to only analyzed posts to avoid polluting AI analysis with empty strings
-    const analyzedPosts = posts.filter((p) => p.analyzed);
+    const analyzedPosts = posts.filter((p: any) => p.analyzed);
     
     if (analyzedPosts.length === 0) {
       return NextResponse.json(
