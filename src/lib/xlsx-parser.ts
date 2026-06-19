@@ -24,8 +24,8 @@ export interface ParsedLinkedInData {
   }>;
 }
 
-export function parseLinkedInExcel(buffer: Buffer): ParsedLinkedInData {
-  const workbook = XLSX.read(buffer, { type: "buffer" });
+export function parseLinkedInExcel(buffer: ArrayBuffer): ParsedLinkedInData {
+  const workbook = XLSX.read(buffer, { type: "array" });
   
   // 1. Parse Engagement sheet (Date, Impressions, Engagements)
   const engagementSheet = workbook.Sheets["ENGAGEMENT"];

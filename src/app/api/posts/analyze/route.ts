@@ -25,15 +25,12 @@ function detectSentenceStructure(hook: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { postUrl } = await req.json();
-    if (!postUrl) {
-      return NextResponse.json({ error: "postUrl is required" }, { status: 400 });
+    const { post } = await req.json();
+    if (!post || !post.postUrl) {
+      return NextResponse.json({ error: "post object with postUrl is required" }, { status: 400 });
     }
 
-    const post = await db.getPostByUrl(postUrl);
-    if (!post) {
-      return NextResponse.json({ error: "Post not found in database" }, { status: 444 });
-    }
+    const postUrl = post.postUrl;
 
     // 1. Scrape the full text of the post
     const postText = await scrapePostText(postUrl);
@@ -46,8 +43,8 @@ export async function POST(req: NextRequest) {
     const openingWords = hook.split(/\s+/).slice(0, 5).join(" ");
     const sentenceStructure = detectSentenceStructure(hook);
     
-    // 6. Update database record
-    const updatedPost = await db.savePost({
+    // 6. Return updated record without saving to DB
+    const updatedPost = {
       ...post,
       postText,
       hook,
@@ -57,7 +54,7 @@ export async function POST(req: NextRequest) {
       openingWords,
       sentenceStructure,
       analyzed: true,
-    });
+    };
 
     return NextResponse.json({
       success: true,

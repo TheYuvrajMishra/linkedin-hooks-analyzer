@@ -1,10 +1,13 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { analyzeContentPatterns } from "@/lib/ai";
 
-export async function POST() {
+export async function POST(req: NextRequest) {
   try {
-    const posts = await db.getPosts();
+    const { posts } = await req.json();
+    if (!posts || !Array.isArray(posts)) {
+      return NextResponse.json({ error: "posts array is required" }, { status: 400 });
+    }
     
     // Filter to only analyzed posts to avoid polluting AI analysis with empty strings
     const analyzedPosts = posts.filter((p: any) => p.analyzed);
@@ -19,8 +22,8 @@ export async function POST() {
     // Run AI analysis
     const analysisResult = await analyzeContentPatterns(analyzedPosts);
     
-    // Save to database
-    const savedResult = await db.saveAnalysisResult(analysisResult);
+    // 4. Return result without saving to database
+    const savedResult = analysisResult;
     
     return NextResponse.json({
       success: true,
