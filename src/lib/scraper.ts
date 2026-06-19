@@ -1,68 +1,38 @@
-import puppeteer from "puppeteer";
+import axios from "axios";
+import * as cheerio from "cheerio";
+
+const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 /**
  * Scrapes the post text content from a LinkedIn post URL.
- * It attempts to parse public elements and meta tags.
- * If scraping fails (due to login walls or captchas), it generates a fallback text based on the URL slug.
+ * It uses Axios to fetch the HTML and Cheerio to parse meta tags.
+ * This runs significantly faster than launching a headless browser.
  */
 export async function scrapePostText(url: string): Promise<string> {
-  let browser;
   try {
-    console.log(`Scraping URL: ${url}`);
-    browser = await puppeteer.launch({
-      headless: true,
-      args: [
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-dev-shm-usage",
-        "--disable-gpu",
-      ],
-    });
-    const page = await browser.newPage();
-    
-    // Set user agent to resemble a real browser
-    await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    );
-    
-    // Set viewport
-    await page.setViewport({ width: 1280, height: 800 });
-
-    // Go to LinkedIn URL
-    await page.goto(url, { waitUntil: "networkidle2", timeout: 15000 });
-    
-    // Extract text and metadata
-    const result = await page.evaluate(() => {
-      const ogDesc = document.querySelector('meta[property="og:description"]')?.getAttribute("content") || "";
-      const metaDesc = document.querySelector('meta[name="description"]')?.getAttribute("content") || "";
-      
-      const selectors = [
-        ".share-update-card__update-text",
-        ".feed-shared-update-v2__commentary",
-        "article.main-content",
-        ".main-content article",
-        ".attributed-text-segment-list__content",
-        "[data-test-id='post-text']"
-      ];
-      
-      let bodyText = "";
-      for (const selector of selectors) {
-        const element = document.querySelector(selector);
-        if (element && element.textContent) {
-          const text = element.textContent.trim();
-          if (text.length > bodyText.length) {
-            bodyText = text;
-          }
-        }
-      }
-      
-      return { ogDesc, metaDesc, bodyText };
+    console.log(`Scraping post: ${url}`);
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent": USER_AGENT,
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+      },
+      timeout: 10000,
     });
 
-    await browser.close();
-    
-    // Determine the best text source (prioritize metadata descriptions which contain clean post bodies)
-    let finalCode = result.ogDesc || result.metaDesc || result.bodyText || "";
+    if (response.status !== 200) {
+      throw new Error(`Failed to fetch page. Status: ${response.status}`);
+    }
+
+    const html = response.data;
+    const $ = cheerio.load(html);
+
+    // Extract post text from metadata tags
+    const metaDesc = $('meta[property="og:description"]').attr("content") ||
+                     $('meta[name="description"]').attr("content") ||
+                     $('meta[name="twitter:description"]').attr("content") || "";
+
+    let finalCode = metaDesc.trim();
     
     if (finalCode) {
       // Clean up common LinkedIn meta prefixes
@@ -75,52 +45,19 @@ export async function scrapePostText(url: string): Promise<string> {
         finalCode = finalCode.replace(regex, "");
       }
       
-      // Clean up trailing comment numbers e.g. " | 20 comments on LinkedIn"
-      finalCode = finalCode.replace(/\s*\|\s*\d+\s*comments\s*(?:on\s*LinkedIn)?\s*$/i, "");
+      // Clean up trailing comment/reaction summaries
+      finalCode = finalCode.replace(/\s*\|\s*\d+\s+(?:comment|reaction)s?\s+(?:on\s+LinkedIn)?\s*$/i, "");
+      finalCode = finalCode.replace(/\s*\|\s*LinkedIn\s*$/i, "");
       finalCode = finalCode.trim();
     }
     
-    if (finalCode && finalCode.length > 5) {
+    if (finalCode) {
       console.log(`Scraped post content successfully (${finalCode.length} chars).`);
       return finalCode;
     }
   } catch (error: any) {
-    console.error(`Error scraping LinkedIn URL: ${url}`, error.message);
-    if (browser) {
-      try {
-        await browser.close();
-      } catch (e) {}
-    }
+    console.error(`Error scraping LinkedIn URL ${url}:`, error.message);
   }
   
-  // If we couldn't scrape, use fallback keywords from the URL
-  return getFallbackPostText(url);
-}
-
-function getFallbackPostText(url: string): string {
-  try {
-    // Extract keywords from the URL slug
-    // e.g. https://www.linkedin.com/posts/the-yuvraj-mishra_nextjs-fullstackdeveloper-reactjs-share-7402528501125287936-GA-2
-    const urlObj = new URL(url);
-    const pathname = urlObj.pathname;
-    const parts = pathname.split("/");
-    const lastPart = parts[parts.length - 1] || "";
-    
-    // It usually starts with "the-yuvraj-mishra_" or similar
-    const splitParts = lastPart.split("_");
-    const keywordSlug = splitParts[splitParts.length - 1] || lastPart;
-    
-    // Split by hyphens and filter out numbers/hashes
-    const keywords = keywordSlug
-      .split("-")
-      .filter((w) => w && isNaN(Number(w)) && w.length > 2 && w !== "share" && w !== "ugcPost")
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-      .join(" ");
-      
-    if (keywords) {
-      return `Building and sharing insights about ${keywords} in my journey as a developer. (Note: Content parsed from post URL keywords due to LinkedIn block/login wall).`;
-    }
-  } catch (e) {}
-  
-  return `Sharing my thoughts and updates on LinkedIn. (Note: Content simulated as LinkedIn is currently blocking scrapers).`;
+  return "";
 }
