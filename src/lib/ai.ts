@@ -54,6 +54,7 @@ interface ChatMessage {
 async function groqChat(
   messages: ChatMessage[],
   temperature = 0.1,
+  maxTokens = 512,
 ): Promise<string> {
   let lastError: unknown;
   let delay = BASE_DELAY_MS;
@@ -66,7 +67,7 @@ async function groqChat(
         messages,
         temperature,
         response_format: { type: "json_object" },
-        max_tokens: 512,           // Keep each call tiny to protect TPM budget
+        max_tokens: maxTokens,
       });
       return res.choices[0]?.message?.content ?? "{}";
     } catch (err: unknown) {
@@ -634,49 +635,141 @@ export function programmaticallyScrubAndAudit(text: string): {
   // Clean empty lines or double spaces resulting from removals
   scrubbed = scrubbed.replace(/[ \t]+/g, " ");
 
-  // 2. Perform Audit Heuristics
-  const charCount = scrubbed.length;
-  if (charCount >= 900 && charCount <= 1300) {
-    checks.push({ name: "Post Length", status: "PASS", message: `Post is ${charCount} characters (fits the 900-1300 sweet spot).` });
-  } else if (charCount >= 300 && charCount < 900) {
-    checks.push({ name: "Post Length", status: "PASS", message: `Post is ${charCount} characters (short form).` });
-  } else if (charCount > 1300 && charCount <= 1900) {
-    checks.push({ name: "Post Length", status: "WARNING", message: `Post is ${charCount} characters (long form, slightly above sweet spot).` });
-  } else {
-    checks.push({ name: "Post Length", status: "FAIL", message: `Post is ${charCount} characters (keep between 300 and 1900).` });
-  }
+  // 2. Perform 10-Point Audit Heuristics
 
+  // Check 1: Hook lands in first 2 lines without context
   const lines = scrubbed.split("\n").filter(l => l.trim());
-  const hookText = lines.slice(0, 2).join("\n");
-  if (hookText.length <= 210) {
-    checks.push({ name: "Hook Length", status: "PASS", message: `First lines are ${hookText.length} characters (will display fully before 'see more').` });
-  } else {
-    checks.push({ name: "Hook Length", status: "FAIL", message: `First lines are ${hookText.length} characters (exceeds the 210-character limit).` });
-  }
+  const hookLines = lines.slice(0, 2).join("\n");
+  const hookPass = hookLines.length <= 210 && lines.length >= 2;
+  checks.push({
+    name: "Hook Lands in First 2 Lines",
+    status: hookPass ? "PASS" : "FAIL",
+    message: hookPass 
+      ? `Hook fits within the first 2 lines (${hookLines.length} chars) and lands without broad context.`
+      : `Hook exceeds viewport limits or lacks direct placement (${hookLines.length} chars).`
+  });
 
-  if (/[—]/.test(text) || /--/.test(text)) {
-    checks.push({ name: "Em Dashes", status: "WARNING", message: "Em-dashes were detected in the draft and were programmatically replaced/removed." });
-  } else {
-    checks.push({ name: "Em Dashes", status: "PASS", message: "No em-dashes found." });
-  }
+  // Check 2: No em dashes
+  const emDashFail = /[—]/.test(text) || /--/.test(text);
+  checks.push({
+    name: "No Em Dashes",
+    status: emDashFail ? "FAIL" : "PASS",
+    message: emDashFail
+      ? "Draft contained forbidden em dashes (which were programmatically swapped to hyphens)."
+      : "Passed: Zero em dashes found in draft."
+  });
 
+  // Check 3: No AI vocab from the banned list
   const detectedAIWords = Object.keys(vocabSwaps).concat(fillers).filter(word => {
     const regex = new RegExp(`\\b${word}\\b`, "i");
     return regex.test(text);
   });
-  if (detectedAIWords.length > 0) {
-    checks.push({ name: "AI Vocabulary", status: "WARNING", message: `Detected AI vocabulary words (${detectedAIWords.join(", ")}) which were cleaned.` });
-  } else {
-    checks.push({ name: "AI Vocabulary", status: "PASS", message: "No AI signature vocabulary detected." });
-  }
+  checks.push({
+    name: "No Banned AI Vocab",
+    status: detectedAIWords.length > 0 ? "FAIL" : "PASS",
+    message: detectedAIWords.length > 0
+      ? `Banned corporate AI words detected (${detectedAIWords.join(", ")}) and programmatically cleaned.`
+      : "Passed: Zero signature AI words found."
+  });
 
-  const emojiRegex = /[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu;
-  const emojis = text.match(emojiRegex) || [];
-  if (emojis.length > 3) {
-    checks.push({ name: "Emoji Density", status: "WARNING", message: `Found ${emojis.length} emojis. High emoji density can trigger LinkedIn spam filters.` });
-  } else {
-    checks.push({ name: "Emoji Density", status: "PASS", message: `Found ${emojis.length} emojis.` });
+  // Check 4: Blank line between every paragraph
+  const linesRaw = text.split("\n");
+  let singleNewlineFault = false;
+  for (let i = 0; i < linesRaw.length - 1; i++) {
+    if (linesRaw[i].trim() !== "" && linesRaw[i+1].trim() !== "") {
+      singleNewlineFault = true;
+      break;
+    }
   }
+  checks.push({
+    name: "Blank Line Between Paragraphs",
+    status: singleNewlineFault ? "FAIL" : "PASS",
+    message: singleNewlineFault
+      ? "Failed: Paragraphs must have a blank line (double newline) between them. Consecutive text lines detected."
+      : "Passed: Paragraphs are properly separated by blank lines."
+  });
+
+  // Check 5: CTA forces a specific answer
+  const ctaText = lines[lines.length - 1] || "";
+  const genericCTAPatterns = [
+    /what do you think/i, /let me know/i, /agree\?/i, /agree or disagree/i, 
+    /thoughts\?/i, /comment below/i, /your take/i
+  ];
+  const isGenericCTA = genericCTAPatterns.some(pattern => pattern.test(ctaText));
+  const hasQuestionMark = ctaText.includes("?");
+  const ctaPass = hasQuestionMark && !isGenericCTA;
+  checks.push({
+    name: "CTA Forces Specific Answer",
+    status: ctaPass ? "PASS" : "FAIL",
+    message: ctaPass
+      ? `Passed: CTA asks a specific question: "${ctaText}"`
+      : `Failed: CTA is generic or missing a question mark. A high-converting CTA must force a specific choice/answer.`
+  });
+
+  // Check 6: 900-1,300 characters
+  const charLengthPass = scrubbed.length >= 900 && scrubbed.length <= 1300;
+  checks.push({
+    name: "900-1,300 Characters",
+    status: charLengthPass ? "PASS" : "FAIL",
+    message: charLengthPass
+      ? `Passed: Post is ${scrubbed.length} characters (fits the 900-1,300 sweet spot).`
+      : `Failed: Post is ${scrubbed.length} characters (target is 900-1,300 chars for maximum reach).`
+  });
+
+  // Check 7: Max 2 hashtags at end
+  const hashtags = text.match(/#\w+/g) || [];
+  const hashtagCountPass = hashtags.length <= 2;
+  const lastSegment = text.slice(-Math.floor(text.length * 0.20));
+  const hashtagsAtEnd = hashtags.every(tag => lastSegment.includes(tag));
+  checks.push({
+    name: "Max 2 Hashtags at End",
+    status: (hashtagCountPass && hashtagsAtEnd) ? "PASS" : "FAIL",
+    message: !hashtagCountPass
+      ? `Failed: Found ${hashtags.length} hashtags (maximum allowed is 2).`
+      : !hashtagsAtEnd
+        ? "Failed: Hashtags must be placed at the very end of the post."
+        : `Passed: Found ${hashtags.length} hashtags placed at the end.`
+  });
+
+  // Check 8: No made-up stats
+  const numberRegex = /\b\d+(?:[\.,]\d+)?%?\b/g;
+  const originalNumbers = text.match(numberRegex) || [];
+  const suspiciousNumbers = originalNumbers.filter(num => {
+    if (["1", "2", "3", "4", "5", "2024", "2025", "2026"].includes(num)) return false;
+    return true;
+  });
+  checks.push({
+    name: "Stat Accuracy Check",
+    status: suspiciousNumbers.length > 0 ? "WARNING" : "PASS",
+    message: suspiciousNumbers.length > 0
+      ? `Warning: Confirm the accuracy of stats: ${suspiciousNumbers.join(", ")}. Do not fabricate stats.`
+      : "Passed: No unverified statistics or percentages detected."
+  });
+
+  // Check 9: No 'stay tuned' or teaser language
+  const teaserRegex = /\b(?:stay tuned|coming soon|teaser|watch this space|more to come|stay tuned for|read next)\b/i;
+  const hasTeaser = teaserRegex.test(text);
+  checks.push({
+    name: "No Teaser Language",
+    status: hasTeaser ? "FAIL" : "PASS",
+    message: hasTeaser
+      ? "Failed: Contains teaser language ('stay tuned', 'coming soon', etc.) which hurts post delivery."
+      : "Passed: Zero teaser or promotional filler language detected."
+  });
+
+  // Check 10: Reads like user wrote it (adopt style from db)
+  const chatGptPhrases = [
+    /\bin this post\b/i, /\bhere are the\b/i, /\bfirst and foremost\b/i, 
+    /\blook no further\b/i, /\bconsequently\b/i, /\bto summarize\b/i
+  ];
+  const hasChatGptIndicators = chatGptPhrases.some(pat => pat.test(text));
+  checks.push({
+    name: "Reads Like User (De-AI Tone)",
+    status: hasChatGptIndicators ? "WARNING" : "PASS",
+    message: hasChatGptIndicators
+      ? "Warning: Detected generic ChatGPT boilerplate. Cleaned up to adopt user style."
+      : "Passed: High similarity to user writing style. Zero ChatGPT templates detected."
+  });
 
   const passed = !checks.some(c => c.status === "FAIL");
 
@@ -699,6 +792,48 @@ export async function generateAndHumanizePost(params: GeneratePostParams) {
     if (p.hookType) hookCounts[p.hookType] = (hookCounts[p.hookType] || 0) + 1;
   });
 
+  // Extract hashtags and rank them by average performance
+  const hashtagStats: Record<string, { count: number; totalER: number }> = {};
+  params.pastPosts.forEach(p => {
+    if (p.postText) {
+      const hashtags = p.postText.match(/#\b\w+\b/g) || [];
+      hashtags.forEach((tag: string) => {
+        const lowerTag = tag.toLowerCase();
+        if (!hashtagStats[lowerTag]) {
+          hashtagStats[lowerTag] = { count: 0, totalER: 0 };
+        }
+        hashtagStats[lowerTag].count++;
+        hashtagStats[lowerTag].totalER += p.engagementRate || 0;
+      });
+    }
+  });
+
+  const topHashtagsList = Object.entries(hashtagStats)
+    .map(([tag, stat]) => ({
+      tag,
+      count: stat.count,
+      avgER: stat.count > 0 ? parseFloat((stat.totalER / stat.count).toFixed(2)) : 0
+    }))
+    .sort((a, b) => b.avgER - a.avgER)
+    .slice(0, 5);
+
+  let topHashtagsString = topHashtagsList.map(t => `${t.tag} (Avg ER: ${t.avgER}%, Used: ${t.count} times)`).join(", ");
+  let allowedHashtags = topHashtagsList.map(t => t.tag);
+  
+  if (allowedHashtags.length === 0) {
+    const topicLower = params.topic.toLowerCase();
+    const fallbacks = ["#solopreneur", "#buildinginpublic", "#indiehackers"];
+    if (topicLower.includes("next") || topicLower.includes("react") || topicLower.includes("web") || topicLower.includes("dev")) {
+      fallbacks.unshift("#webdev", "#nextjs", "#reactjs", "#javascript");
+    } else if (topicLower.includes("ai") || topicLower.includes("llm") || topicLower.includes("gpt")) {
+      fallbacks.unshift("#ai", "#artificialintelligence", "#saas", "#tech");
+    } else {
+      fallbacks.unshift("#saas", "#startups", "#entrepreneurship");
+    }
+    allowedHashtags = fallbacks.slice(0, 4);
+    topHashtagsString = allowedHashtags.join(", ") + " (recommended fallbacks)";
+  }
+
   const topPastPosts = [...params.pastPosts]
     .sort((a, b) => (b.engagementRate || 0) - (a.engagementRate || 0))
     .slice(0, 5)
@@ -706,7 +841,8 @@ export async function generateAndHumanizePost(params: GeneratePostParams) {
       topic: p.topic,
       hookType: p.hookType,
       er: p.engagementRate,
-      hook: p.hook ? p.hook.replace(/\n/g, " ").slice(0, 100) : ""
+      hook: p.hook ? p.hook.replace(/\n/g, " ").slice(0, 100) : "",
+      text: p.postText ? p.postText.slice(0, 400) : ""
     }));
 
   const historySummary = {
@@ -732,14 +868,20 @@ export async function generateAndHumanizePost(params: GeneratePostParams) {
   const selectedFormulaDesc = formulas[params.hookFormula] || "Choose the best matching formula from F1 to F10 based on the topic.";
 
   const systemPrompt = `You are an elite LinkedIn copywriter and positioning analyst.
-Analyze the user's past posting history, topic distribution, and performance.
-Create a LinkedIn post that:
-1. Aligns with their historical context (avoids direct duplicates, maintains style continuity).
-2. Adheres to the designated hook formula or picks the best matching one.
-3. Fits the length constraint: ${params.length} characters (short: 300-500, medium: 900-1300, long: 1500-1900).
-4. Integrates the user's provided anecdotes, specific numbers, and personal details.
-5. Employs aggressive sentence-length variance, breaks parallel lists, and inserts sentence fragments.
-6. Absolutely avoids em dashes (—), negative parallelisms, and corporate buzzwords ("delve", "leverage", "robust", etc.).
+Analyze the user's past posting history, topic distribution, performance, and writing style.
+
+CRITICAL INSTRUCTION: You MUST generate a COMPLETE, FULL post, NOT just a hook. 
+You must strictly adhere to the following 10-Point Format Checklist:
+1. Hook lands in the first 2 lines without prior build-up or broad context.
+2. Absolutely no em dashes (—) or double hyphens (--) anywhere. Use standard hyphens, commas, or periods.
+3. No AI signature vocabulary (e.g. leverage, utilize, delve, harness, foster, cultivate, robust, intricate, showcase, underscore, fundamentally, essentially, ultimately, crucially, notably).
+4. Blank line between every single paragraph (double newlines \n\n, no consecutive single newlines).
+5. CTA forces a specific choice/answer related to the topic (e.g. "Do you do X, or do you prefer Y?" rather than generic bait like "What do you think?").
+6. Total character count must fall strictly between 900 and 1,300 characters. Keep it concise but fully detailed.
+7. Max 2 hashtags placed at the very end of the post (choose from the provided user's top hashtags).
+8. No made-up stats. Only use numbers or statistics provided in the user situation context.
+9. No "stay tuned" or teaser/promotional placeholder language.
+10. Style match: Reads like the user wrote it. Adopt the user's exact writing style, sentence length distribution, tone, soft pauses (e.g. '..'), and structural style from the past posts summary. Avoid standard ChatGPT boilerplate or templates.
 
 Return ONLY JSON matching this format:
 {
@@ -753,8 +895,8 @@ Return ONLY JSON matching this format:
     "name": "<Formula Name>",
     "reason": "<Why this formula was selected>"
   },
-  "initialDraft": "<The first draft of the post adhering to length and structure, before advanced humanizer passes.>",
-  "humanizedDraft": "<The post draft after applying the humanizer rules (Forensic, Strict, and Aesthetic passes, using variance, fragments, specific numbers, named entities, and vulnerability).>",
+  "initialDraft": "<The first draft of the complete post adhering to length and structure, before advanced humanizer passes.>",
+  "humanizedDraft": "<The complete post draft after applying the humanizer rules (Forensic, Strict, and Aesthetic passes, using variance, fragments, specific numbers, named entities, vulnerability, specific CTA, and 1-2 hashtags).>",
   "humanizationDiff": [
     { "original": "<Original phrase/word>", "replacement": "<Humanized phrase/word>", "reason": "<Why the change was made (e.g. AI Vocab word leverage replaced)>" }
   ],
@@ -774,8 +916,9 @@ User Situation Context:
 - First-Person Detail: ${params.firstPersonDetail || "None provided"}
 - Vulnerability / Stakes: ${params.vulnerability || "None provided"}
 - Anecdotes / Draft Ideas: ${params.anecdotes || "None provided"}
+- Top Performing Hashtags: ${topHashtagsString}
 
-User Past Posts Summary:
+User Past Posts Summary (Adopt tone, spacing, punctuation from these):
 ${JSON.stringify(historySummary, null, 2)}
 `;
 
@@ -783,7 +926,7 @@ ${JSON.stringify(historySummary, null, 2)}
     const raw = await groqChat([
       { role: "system", content: systemPrompt },
       { role: "user", content: userPrompt }
-    ], 0.3);
+    ], 0.3, 1800);
     
     const data = JSON.parse(raw);
     
