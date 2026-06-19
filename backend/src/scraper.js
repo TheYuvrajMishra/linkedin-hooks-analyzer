@@ -1,0 +1,113 @@
+import axios from 'axios';
+import * as cheerio from 'cheerio';
+
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
+/**
+ * Cleans the extracted LinkedIn description text.
+ * LinkedIn appends comments, reactions, and branding information at the end of meta descriptions.
+ */
+function cleanPostText(text) {
+  if (!text) return '';
+  
+  let cleaned = text.trim();
+  
+  // LinkedIn descriptions often end with " | X comments on LinkedIn" or " | X reactions on LinkedIn"
+  const suffixRegex = /\s*\|\s*\d+\s+(?:comment|reaction)s?\s+on\s+LinkedIn\s*$/i;
+  cleaned = cleaned.replace(suffixRegex, '');
+
+  // Or sometimes just " | LinkedIn" or similar
+  cleaned = cleaned.replace(/\s*\|\s*LinkedIn\s*$/i, '');
+
+  return cleaned;
+}
+
+/**
+ * Scrapes a LinkedIn post URL to extract post content and metadata.
+ */
+export async function scrapePost(url) {
+  try {
+    console.log(`Scraping post: ${url}`);
+    const response = await axios.get(url, {
+      headers: {
+        'User-Agent': USER_AGENT,
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+      timeout: 15000,
+    });
+
+    if (response.status !== 200) {
+      throw new Error(`Failed to fetch page. Status: ${response.status}`);
+    }
+
+    const html = response.data;
+    const $ = cheerio.load(html);
+
+    // 1. Extract Post Text from description meta tags
+    let rawText = '';
+    const metaDesc = $('meta[name="description"]').attr('content') || 
+                     $('meta[property="og:description"]').attr('content') ||
+                     $('meta[name="twitter:description"]').attr('content');
+                     
+    if (metaDesc) {
+      rawText = cleanPostText(metaDesc);
+    }
+
+    // 2. Extract Publish Date from schema ld+json if available
+    let publishDate = null;
+    $('script[type="application/ld+json"]').each((i, elem) => {
+      try {
+        const data = JSON.parse($(elem).html());
+        if (data && data.datePublished) {
+          publishDate = data.datePublished;
+        }
+      } catch (err) {
+        // Ignore JSON parse errors for invalid scripts
+      }
+    });
+
+    // 3. Guess Media Type
+    // Look at page content or URL to guess the media type.
+    // e.g., if there is a video tag, or based on post keywords (document, video, carousel).
+    let mediaType = 'Text';
+    
+    // Check if the URL contains keywords
+    const lowerUrl = url.toLowerCase();
+    if (lowerUrl.includes('ugcpost') || lowerUrl.includes('activity')) {
+      // In LinkedIn, ugcPost often implies media was uploaded, but can be text.
+    }
+    
+    // Check HTML content for video or iframe indicators
+    const hasVideo = $('meta[property="og:video"]').length > 0 || html.includes('video-player') || html.includes('plyr');
+    const hasImage = $('meta[property="og:image"]').length > 0 && !$('meta[property="og:image"]').attr('content')?.includes('profile-displayphoto');
+
+    if (hasVideo) {
+      mediaType = 'Video';
+    } else if (hasImage) {
+      // Could be image or carousel. If the text mentions "carousel" or "slide", mark as Carousel.
+      const textLower = rawText.toLowerCase();
+      if (textLower.includes('carousel') || textLower.includes('swipe') || textLower.includes('pdf') || textLower.includes('slide')) {
+        mediaType = 'Carousel';
+      } else {
+        mediaType = 'Image';
+      }
+    }
+
+    return {
+      url,
+      text: rawText,
+      publishDate,
+      mediaType,
+    };
+  } catch (error) {
+    console.error(`Error scraping post ${url}:`, error.message);
+    // Return partial object to avoid failing the whole import
+    return {
+      url,
+      text: '',
+      publishDate: null,
+      mediaType: 'Text',
+      error: error.message
+    };
+  }
+}
