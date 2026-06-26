@@ -702,27 +702,8 @@ export default function Home() {
                   </div>
                 )}
 
-                <div className="grid gap-6">
+                <div className="space-y-6">
                   <div className="rounded-2xl border border-white/5 bg-zinc-950/50 p-6 text-left transition-colors hover:border-white/10">
-                    <h3 className="font-display text-sm font-bold text-white mb-3">Option 1: Project Demo Auto-Load</h3>
-                    <p className="text-xs text-zinc-400 mb-4">
-                      The analyzer script has already pulled 1 year of data into <code className="bg-white/10 px-1 py-0.5 rounded text-white">AggregateAnalytics_2023-11-20_2024-11-19.xlsx</code> in the project root. Load it instantly.
-                    </p>
-                    <button
-                      onClick={handleAutoLoad}
-                      disabled={actionLoading}
-                      className="inline-flex h-9 items-center justify-center gap-2 rounded-full bg-white px-5 text-xs font-bold text-black transition-all hover:bg-zinc-200 active:scale-95 disabled:opacity-50 w-full sm:w-auto cursor-pointer"
-                    >
-                      <Database className="h-3.5 w-3.5" strokeWidth={1.2} />
-                      Load Demo Spreadsheet
-                    </button>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/5 bg-zinc-950/50 p-6 text-left transition-colors hover:border-white/10">
-                    <h3 className="font-display text-sm font-bold text-white mb-3">Option 2: Upload Your Own</h3>
-                    <p className="text-xs text-zinc-400 mb-4">
-                      Export your 365-day Analytics data from LinkedIn (Posts & Metrics) to an Excel file and upload it here.
-                    </p>
                     <form onSubmit={handleFileUpload} className="flex flex-col sm:flex-row gap-3">
                       <input
                         type="file"
@@ -741,6 +722,36 @@ export default function Home() {
                       </button>
                     </form>
                   </div>
+
+                  <details className="group text-left border border-white/5 bg-zinc-950/30 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary className="flex items-center justify-between p-4 text-xs font-bold text-zinc-300 cursor-pointer hover:bg-white/5 select-none transition-colors">
+                      <div className="flex items-center gap-2">
+                        <BookOpen className="h-4 w-4 text-zinc-400" strokeWidth={1.2} />
+                        <span>How to get your LinkedIn report file?</span>
+                      </div>
+                      <ChevronRight className="h-4 w-4 text-zinc-500 transition-transform duration-300 group-open:rotate-90" strokeWidth={1.2} />
+                    </summary>
+                    <div className="p-4 pt-0 border-t border-white/5 bg-zinc-950/20 text-xs text-zinc-400 space-y-3">
+                      <p>To export your analytics report directly from LinkedIn:</p>
+                      <ol className="list-decimal pl-4 space-y-2">
+                        <li>
+                          Go to your <strong>LinkedIn Creator Analytics</strong> dashboard (or visit <a href="https://www.linkedin.com/analytics/creator/" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-zinc-200">linkedin.com/analytics/creator/</a>).
+                        </li>
+                        <li>
+                          Select the <strong>Past 365 Days</strong> (or your custom range) from the date filter at the top.
+                        </li>
+                        <li>
+                          Click the <strong>Export</strong> button in the top right corner.
+                        </li>
+                        <li>
+                          Save the downloaded Excel file (usually named <code>AggregateAnalytics_...xlsx</code>) and upload it here.
+                        </li>
+                      </ol>
+                      <p className="text-[10px] text-zinc-500 italic">
+                        Note: The exported sheet must contain the default worksheets: ENGAGEMENT, FOLLOWERS, DEMOGRAPHICS, and TOP POSTS.
+                      </p>
+                    </div>
+                  </details>
                 </div>
               </div>
             </div>

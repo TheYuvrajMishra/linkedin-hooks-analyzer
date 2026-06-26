@@ -45,51 +45,10 @@ export function EmptyState({
             </div>
           )}
 
-          {/* Upload Card Options */}
-          <div className="grid gap-6">
-            {/* Option 1: Workspace Auto-Load (Preferred for direct spreadsheet) */}
-            <div className="rounded-2xl border border-white/5 bg-[#0e0e11]/50 p-6 text-left hover:border-white/10 transition-all duration-550">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                <div>
-                  <span className="inline-block rounded-full bg-white/5 border border-white/10 px-3 py-0.5 text-[9px] font-bold text-zinc-400 uppercase tracking-wider mb-2">
-                    Fast Track
-                  </span>
-                  <h3 className="text-sm font-bold text-white font-display">
-                    Load Root Workspace Report
-                  </h3>
-                  <p className="text-xs text-zinc-400 mt-1">
-                    Use the pre-positioned file:{" "}
-                    <code className="text-zinc-300 bg-zinc-950 px-1.5 py-0.5 rounded">
-                      AggregateAnalytics_Yuvraj Mishra...xlsx
-                    </code>
-                    .
-                  </p>
-                </div>
-                <button
-                  onClick={handleAutoLoad}
-                  disabled={actionLoading}
-                  className="group flex items-center justify-between gap-4 rounded-full bg-white pl-6 pr-2 py-2 text-xs font-bold text-black shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 cursor-pointer w-full sm:w-auto"
-                >
-                  <span>Load Account Report</span>
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-black/15 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:-translate-y-[1px] group-hover:scale-105">
-                    <ChevronRight className="h-4 w-4 text-black" strokeWidth={1.2} />
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            {/* Divider */}
-            <div className="relative flex items-center py-2">
-              <div className="flex-grow border-t border-white/5"></div>
-              <span className="flex-shrink mx-4 text-[10px] font-bold text-zinc-600 uppercase tracking-widest">
-                or
-              </span>
-              <div className="flex-grow border-t border-white/5"></div>
-            </div>
-
-            {/* Option 2: Drag & Drop Manual File Upload */}
+          {/* Drag & Drop Manual File Upload */}
+          <div className="space-y-6">
             <form onSubmit={handleFileUpload} className="space-y-4">
-              <div className="rounded-2xl border-2 border-dashed border-white/5 bg-[#0e0e11]/25 p-6 hover:border-white/10 transition-all cursor-pointer relative group">
+              <div className="rounded-2xl border-2 border-dashed border-white/5 bg-[#0e0e11]/25 p-8 hover:border-white/10 transition-all cursor-pointer relative group">
                 <input
                   type="file"
                   accept=".xlsx, .csv"
@@ -101,13 +60,13 @@ export function EmptyState({
                 />
                 <div className="flex flex-col items-center">
                   <FileText
-                    className="h-8 w-8 text-zinc-500 group-hover:text-zinc-300 transition-colors mb-2"
+                    className="h-10 w-10 text-zinc-500 group-hover:text-zinc-300 transition-colors mb-3"
                     strokeWidth={1.2}
                   />
-                  <span className="text-xs font-semibold text-zinc-300 font-display">
-                    {selectedFile ? selectedFile.name : "Select LinkedIn Excel report (.xlsx)"}
+                  <span className="text-sm font-semibold text-zinc-300 font-display">
+                    {selectedFile ? selectedFile.name : "Select or drag your LinkedIn Excel report (.xlsx)"}
                   </span>
-                  <span className="text-[9px] text-zinc-600 mt-1 font-mono">Maximum size: 50MB</span>
+                  <span className="text-[10px] text-zinc-600 mt-1 font-mono">Maximum size: 50MB</span>
                 </div>
               </div>
 
@@ -121,6 +80,37 @@ export function EmptyState({
                 </button>
               )}
             </form>
+
+            {/* Collapsible Guide */}
+            <details className="group text-left border border-white/5 bg-zinc-950/30 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between p-4 text-xs font-bold text-zinc-300 cursor-pointer hover:bg-white/5 select-none transition-colors">
+                <div className="flex items-center gap-2">
+                  <FileText className="h-4 w-4 text-zinc-400" strokeWidth={1.2} />
+                  <span>How to get your LinkedIn report file?</span>
+                </div>
+                <ChevronRight className="h-4 w-4 text-zinc-500 transition-transform duration-300 group-open:rotate-90" strokeWidth={1.2} />
+              </summary>
+              <div className="p-4 pt-0 border-t border-white/5 bg-zinc-950/20 text-xs text-zinc-400 space-y-3">
+                <p>To export your analytics report directly from LinkedIn:</p>
+                <ol className="list-decimal pl-4 space-y-2">
+                  <li>
+                    Go to your <strong>LinkedIn Creator Analytics</strong> dashboard (or visit <a href="https://www.linkedin.com/analytics/creator/" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-zinc-200">linkedin.com/analytics/creator/</a>).
+                  </li>
+                  <li>
+                    Select the <strong>Past 365 Days</strong> (or your custom range) from the date filter at the top.
+                  </li>
+                  <li>
+                    Click the <strong>Export</strong> button in the top right corner.
+                  </li>
+                  <li>
+                    Save the downloaded Excel file (usually named <code>AggregateAnalytics_...xlsx</code>) and upload it here.
+                  </li>
+                </ol>
+                <p className="text-[10px] text-zinc-500 italic">
+                  Note: The exported sheet must contain the default worksheets: ENGAGEMENT, FOLLOWERS, DEMOGRAPHICS, and TOP POSTS.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
